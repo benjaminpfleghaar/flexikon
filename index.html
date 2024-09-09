@@ -7,14 +7,14 @@
 		<link rel="stylesheet" href="./assets/styles/styles.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Quiz app</h1>
+		<header aria-labelledby="title">
+			<h1 id="title">Quiz app</h1>
 		</header>
 		<main>
 			<section class="card">
 				<h2>What property flips the axes in flexbox?</h2>
 				<button type="button" class="toggle">Show answer</button>
-				<button type="button" aria-label="bookmark" class="bookmark">
+				<button type="button" aria-label="Bookmark" class="bookmark">
 					<img
 						src="assets/images/bookmark.svg"
 						width="24"
@@ -30,7 +30,7 @@
 			<section class="card">
 				<h2 class="answer">flex-direction</h2>
 				<button type="button" class="toggle">Hide answer</button>
-				<button type="button" aria-label="bookmark" class="bookmark">
+				<button type="button" aria-label="Bookmark" class="bookmark">
 					<img
 						src="assets/images/bookmark.svg"
 						width="24"
@@ -46,7 +46,7 @@
 			<section class="card">
 				<h2>Which tag is used for the main content?</h2>
 				<button type="button" class="toggle">Show answer</button>
-				<button type="button" aria-label="bookmark" class="bookmark">
+				<button type="button" aria-label="Bookmark" class="bookmark">
 					<img
 						src="assets/images/bookmark-active.svg"
 						width="24"
@@ -62,7 +62,7 @@
 			<section class="card">
 				<h2>What does the “font-weight” attribute do?</h2>
 				<button type="button" class="toggle">Show answer</button>
-				<button type="button" aria-label="bookmark" class="bookmark">
+				<button type="button" aria-label="Bookmark" class="bookmark">
 					<img
 						src="assets/images/bookmark.svg"
 						width="24"
@@ -75,11 +75,46 @@
 					<li>#css</li>
 				</ul>
 			</section>
+			<section class="profile">
+				<section class="header">
+					<div class="img"></div>
+					<h2>Max Doe</h2>
+				</section>
+				<section class="about">
+					<h3>About me</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+						sed diam nonumy eirmod tempor invidunt ut labore et
+						dolore magna aliquyam erat, sed diam voluptua. At vero
+						eos et accusam et justo duo dolores et ea rebum.
+					</p>
+				</section>
+				<ul>
+					<li>
+						<img
+							src="assets/images/card.svg"
+							width="16"
+							height="16"
+							alt="Card" />12
+					</li>
+					<li>
+						<img
+							src="assets/images/bookmark.svg"
+							width="16"
+							height="16"
+							alt="Bookmark" />4
+					</li>
+				</ul>
+			</section>
 		</main>
 		<footer>
 			<ul>
 				<li>
-					<a href="index.html" class="active" title="Home"
+					<a
+						href="index.html"
+						aria-label="Home"
+						class="active"
+						title="Home"
 						><img
 							src="assets/images/home.svg"
 							width="24"
@@ -88,7 +123,10 @@
 					/></a>
 				</li>
 				<li>
-					<a href="bookmark.html" title="Bookmarks"
+					<a
+						href="bookmark.html"
+						aria-label="Bookmarks"
+						title="Bookmarks"
 						><img
 							src="assets/images/bookmark.svg"
 							width="24"
@@ -97,7 +135,7 @@
 					/></a>
 				</li>
 				<li>
-					<a href="profile.html" title="Profile"
+					<a href="profile.html" aria-label="Profile" title="Profile"
 						><img
 							src="assets/images/profile.svg"
 							width="24"
