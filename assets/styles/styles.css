@@ -43,7 +43,51 @@ main {
 	padding: 32px;
 	flex-flow: column wrap;
 }
-main section {
+main .profile {
+	gap: 32px;
+	display: flex;
+	flex-direction: column;
+}
+main .profile .header {
+	gap: 24px;
+	display: flex;
+	align-items: center;
+}
+main .img {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	background-color: #f4f4f4;
+}
+main .profile h2 {
+	font-weight: 700;
+	font-size: 1.25em;
+	font-family: "Inter_24pt-Bold";
+}
+main .profile h3 {
+	font-size: 1em;
+	font-weight: 700;
+	font-family: "Inter_24pt-Bold";
+}
+main .profile ul {
+	gap: 8px;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+main .profile li {
+	gap: 8px;
+	height: 32px;
+	display: flex;
+	padding: 0 12px;
+	font-weight: 700;
+	font-size: 0.75em;
+	align-items: center;
+	border-radius: 16px;
+	background-color: #f4f4f4;
+	font-family: "Inter_24pt-Bold";
+}
+main .card {
 	gap: 48px;
 	display: flex;
 	position: relative;
@@ -51,18 +95,20 @@ main section {
 	flex-direction: column;
 	border: 1px solid #e0e0e0;
 }
-main h2 {
+main .card h2 {
 	padding: 24px;
+	font-weight: 700;
 	font-size: 1.25em;
 	text-align: center;
 	border-radius: 8px 8px 0 0;
 	background-color: #f4f4f4;
+	font-family: "Inter_24pt-Bold";
 }
-main .answer {
+main .card .answer {
 	color: #071908;
 	background-color: #defbe6;
 }
-main button {
+main .card button {
 	height: 40px;
 	border: none;
 	cursor: pointer;
@@ -71,17 +117,17 @@ main button {
 	transition: all ease 0.2s;
 	border: 1px solid #e0e0e0;
 }
-main button:hover {
+main .card button:hover {
 	background-color: #f4f4f4;
 }
-main .toggle {
+main .card .toggle {
 	padding: 0 32px;
 	color: #161616;
 	font-weight: 700;
 	align-self: center;
 	font-family: "Inter_24pt-Bold";
 }
-main .bookmark {
+main .card .bookmark {
 	top: -20px;
 	right: 16px;
 	width: 40px;
@@ -90,21 +136,21 @@ main .bookmark {
 	align-items: center;
 	justify-content: center;
 }
-main ul {
+main .card ul {
 	gap: 8px;
 	display: flex;
 	flex-wrap: wrap;
 	list-style-type: none;
 	padding: 0 0 24px 24px;
 }
-main li {
+main .card li {
 	height: 32px;
 	display: flex;
 	padding: 0 12px;
 	font-weight: 700;
 	font-size: 0.75em;
 	align-items: center;
-	border-radius: 17px;
+	border-radius: 16px;
 	background-color: #f4f4f4;
 	font-family: "Inter_24pt-Bold";
 }
@@ -114,8 +160,9 @@ main li {
 footer {
 	bottom: 0;
 	z-index: 1;
+	width: 100vw;
 	padding: 12px;
-	position: sticky;
+	position: fixed;
 	background-color: #fff;
 	border-top: 1px solid #e0e0e0;
 }
