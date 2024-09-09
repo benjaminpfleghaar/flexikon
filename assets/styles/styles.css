@@ -1,4 +1,35 @@
+@font-face {
+	font-family: "Inter_24pt-Regular";
+	src: url(../fonts/Inter_24pt-Regular.ttf);
+}
+@font-face {
+	font-family: "Inter_24pt-Bold";
+	src: url(../fonts/Inter_24pt-Bold.ttf);
+}
+
+/* Global */
+
 * {
 	margin: 0;
 	box-sizing: border-box;
+}
+body {
+	color: #161616;
+	line-height: 1.5;
+	font-family: "Inter_24pt-Regular";
+}
+
+/* Header */
+
+header {
+	top: 0;
+	position: sticky;
+	background-color: #fff;
+	border-bottom: 1px solid #e0e0e0;
+}
+header h1 {
+	padding: 16px 0;
+	font-size: 1.5em;
+	text-align: center;
+	font-family: "Inter_24pt-Bold";
 }
