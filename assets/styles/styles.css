@@ -24,12 +24,12 @@ body {
 header {
 	top: 0;
 	z-index: 1;
+	padding: 16px;
 	position: sticky;
 	background-color: #fff;
 	border-bottom: 1px solid #e0e0e0;
 }
 header h1 {
-	padding: 16px 0;
 	font-size: 1.5em;
 	text-align: center;
 	font-family: "Inter_24pt-Bold";
@@ -84,9 +84,11 @@ main .toggle {
 main .bookmark {
 	top: -20px;
 	right: 16px;
+	width: 40px;
 	display: flex;
 	position: absolute;
 	align-items: center;
+	justify-content: center;
 }
 main ul {
 	gap: 8px;
@@ -103,6 +105,36 @@ main li {
 	font-size: 0.75em;
 	align-items: center;
 	border-radius: 17px;
+	background-color: #f4f4f4;
 	font-family: "Inter_24pt-Bold";
+}
+
+/* Footer */
+
+footer {
+	bottom: 0;
+	z-index: 1;
+	padding: 12px;
+	position: sticky;
+	background-color: #fff;
+	border-top: 1px solid #e0e0e0;
+}
+footer ul {
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+}
+footer a {
+	height: 40px;
+	display: flex;
+	padding: 0 16px;
+	color: #8d8d8d;
+	align-items: center;
+	border-radius: 20px;
+	transition: all ease 0.2s;
+}
+footer a:hover,
+footer .active {
 	background-color: #f4f4f4;
 }
