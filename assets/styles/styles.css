@@ -16,7 +16,14 @@
 body {
 	color: #161616;
 	line-height: 1.5;
+	background-color: #f4f4f4;
 	font-family: "Inter_24pt-Regular";
+}
+main {
+	gap: 16px;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 24px 24px 88px;
 }
 
 /* Header */
@@ -24,135 +31,146 @@ body {
 header {
 	top: 0;
 	z-index: 1;
-	padding: 16px;
 	position: sticky;
+	padding: 16px 24px;
 	background-color: #fff;
 	border-bottom: 1px solid #e0e0e0;
 }
 header h1 {
-	font-size: 1.5em;
-	text-align: center;
-	font-family: "Inter_24pt-Bold";
-}
-
-/* Main */
-
-main {
-	gap: 32px;
-	display: flex;
-	flex-flow: column wrap;
-	padding: 32px 32px 96px;
-}
-main .profile {
-	gap: 32px;
-	display: flex;
-	flex-direction: column;
-}
-main .profile .header {
-	gap: 24px;
-	display: flex;
-	align-items: center;
-}
-main .img {
-	width: 80px;
-	height: 80px;
-	border-radius: 40px;
-	background-color: #f4f4f4;
-}
-main .profile h2 {
-	font-weight: 700;
-	font-size: 1.25em;
-	font-family: "Inter_24pt-Bold";
-}
-main .profile h3 {
 	font-size: 1em;
 	font-weight: 700;
 	font-family: "Inter_24pt-Bold";
 }
+
+/* Profile */
+
+main .profile {
+	gap: 32px;
+	padding: 24px;
+	display: flex;
+	border-radius: 16px;
+	flex-direction: column;
+	background-color: #fff;
+}
+main .profile .header {
+	gap: 16px;
+	display: flex;
+	align-items: center;
+}
+main .profile .header img {
+	border-radius: 32px;
+}
+main .profile h2 {
+	display: flex;
+	font-size: 1em;
+	font-weight: 700;
+	flex-direction: column;
+	font-family: "Inter_24pt-Bold";
+}
+main .profile small {
+	color: #8d8d8d;
+	font-size: 0.75em;
+}
+main .profile h3 {
+	font-size: 1em;
+	font-weight: 700;
+	font-size: 0.75em;
+	font-family: "Inter_24pt-Bold";
+}
 main .profile ul {
-	gap: 8px;
+	gap: 4px;
 	padding: 0;
 	display: flex;
 	list-style-type: none;
 }
 main .profile li {
-	gap: 8px;
+	gap: 12px;
 	height: 32px;
 	display: flex;
+	font-weight: 700;
+	font-size: 0.75em;
+	align-items: center;
+	border-radius: 16px;
+	padding: 0 16px 0 4px;
+	background-color: #f4f4f4;
+	font-family: "Inter_24pt-Bold";
+}
+main .profile span {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	border-radius: 12px;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+}
+
+/* Card */
+
+main .card {
+	padding: 24px;
+	border-radius: 16px;
+	background-color: #fff;
+}
+main .card .header {
+	display: flex;
+	margin-bottom: 48px;
+	justify-content: space-between;
+}
+main .card ul {
+	gap: 4px;
+	padding: 0;
+	display: flex;
+	list-style-type: none;
+}
+main .card li {
+	height: 24px;
+	display: flex;
 	padding: 0 12px;
+	color: #8d8d8d;
 	font-weight: 700;
 	font-size: 0.75em;
 	align-items: center;
 	border-radius: 16px;
 	background-color: #f4f4f4;
-	font-family: "Inter_24pt-Bold";
-}
-main .card {
-	gap: 48px;
-	display: flex;
-	position: relative;
-	border-radius: 8px;
-	flex-direction: column;
-	border: 1px solid #e0e0e0;
-}
-main .card h2 {
-	padding: 24px;
-	font-weight: 700;
-	font-size: 1.25em;
-	text-align: center;
-	border-radius: 8px 8px 0 0;
-	background-color: #f4f4f4;
-	font-family: "Inter_24pt-Bold";
-}
-main .card .answer {
-	color: #071908;
-	background-color: #defbe6;
-}
-main .card button {
-	height: 40px;
-	border: none;
-	cursor: pointer;
-	border-radius: 20px;
-	background-color: #fff;
-	transition: all ease 0.2s;
-	border: 1px solid #e0e0e0;
-}
-main .card button:hover {
-	background-color: #f4f4f4;
-}
-main .card .toggle {
-	padding: 0 32px;
-	color: #161616;
-	font-weight: 700;
-	align-self: center;
 	font-family: "Inter_24pt-Bold";
 }
 main .card .bookmark {
-	top: -20px;
-	right: 16px;
-	width: 40px;
+	width: 20px;
+	height: 24px;
+	border: none;
 	display: flex;
-	position: absolute;
+	cursor: pointer;
+	background: none;
 	align-items: center;
 	justify-content: center;
 }
-main .card ul {
-	gap: 8px;
+main .card .question {
+	gap: 16px;
 	display: flex;
-	flex-wrap: wrap;
-	list-style-type: none;
-	padding: 0 0 24px 24px;
+	align-items: flex-end;
+	justify-content: space-between;
 }
-main .card li {
-	height: 32px;
-	display: flex;
-	padding: 0 12px;
+main .card h2 {
 	font-weight: 700;
-	font-size: 0.75em;
-	align-items: center;
-	border-radius: 16px;
-	background-color: #f4f4f4;
+	font-size: 1.25em;
+	margin-bottom: -4px;
+	line-height: 1.25em;
 	font-family: "Inter_24pt-Bold";
+}
+main .card .toggle {
+	height: 40px;
+	border: none;
+	display: flex;
+	padding: 0 8px;
+	cursor: pointer;
+	border-radius: 20px;
+	align-items: center;
+	transition: all ease 0.2s;
+	background-color: #161616;
+}
+main .card .toggle:hover {
+	background-color: #393939;
 }
 
 /* Footer */
