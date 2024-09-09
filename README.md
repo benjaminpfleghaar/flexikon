@@ -1,3 +1,3 @@
-# Quiz App
+# Quiz app
 
 Quiz app as part of the neuefische Web Development Bootcamp
