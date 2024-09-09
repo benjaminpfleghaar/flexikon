@@ -23,6 +23,7 @@ body {
 
 header {
 	top: 0;
+	z-index: 1;
 	position: sticky;
 	background-color: #fff;
 	border-bottom: 1px solid #e0e0e0;
@@ -32,4 +33,76 @@ header h1 {
 	font-size: 1.5em;
 	text-align: center;
 	font-family: "Inter_24pt-Bold";
+}
+
+/* Main */
+
+main {
+	gap: 32px;
+	display: flex;
+	padding: 32px;
+	flex-flow: column wrap;
+}
+main section {
+	gap: 48px;
+	display: flex;
+	position: relative;
+	border-radius: 8px;
+	flex-direction: column;
+	border: 1px solid #e0e0e0;
+}
+main h2 {
+	padding: 24px;
+	font-size: 1.25em;
+	text-align: center;
+	border-radius: 8px 8px 0 0;
+	background-color: #f4f4f4;
+}
+main .answer {
+	color: #071908;
+	background-color: #defbe6;
+}
+main button {
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	border-radius: 20px;
+	background-color: #fff;
+	transition: all ease 0.2s;
+	border: 1px solid #e0e0e0;
+}
+main button:hover {
+	background-color: #f4f4f4;
+}
+main .toggle {
+	padding: 0 32px;
+	color: #161616;
+	font-weight: 700;
+	align-self: center;
+	font-family: "Inter_24pt-Bold";
+}
+main .bookmark {
+	top: -20px;
+	right: 16px;
+	display: flex;
+	position: absolute;
+	align-items: center;
+}
+main ul {
+	gap: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0 0 24px 24px;
+}
+main li {
+	height: 32px;
+	display: flex;
+	padding: 0 12px;
+	font-weight: 700;
+	font-size: 0.75em;
+	align-items: center;
+	border-radius: 17px;
+	font-family: "Inter_24pt-Bold";
+	background-color: #f4f4f4;
 }
