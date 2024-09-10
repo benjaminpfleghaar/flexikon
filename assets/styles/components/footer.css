@@ -1,0 +1,26 @@
+.footer {
+	bottom: 0;
+	z-index: 1;
+	width: 390px;
+	padding: 16px 0;
+	position: fixed;
+	background-color: var(--color-white);
+	border-top: 1px solid var(--color-border);
+}
+.footer__list {
+	display: flex;
+	justify-content: space-around;
+}
+.footer__link {
+	display: flex;
+	font-weight: 800;
+	align-items: center;
+	text-decoration: none;
+	flex-direction: column;
+	font-family: var(--font-bold);
+	font-size: var(--font-size-xs);
+	color: var(--color-secondary-bright);
+}
+.footer__link--active {
+	color: var(--color-primary);
+}

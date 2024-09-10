@@ -1,0 +1,79 @@
+.answer {
+	gap: 16px;
+	height: 358px;
+	padding: 24px;
+	display: flex;
+	max-width: 100%;
+	position: relative;
+	border-radius: 28px;
+	flex-direction: column;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+.answer__button {
+	top: 8px;
+	right: 8px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: flex;
+	cursor: pointer;
+	position: absolute;
+	align-items: center;
+	border-radius: 20px;
+	justify-content: center;
+	background-color: var(--color-background-dark);
+}
+.answer__button--active {
+	background-color: var(--color-white);
+}
+.answer__headline {
+	font-weight: 800;
+	padding-right: 24px;
+	font-size: var(--font-size-m);
+	font-family: var(--font-bold);
+}
+.answer__code {
+	gap: 2px;
+	flex-grow: 1;
+	padding: 16px;
+	display: flex;
+	border-radius: 12px;
+	flex-direction: column;
+	font-size: var(--font-size-s);
+	background-color: var(--color-background-dark);
+}
+.answer__line--offset {
+	padding-left: 16px;
+}
+.answer__element {
+	color: var(--color-gold);
+}
+.answer__punctuation {
+	color: var(--color-gray);
+}
+.answer__key {
+	color: var(--color-blue);
+}
+.answer__value {
+	color: var(--color-brown);
+}
+.answer__bracket {
+	color: var(--color-yellow);
+}
+.answer__list {
+	gap: 4px;
+	display: flex;
+}
+.answer__item {
+	height: 24px;
+	display: flex;
+	padding: 0 12px;
+	font-weight: 800;
+	align-items: center;
+	border-radius: 12px;
+	font-family: var(--font-bold);
+	font-size: var(--font-size-s);
+	color: var(--color-secondary-dark);
+	background-color: var(--color-background-dark);
+}

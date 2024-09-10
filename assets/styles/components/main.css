@@ -1,0 +1,10 @@
+@import "./main/question.css";
+@import "./main/answer.css";
+@import "./main/profile.css";
+
+.main {
+	gap: 8px;
+	display: flex;
+	padding: 0 16px 88px;
+	flex-flow: column wrap;
+}

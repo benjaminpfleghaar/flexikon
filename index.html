@@ -3,188 +3,143 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Quiz app</title>
+		<title>Quiz</title>
 		<link rel="stylesheet" href="./assets/styles/styles.css" />
 	</head>
 	<body>
-		<header aria-labelledby="title">
-			<h1 id="title">Quiz app</h1>
+		<header class="header">
+			<section class="header__title">
+				<img src="assets/images/logo.svg" alt="Quiz" />
+				<h1 class="header__headline">
+					<span class="header__span">Quiz / </span>Profile
+				</h1>
+			</section>
+			<button type="button" class="header__button">
+				<img src="assets/images/filter-20.svg" alt="Filter" />Filter
+			</button>
 		</header>
-		<main>
-			<section class="card">
-				<section class="header">
-					<ul>
-						<li>html</li>
-						<li>flexbox</li>
-						<li>css</li>
-					</ul>
-					<button
-						type="button"
-						aria-label="Bookmark"
-						class="bookmark">
-						<img
-							src="assets/images/bookmark-20.svg"
-							width="20"
-							height="20"
-							alt="Bookmark" />
-					</button>
-				</section>
-				<section class="question">
-					<h2>What property flips the axes in flexbox?</h2>
-					<button type="button" class="toggle">
-						<img
-							src="assets/images/arrow-24.svg"
-							width="24"
-							height="24"
-							alt="Arrow" />
-					</button>
-				</section>
-			</section>
-			<section class="card answer">
-				<section class="header">
-					<ul>
-						<li>html</li>
-						<li>flexbox</li>
-						<li>css</li>
-					</ul>
-					<button
-						type="button"
-						aria-label="Bookmark"
-						class="bookmark">
-						<img
-							src="assets/images/bookmark-20.svg"
-							width="20"
-							height="20"
-							alt="Bookmark" />
-					</button>
-				</section>
-				<section class="question">
-					<h2>flex-direction</h2>
-					<button type="button" class="toggle">
-						<img
-							src="assets/images/arrow-24.svg"
-							width="24"
-							height="24"
-							alt="Arrow" />
-					</button>
-				</section>
-			</section>
-			<section class="card">
-				<section class="header">
-					<ul>
-						<li>html</li>
-						<li>flexbox</li>
-						<li>css</li>
-					</ul>
-					<button
-						type="button"
-						aria-label="Bookmark"
-						class="bookmark">
-						<img
-							src="assets/images/bookmark-active-20.svg"
-							width="20"
-							height="20"
-							alt="Bookmark" />
-					</button>
-				</section>
-				<section class="question">
-					<h2>Which tag is used for the main content?</h2>
-					<button type="button" class="toggle">
-						<img
-							src="assets/images/arrow-24.svg"
-							width="24"
-							height="24"
-							alt="Arrow" />
-					</button>
-				</section>
-			</section>
-			<section class="card">
-				<section class="header">
-					<ul>
-						<li>html</li>
-						<li>flexbox</li>
-						<li>css</li>
-					</ul>
-					<button
-						type="button"
-						aria-label="Bookmark"
-						class="bookmark">
-						<img
-							src="assets/images/bookmark-20.svg"
-							width="20"
-							height="20"
-							alt="Bookmark" />
-					</button>
-				</section>
-				<section class="question">
-					<h2>What does the “font-weight” attribute do?</h2>
-					<button type="button" class="toggle">
-						<img
-							src="assets/images/arrow-24.svg"
-							width="24"
-							height="24"
-							alt="Arrow" />
-					</button>
-				</section>
+		<main class="main">
+			<section class="answer">
+				<button type="button" class="answer__button">
+					<img
+						src="assets/images/bookmark-20-dark.svg"
+						alt="Bookmark" />
+				</button>
+				<h3 class="answer__headline">Answer</h3>
+				<p class="answer__paragraph">
+					The flex-direction property specifies the direction of the
+					flexible items.
+				</p>
+				<code class="answer__code">
+					<span class="answer__line">
+						<span class="answer__element">div </span>
+						<span class="answer__bracket">{</span>
+					</span>
+					<span class="answer__line answer__line--offset">
+						<span class="answer__key">display</span
+						><span class="answer__answer__punctuation">:</span>
+						<span class="answer__value">flex</span
+						><span class="answer__answer__punctuation">;</span>
+					</span>
+					<span class="answer__line--offset">
+						<span class="answer__key">flex-direction</span
+						><span class="answer__answer__punctuation">:</span>
+						<span class="answer__value">column</span
+						><span class="answer__answer__punctuation">;</span>
+					</span>
+					<span class="answer__line">
+						<span class="answer__bracket">}</span>
+					</span>
+				</code>
+				<ul class="answer__list">
+					<li class="answer__item">html</li>
+					<li class="answer__item">css</li>
+					<li class="answer__item">flexbox</li>
+				</ul>
 			</section>
 			<section class="profile">
-				<section class="header">
+				<figure class="profile__figure">
 					<img
 						src="assets/images/avatar.jpeg"
-						width="64"
-						height="64"
+						class="profile__img"
+						width="120"
+						height="120"
 						alt="Max Doe" />
-					<h2>Maximilian Doe <small>@max.doe</small></h2>
+				</figure>
+				<section class="profile__name">
+					<h2 class="profile__headline">Max Doe</h2>
+					<small class="profile__small">@max.doe</small>
 				</section>
-				<article>
-					<h3>About</h3>
-					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-						sed diam nonumy eirmod tempor invidunt ut labore et
-						dolore magna aliquyam erat, sed diam voluptua.
-					</p>
-				</article>
-				<ul>
-					<li><span>8</span>Questions</li>
-					<li><span>3</span>Bookmarks</li>
+				<ul class="profile__list">
+					<li class="profile__item">
+						<span class="profile__span">12</span>Questions
+					</li>
+					<li class="profile__item">
+						<span class="profile__span">4</span>Bookmarks
+					</li>
+				</ul>
+				<p>
+					Lorem ipsum dolor sit amet, sadipscing elitr, sed diam
+					nonumy eirmod tenvidunt ut labore et dolore magna yam era
+					sed diam voluptua.
+				</p>
+			</section>
+			<section class="question">
+				<button type="button" class="question__button">
+					<img src="assets/images/bookmark-20.svg" alt="Bookmark" />
+				</button>
+				<h2 class="question__headline">
+					What property flips the axes in flexbox?
+				</h2>
+				<ul class="question__list">
+					<li class="question__item">html</li>
+					<li class="question__item">css</li>
+					<li class="question__item">flexbox</li>
+				</ul>
+			</section>
+			<section class="question">
+				<button
+					type="button"
+					class="question__button question__button--active">
+					<img
+						src="assets/images/bookmark-20-filled.svg"
+						alt="Bookmark" />
+				</button>
+				<h2 class="question__headline">
+					What property flips the axes in flexbox?
+				</h2>
+				<ul class="question__list">
+					<li class="question__item">html</li>
+					<li class="question__item">css</li>
+					<li class="question__item">flexbox</li>
 				</ul>
 			</section>
 		</main>
-		<footer>
-			<ul>
+		<footer class="footer">
+			<ul class="footer__list">
 				<li>
 					<a
-						href="index.html"
-						aria-label="Home"
-						class="active"
-						title="Home"
-						><img
-							src="assets/images/home-24.svg"
-							width="24"
-							height="24"
-							alt="Home"
-					/></a>
+						href="#"
+						class="footer__link footer__link--active"
+						title="Home">
+						<img
+							src="assets/images/home-24-filled.svg"
+							alt="Home" />Home
+					</a>
 				</li>
 				<li>
-					<a
-						href="bookmark.html"
-						aria-label="Bookmarks"
-						title="Bookmarks"
-						><img
+					<a href="#" class="footer__link" title="Bookmark">
+						<img
 							src="assets/images/bookmark-24.svg"
-							width="24"
-							height="24"
-							alt="Bookmark"
-					/></a>
+							alt="Bookmark" />Bookmark
+					</a>
 				</li>
 				<li>
-					<a href="profile.html" aria-label="Profile" title="Profile"
-						><img
+					<a href="#" class="footer__link" title="Profile">
+						<img
 							src="assets/images/profile-24.svg"
-							width="24"
-							height="24"
-							alt="Profile"
-					/></a>
+							alt="Profile" />Profile
+					</a>
 				</li>
 			</ul>
 		</footer>
