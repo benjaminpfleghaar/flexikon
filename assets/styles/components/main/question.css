@@ -1,8 +1,8 @@
 .question {
-	height: 358px;
 	padding: 24px;
 	display: flex;
 	max-width: 100%;
+	min-height: 398px;
 	position: relative;
 	border-radius: 28px;
 	flex-direction: column;
@@ -28,7 +28,7 @@
 }
 .question__headline {
 	font-weight: 800;
-	padding-right: 24px;
+	padding-right: 40px;
 	line-height: normal;
 	font-size: var(--font-size-xl);
 	font-family: var(--font-bold-italic);

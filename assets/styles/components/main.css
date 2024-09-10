@@ -5,6 +5,8 @@
 .main {
 	gap: 8px;
 	display: flex;
-	padding: 0 16px 88px;
+	margin: 0 auto;
+	max-width: 430px;
+	padding: 0 16px 96px;
 	flex-flow: column wrap;
 }

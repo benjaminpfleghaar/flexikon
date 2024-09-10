@@ -44,8 +44,6 @@
 	--font-size-xxl: 40px;
 }
 body {
-	margin: 0 auto;
-	max-width: 390px;
 	line-height: 1.5;
 	color: var(--color-primary);
 	font-family: var(--font-regular);

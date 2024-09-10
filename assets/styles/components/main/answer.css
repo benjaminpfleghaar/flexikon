@@ -1,9 +1,9 @@
 .answer {
 	gap: 16px;
-	height: 358px;
 	padding: 24px;
 	display: flex;
 	max-width: 100%;
+	min-height: 398px;
 	position: relative;
 	border-radius: 28px;
 	flex-direction: column;
@@ -29,7 +29,10 @@
 }
 .answer__headline {
 	font-weight: 800;
-	padding-right: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-right: 40px;
+	text-overflow: ellipsis;
 	font-size: var(--font-size-m);
 	font-family: var(--font-bold);
 }
@@ -40,7 +43,7 @@
 	display: flex;
 	border-radius: 12px;
 	flex-direction: column;
-	font-size: var(--font-size-s);
+	font-size: var(--font-size-m);
 	background-color: var(--color-background-dark);
 }
 .answer__line--offset {
