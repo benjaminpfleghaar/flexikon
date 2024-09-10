@@ -13,7 +13,7 @@
 }
 .footer__link {
 	display: flex;
-	font-weight: 800;
+	font-weight: normal;
 	align-items: center;
 	text-decoration: none;
 	flex-direction: column;

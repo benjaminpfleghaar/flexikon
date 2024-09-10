@@ -23,12 +23,12 @@
 	flex-direction: column;
 }
 .profile__headline {
-	font-weight: 800;
+	font-weight: normal;
 	font-size: var(--font-size-l);
 	font-family: var(--font-bold-italic);
 }
 .profile__small {
-	font-weight: 800;
+	font-weight: normal;
 	font-size: var(--font-size-s);
 	font-family: var(--font-bold);
 	color: var(--color-secondary-bright);
@@ -41,7 +41,7 @@
 	gap: 12px;
 	height: 32px;
 	display: flex;
-	font-weight: 800;
+	font-weight: normal;
 	align-items: center;
 	border-radius: 16px;
 	padding: 0 16px 0 4px;
