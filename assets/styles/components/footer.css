@@ -17,9 +17,9 @@
 	align-items: center;
 	text-decoration: none;
 	flex-direction: column;
-	font-family: var(--font-bold);
 	font-size: var(--font-size-xs);
 	color: var(--color-secondary-bright);
+	font-family: var(--font-bold), sans-serif;
 }
 .footer__link--active {
 	color: var(--color-primary);

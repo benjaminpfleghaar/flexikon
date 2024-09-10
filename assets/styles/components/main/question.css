@@ -31,7 +31,7 @@
 	padding-right: 40px;
 	line-height: normal;
 	font-size: var(--font-size-xl);
-	font-family: var(--font-bold-italic);
+	font-family: var(--font-bold-italic), sans-serif;
 }
 .question__list {
 	gap: 4px;
@@ -44,8 +44,8 @@
 	font-weight: normal;
 	align-items: center;
 	border-radius: 12px;
-	font-family: var(--font-bold);
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
+	font-family: var(--font-bold), sans-serif;
 	background-color: var(--color-background-bright);
 }

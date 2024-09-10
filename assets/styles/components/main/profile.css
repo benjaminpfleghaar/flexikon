@@ -25,13 +25,13 @@
 .profile__headline {
 	font-weight: normal;
 	font-size: var(--font-size-l);
-	font-family: var(--font-bold-italic);
+	font-family: var(--font-bold-italic), sans-serif;
 }
 .profile__small {
 	font-weight: normal;
 	font-size: var(--font-size-s);
 	font-family: var(--font-bold);
-	color: var(--color-secondary-bright);
+	color: var(--color-secondary-bright), sans-serif;
 }
 .profile__list {
 	gap: 8px;
@@ -46,8 +46,8 @@
 	border-radius: 16px;
 	padding: 0 16px 0 4px;
 	color: var(--color-primary);
-	font-family: var(--font-bold);
 	font-size: var(--font-size-s);
+	font-family: var(--font-bold), sans-serif;
 	background-color: var(--color-background-bright);
 }
 .profile__span {
