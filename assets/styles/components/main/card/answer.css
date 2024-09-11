@@ -32,6 +32,14 @@
 	background-color: var(--color-white);
 	background-image: url(../../../../images/bookmark-20-filled-dark.svg);
 }
+.answer__span--hidden {
+	top: auto;
+	width: 1px;
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+}
 .answer__headline {
 	overflow: hidden;
 	white-space: nowrap;

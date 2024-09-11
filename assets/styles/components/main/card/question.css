@@ -31,6 +31,14 @@
 	background-color: var(--color-primary);
 	background-image: url(../../../../images/bookmark-20-filled.svg);
 }
+.question__span--hidden {
+	top: auto;
+	width: 1px;
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+}
 .question__headline {
 	padding-right: 40px;
 	line-height: normal;

@@ -22,3 +22,6 @@
 .footer__link--active {
 	color: var(--color-primary);
 }
+.footer__link--active::after {
+	content: "•";
+}
