@@ -5,7 +5,7 @@ Quiz app as part of the neuefische Web Development Bootcamp
 ## Learnings
 
 -   Apply BEM naming convention
--   Use `data-js=<name>` for query selction
+-   Use `data-js=<name>` for query selection
 -   Use `text-overflow: ellipsis` for cutting text
 -   How to ensure accessibility of icon only buttons
 -   Organize components/styles in different files
