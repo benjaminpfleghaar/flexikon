@@ -2,10 +2,7 @@
 @import "./main/card.css";
 
 .main {
-	gap: 8px;
-	display: flex;
 	margin: 0 auto;
 	max-width: 430px;
-	padding: 0 16px 96px;
-	flex-flow: column wrap;
+	padding: 0 16px 88px;
 }
