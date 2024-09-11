@@ -24,20 +24,12 @@
 	align-items: center;
 	border-radius: 20px;
 	justify-content: center;
-	background-color: var(--color-background-bright);
+	background: var(--color-background-bright)
+		url(../../../../images/bookmark-20.svg) center no-repeat;
 }
 .question__button--active {
 	background-color: var(--color-primary);
-}
-.question__button {
-	cursor: pointer;
-	transition: transform ease 0.2s;
-}
-.question__button:hover {
-	transform: scale(1.5);
-}
-.question__button:active {
-	transform: scale(1);
+	background-image: url(../../../../images/bookmark-20-filled.svg);
 }
 .question__headline {
 	padding-right: 40px;

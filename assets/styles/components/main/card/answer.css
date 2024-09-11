@@ -25,10 +25,12 @@
 	align-items: center;
 	border-radius: 20px;
 	justify-content: center;
-	background-color: var(--color-background-dark);
+	background: var(--color-background-dark)
+		url(../../../../images/bookmark-20-dark.svg) center no-repeat;
 }
 .answer__button--active {
 	background-color: var(--color-white);
+	background-image: url(../../../../images/bookmark-20-filled-dark.svg);
 }
 .answer__headline {
 	overflow: hidden;

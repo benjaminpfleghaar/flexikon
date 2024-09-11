@@ -8,6 +8,6 @@
 .card:hover {
 	transform: scale(1.025);
 }
-.card:active:not(:has(.question__button:active)) {
+.card:active:not(:has(.question__button:active, .answer__button:active)) {
 	transform: scale(1);
 }
