@@ -2,7 +2,6 @@
 	gap: 16px;
 	padding: 24px;
 	display: flex;
-	max-width: 100%;
 	min-height: 398px;
 	position: relative;
 	border-radius: 28px;
@@ -64,7 +63,10 @@
 .answer__element {
 	color: var(--color-gold);
 }
-.answer__punctuation {
+.answer__tag {
+	color: var(--color-darkblue);
+}
+.answer__character {
 	color: var(--color-gray);
 }
 .answer__key {
@@ -73,8 +75,11 @@
 .answer__value {
 	color: var(--color-brown);
 }
-.answer__bracket {
+.answer__braces {
 	color: var(--color-yellow);
+}
+.answer__brackets {
+	color: var(--color-darkgray);
 }
 .answer__list {
 	gap: 4px;

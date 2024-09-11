@@ -3,6 +3,7 @@
 
 .card {
 	cursor: pointer;
+	max-width: 430px;
 	transition: transform ease 0.2s;
 }
 .card:hover {
