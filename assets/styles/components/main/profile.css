@@ -23,12 +23,10 @@
 	flex-direction: column;
 }
 .profile__headline {
-	font-weight: normal;
 	font-size: var(--font-size-l);
 	font-family: var(--font-bold-italic), sans-serif;
 }
 .profile__small {
-	font-weight: normal;
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
 	font-family: var(--font-bold), sans-serif;

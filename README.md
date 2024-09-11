@@ -12,3 +12,5 @@ Quiz app as part of the neuefische Web Development Bootcamp
 ## Feature ideas
 
 -   Make card exactly as high as it is wide
+-   Add counter at bookmark link in bottom navigation
+-   Add logout button on profile page

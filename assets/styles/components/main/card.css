@@ -1,0 +1,13 @@
+@import "./card/question.css";
+@import "./card/answer.css";
+
+.card {
+	cursor: pointer;
+	transition: transform ease 0.2s;
+}
+.card:hover {
+	transform: scale(1.025);
+}
+.card:active {
+	transform: scale(1);
+}

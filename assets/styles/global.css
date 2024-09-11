@@ -5,8 +5,8 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "PlusJakartaSans-ExtraBold";
-	src: url(../fonts/PlusJakartaSans-ExtraBold.ttf);
+	font-family: "PlusJakartaSans-Bold";
+	src: url(../fonts/PlusJakartaSans-Bold.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
@@ -38,7 +38,7 @@
 	--color-brown: #c6937c;
 	--color-yellow: #f9d749;
 
-	--font-bold: "PlusJakartaSans-ExtraBold", sans-serif;
+	--font-bold: "PlusJakartaSans-Bold", sans-serif;
 	--font-regular: "PlusJakartaSans-Regular", sans-serif;
 	--font-bold-italic: "PlusJakartaSans-ExtraBoldItalic", sans-serif;
 
@@ -55,6 +55,14 @@ body {
 	font-family: var(--font-regular), sans-serif;
 	background-color: var(--color-background-bright);
 }
+h1,
+h2,
+h3 {
+	font-weight: normal;
+}
 ul {
-	list-style-type: none;
+	list-style: none;
+}
+a {
+	text-decoration: none;
 }

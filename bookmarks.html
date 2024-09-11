@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Quiz App</title>
+		<title>Quiz Bookmarks</title>
 		<link rel="stylesheet" href="./assets/styles/styles.css" />
 		<script src="./assets/scripts/scripts.js" defer></script>
 	</head>
@@ -11,7 +11,9 @@
 		<header class="header">
 			<section class="header__title">
 				<img src="assets/images/logo.svg" alt="Quiz" />
-				<h1 class="header__headline">Quiz</h1>
+				<h1 class="header__headline">
+					<span class="header__span">Quiz / </span>Bookmarks
+				</h1>
 			</section>
 			<button type="button" class="header__button">
 				<img src="assets/images/filter-20.svg" alt="Filter" />Filter
@@ -20,9 +22,11 @@
 		<main class="main">
 			<section class="card" data-js="card">
 				<section class="question" data-js="question">
-					<button type="button" class="question__button">
+					<button
+						type="button"
+						class="question__button question__button--active">
 						<img
-							src="assets/images/bookmark-20.svg"
+							src="assets/images/bookmark-20-filled.svg"
 							alt="Bookmark" />
 					</button>
 					<h2 class="question__headline">
@@ -35,9 +39,11 @@
 					</ul>
 				</section>
 				<section class="answer answer--hide" data-js="answer">
-					<button type="button" class="answer__button">
+					<button
+						type="button"
+						class="answer__button answer__button--active">
 						<img
-							src="assets/images/bookmark-20-dark.svg"
+							src="assets/images/bookmark-20-filled-dark.svg"
 							alt="Bookmark" />
 					</button>
 					<h3 class="answer__headline">
@@ -79,22 +85,17 @@
 		<footer class="footer">
 			<ul class="footer__list">
 				<li>
-					<a
-						href="index.html"
-						class="footer__link footer__link--active"
-						title="Home">
-						<img
-							src="assets/images/home-24-filled.svg"
-							alt="Home" />Home
+					<a href="index.html" class="footer__link" title="Home">
+						<img src="assets/images/home-24.svg" alt="Home" />Home
 					</a>
 				</li>
 				<li>
 					<a
 						href="bookmarks.html"
-						class="footer__link"
+						class="footer__link footer__link--active"
 						title="Bookmarks">
 						<img
-							src="assets/images/bookmark-24.svg"
+							src="assets/images/bookmark-24-filled.svg"
 							alt="Bookmarks" />Bookmarks
 					</a>
 				</li>
