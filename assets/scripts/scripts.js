@@ -1,7 +1,6 @@
 const cards = document.querySelectorAll('[data-js="card"]');
-const cardsArray = Array.from(cards);
 
-cardsArray.forEach((card, index) => {
+[...cards].forEach((card, index) => {
 	const question = cards[index].querySelector('[data-js="question"]');
 	const answer = cards[index].querySelector('[data-js="answer"]');
 	const questionButton = question.querySelector(

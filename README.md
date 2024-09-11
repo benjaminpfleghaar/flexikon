@@ -39,6 +39,8 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Use `text-overflow: ellipsis` for cutting text
 -   How to ensure accessibility of icon only buttons
 -   Organize components/styles in different files
+-   Make an array from nodes with `Array.from(nodes)`
+    -   even shorter `[...nodes]`
 -   Use color and font variables in CSS
 
 ## Feature ideas
