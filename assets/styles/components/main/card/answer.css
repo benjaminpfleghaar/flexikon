@@ -46,7 +46,7 @@
 	flex-grow: 1;
 	padding: 16px;
 	display: flex;
-	border-radius: 12px;
+	border-radius: 8px;
 	flex-direction: column;
 	font-size: var(--font-size-m);
 	background-color: var(--color-background-dark);
