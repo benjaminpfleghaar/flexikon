@@ -4,7 +4,7 @@
 	display: flex;
 	min-height: 430px;
 	position: relative;
-	border-radius: 28px;
+	border-radius: 8px;
 	flex-direction: column;
 	color: var(--color-white);
 	background-color: var(--color-primary);
@@ -13,22 +13,19 @@
 	display: none;
 }
 .answer__button {
-	top: 8px;
-	right: 8px;
+	right: 16px;
 	width: 40px;
+	bottom: 16px;
 	height: 40px;
 	border: none;
 	display: flex;
 	cursor: pointer;
 	position: absolute;
 	align-items: center;
-	border-radius: 20px;
 	justify-content: center;
-	background: var(--color-background-dark)
-		url(../../../../images/bookmark-20-dark.svg) center no-repeat;
+	background: url(../../../../images/bookmark-20-dark.svg) center no-repeat;
 }
 .answer__button--active {
-	background-color: var(--color-white);
 	background-image: url(../../../../images/bookmark-20-filled-dark.svg);
 }
 .answer__span--hidden {
@@ -40,12 +37,9 @@
 	position: absolute;
 }
 .answer__headline {
-	overflow: hidden;
-	white-space: nowrap;
-	padding-right: 40px;
-	text-overflow: ellipsis;
-	font-size: var(--font-size-m);
-	font-family: var(--font-medium), sans-serif;
+	line-height: normal;
+	font-size: var(--font-size-l);
+	font-family: var(--font-light), sans-serif;
 }
 .answer__code {
 	gap: 2px;

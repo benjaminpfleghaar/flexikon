@@ -52,7 +52,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 ### Implemented
 
--   Add Logout button to the profile page
+-   Add navigation to header on Desktop
 
 ## How to use
 
