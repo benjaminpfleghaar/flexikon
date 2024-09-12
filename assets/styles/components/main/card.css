@@ -1,14 +1,28 @@
 @import "./card/question.css";
 @import "./card/answer.css";
 
-.card {
+.main__card {
+	width: 100%;
+	padding: 4px;
 	cursor: pointer;
-	margin-bottom: 8px;
+	flex-basis: 100%;
 	transition: transform ease 0.2s;
 }
-.card:hover {
+.main__card:hover {
 	transform: scale(1.025);
 }
-.card:active:not(:has(.question__button:active, .answer__button:active)) {
+.main__card:active:not(:has(.question__button:active, .answer__button:active)) {
 	transform: scale(1);
+}
+@media (min-width: 768px) {
+	.main__card {
+		width: 50%;
+		flex-basis: 50%;
+	}
+}
+@media (min-width: 1280px) {
+	.main__card {
+		width: 33.33%;
+		flex-basis: 33.33%;
+	}
 }

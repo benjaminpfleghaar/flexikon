@@ -17,6 +17,9 @@
 	font-weight: normal;
 	font-family: var(--font-regular), sans-serif;
 }
+.header__nav {
+	display: none;
+}
 .header__list {
 	gap: 8px;
 	display: flex;
@@ -50,4 +53,9 @@
 	font-size: var(--font-size-s);
 	background: var(--color-primary);
 	font-family: var(--font-bold), sans-serif;
+}
+@media (min-width: 768px) {
+	.header__nav {
+		display: block;
+	}
 }

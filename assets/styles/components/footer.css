@@ -22,3 +22,8 @@
 .footer__link--active {
 	color: var(--color-primary);
 }
+@media (min-width: 768px) {
+	.footer {
+		display: none;
+	}
+}

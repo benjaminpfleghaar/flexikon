@@ -1,7 +1,7 @@
 .profile {
 	gap: 24px;
 	display: flex;
-	max-width: 100%;
+	min-height: 430px;
 	border-radius: 28px;
 	align-items: center;
 	flex-direction: column;

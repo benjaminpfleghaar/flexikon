@@ -2,7 +2,14 @@
 @import "./main/card.css";
 
 .main {
+	display: flex;
 	margin: 0 auto;
-	max-width: 430px;
-	padding: 0 16px 88px;
+	flex-flow: row wrap;
+	padding: 0 12px 88px;
+	justify-content: center;
+}
+@media (min-width: 768px) {
+	.main {
+		padding-bottom: 12px;
+	}
 }
