@@ -5,7 +5,7 @@
 	display: flex;
 	margin: 0 auto;
 	flex-flow: row wrap;
-	padding: 0 12px 88px;
+	padding: 0 12px 92px;
 	justify-content: center;
 }
 @media (min-width: 768px) {
