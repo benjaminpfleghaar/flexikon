@@ -46,12 +46,14 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 ## Feature ideas
 
--   Make card exactly as high as it is wide
--   Add counter at bookmark link in bottom navigation
+-   Add counter at bookmark nav link
+-   Provide layout for empty bookmark page
+-   Prevent hover effect on mobile
 -   Add filter functionality
 
 ### Implemented
 
+-   Make card exactly as high as it is wide
 -   Add navigation to header on Desktop
 
 ## How to use

@@ -2,8 +2,7 @@
 	gap: 16px;
 	padding: 24px;
 	display: flex;
-	min-height: 430px;
-	position: relative;
+	aspect-ratio: 1;
 	border-radius: 8px;
 	flex-direction: column;
 	color: var(--color-white);

@@ -1,8 +1,7 @@
 .question {
 	padding: 24px;
 	display: flex;
-	min-height: 430px;
-	position: relative;
+	aspect-ratio: 1;
 	border-radius: 8px;
 	flex-direction: column;
 	justify-content: space-between;
