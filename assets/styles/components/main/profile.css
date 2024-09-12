@@ -17,19 +17,16 @@
 	display: block;
 	border-radius: 120px;
 }
-.profile__name {
+.profile__headline {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-}
-.profile__headline {
 	font-size: var(--font-size-l);
-	font-family: var(--font-bold-italic), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .profile__small {
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-bold), sans-serif;
 }
 .profile__list {
 	gap: 8px;
@@ -45,7 +42,7 @@
 	padding: 0 16px 0 4px;
 	color: var(--color-primary);
 	font-size: var(--font-size-s);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 	background-color: var(--color-background-bright);
 }
 .profile__span {

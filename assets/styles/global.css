@@ -22,9 +22,9 @@
 	--color-darkblue: #669cd1;
 	--color-darkgray: #808080;
 
-	--font-bold: "PlusJakartaSans-Bold", sans-serif;
-	--font-regular: "PlusJakartaSans-Regular", sans-serif;
-	--font-bold-italic: "PlusJakartaSans-ExtraBoldItalic", sans-serif;
+	--font-bold: "DMSans-Bold", sans-serif;
+	--font-light: "DMSans-Light", sans-serif;
+	--font-medium: "DMSans-Medium", sans-serif;
 
 	--font-size-xs: 0.625rem;
 	--font-size-s: 0.75rem;
@@ -36,7 +36,7 @@
 body {
 	line-height: 1.5;
 	color: var(--color-primary);
-	font-family: var(--font-regular), sans-serif;
+	font-family: var(--font-light), sans-serif;
 	background-color: var(--color-background-bright);
 }
 h1,

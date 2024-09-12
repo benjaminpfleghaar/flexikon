@@ -15,7 +15,7 @@
 }
 .header__span {
 	font-weight: normal;
-	font-family: var(--font-regular), sans-serif;
+	font-family: var(--font-light), sans-serif;
 }
 .header__nav {
 	display: none;
@@ -33,11 +33,11 @@
 	align-items: center;
 	font-size: var(--font-size-m);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .header__link--active {
-	color: var(--color-white);
-	background: var(--color-primary);
+	color: var(--color-primary);
+	background: var(--color-border);
 }
 .header__button {
 	gap: 12px;
@@ -52,7 +52,7 @@
 	color: var(--color-white);
 	font-size: var(--font-size-s);
 	background: var(--color-primary);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 @media (min-width: 768px) {
 	.header__nav {

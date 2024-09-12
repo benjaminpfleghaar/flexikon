@@ -45,7 +45,7 @@
 	padding-right: 40px;
 	text-overflow: ellipsis;
 	font-size: var(--font-size-m);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .answer__code {
 	gap: 2px;
@@ -93,6 +93,6 @@
 	border-radius: 12px;
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-dark);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 	background-color: var(--color-background-dark);
 }

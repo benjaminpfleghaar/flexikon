@@ -1,18 +1,18 @@
 @font-face {
-	font-family: "PlusJakartaSans-Regular";
-	src: url(../fonts/PlusJakartaSans-Regular.ttf);
+	font-family: "DMSans-Light";
+	src: url(../fonts/DMSans-Light.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: "PlusJakartaSans-Bold";
-	src: url(../fonts/PlusJakartaSans-Bold.ttf);
+	font-family: "DMSans-Medium";
+	src: url(../fonts/DMSans-Medium.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: "PlusJakartaSans-ExtraBoldItalic";
-	src: url(../fonts/PlusJakartaSans-ExtraBoldItalic.ttf);
+	font-family: "DMSans-Bold";
+	src: url(../fonts/DMSans-Bold.ttf);
 	font-weight: normal;
 	font-style: normal;
 }
