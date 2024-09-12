@@ -1,21 +1,3 @@
-@font-face {
-	font-family: "PlusJakartaSans-Regular";
-	src: url(../fonts/PlusJakartaSans-Regular.ttf);
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "PlusJakartaSans-Bold";
-	src: url(../fonts/PlusJakartaSans-Bold.ttf);
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: "PlusJakartaSans-ExtraBoldItalic";
-	src: url(../fonts/PlusJakartaSans-ExtraBoldItalic.ttf);
-	font-weight: normal;
-	font-style: normal;
-}
 *,
 *::before,
 *::after {
