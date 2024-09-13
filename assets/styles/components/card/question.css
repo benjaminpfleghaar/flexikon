@@ -41,13 +41,13 @@
 	cursor: pointer;
 	border-radius: 12px;
 	border: 1px solid var(--color-border);
-	background: url(../../../../images/main/add-20.svg) center no-repeat;
+	background: url(../../../images/main/add-20.svg) center no-repeat;
 }
 .question__button--active {
 	background-size: 20px;
 	border-color: var(--color-selected);
 	background-color: var(--color-selected);
-	background-image: url(../../../../images/main/check-20.svg);
+	background-image: url(../../../images/main/check-20.svg);
 }
 .question__span--hidden {
 	top: auto;

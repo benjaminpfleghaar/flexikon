@@ -13,8 +13,8 @@
 }
 .answer__headline {
 	line-height: normal;
-	font-size: var(--font-size-l);
-	font-family: var(--font-light), sans-serif;
+	font-size: var(--font-size-m);
+	font-family: var(--font-medium), sans-serif;
 }
 .answer__code {
 	gap: 2px;
@@ -76,13 +76,13 @@
 	cursor: pointer;
 	border-radius: 12px;
 	border: 1px solid var(--color-border-dark);
-	background: url(../../../../images/main/add-20-dark.svg) center no-repeat;
+	background: url(../../../images/main/add-20-dark.svg) center no-repeat;
 }
 .answer__button--active {
 	background-size: 20px;
 	border-color: var(--color-selected);
 	background-color: var(--color-selected);
-	background-image: url(../../../../images/main/check-20.svg);
+	background-image: url(../../../images/main/check-20.svg);
 }
 .answer__span--hidden {
 	top: auto;
