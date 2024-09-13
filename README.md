@@ -70,5 +70,5 @@ The application requires no further packages.
 -   Visual Studio Code
 -   GitHub
 -   HTML
--   SASS
+-   CSS
 -   JS
