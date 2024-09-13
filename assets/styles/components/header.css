@@ -9,7 +9,7 @@
 	padding-left: 32px;
 	font-size: var(--font-size-m);
 	font-family: var(--font-bold), sans-serif;
-	background: url(../../images/logo.svg) left center no-repeat;
+	background: url(../../images/header/logo.svg) left center no-repeat;
 }
 .header__span {
 	font-weight: normal;
@@ -26,10 +26,9 @@
 	gap: 8px;
 	height: 40px;
 	display: flex;
-	padding: 0 16px;
 	border-radius: 20px;
 	align-items: center;
-	font-size: var(--font-size-m);
+	padding: 0 16px 0 12px;
 	color: var(--color-secondary-bright);
 	font-family: var(--font-medium), sans-serif;
 }

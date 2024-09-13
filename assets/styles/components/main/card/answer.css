@@ -74,10 +74,13 @@
 	height: 24px;
 	border: none;
 	cursor: pointer;
-	background: url(../../../../images/bookmark-20-dark.svg) center no-repeat;
+	border-radius: 12px;
+	background: url(../../../../images/main/add-24-dark.svg) center no-repeat;
 }
 .answer__button--active {
-	background-image: url(../../../../images/bookmark-20-filled-dark.svg);
+	background-size: 20px;
+	background-color: #59ed83;
+	background-image: url(../../../../images/main/check-20.svg);
 }
 .answer__span--hidden {
 	top: auto;
