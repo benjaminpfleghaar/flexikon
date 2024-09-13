@@ -51,11 +51,11 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
 -   Mark question based on their difficulty
--   Prevent hover effect on mobile
 -   Add filter functionality
 
 ### Implemented
 
+-   Prevent hover effect on mobile
 -   Make card exactly as high as it is wide
 -   Add navigation to header on Desktop
 
