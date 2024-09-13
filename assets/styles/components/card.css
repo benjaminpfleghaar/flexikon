@@ -9,10 +9,10 @@
 	transition: transform ease 0.2s;
 }
 .main__card:hover {
-	transform: scale(1.025);
+	/* transform: scale(1.025); */
 }
 .main__card:active:not(:has(.question__button:active, .answer__button:active)) {
-	transform: scale(1);
+	/* transform: scale(1); */
 }
 @media (min-width: 768px) {
 	.main__card {
