@@ -69,5 +69,5 @@ The application requires no further packages.
 -   Visual Studio Code
 -   GitHub
 -   HTML
--   CSS
+-   SASS
 -   JS

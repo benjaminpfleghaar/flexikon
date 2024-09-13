@@ -1,0 +1,29 @@
+{
+	"name": "quiz-app",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Quiz app as part of the neuefische Web Development Bootcamp",
+	"main": "index.html",
+	"scripts": {
+		"start": "npx -y live-server@latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/benjaminpfleghaar/quiz-app.git"
+	},
+	"keywords": [
+		"HTML",
+		"CSS",
+		"JavaScript",
+		"Mobile",
+		"App"
+	],
+	"author": "Benjamin Pfleghaar",
+	"bugs": {
+		"url": "https://github.com/benjaminpfleghaar/quiz-app/issues"
+	},
+	"homepage": "https://github.com/benjaminpfleghaar/quiz-app#readme",
+	"dependencies": {
+		"sass": "^1.78.0"
+	}
+}
