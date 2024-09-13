@@ -60,11 +60,10 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 ## How to use
 
-The application uses additional packages.
+The application requires no further packages.
 
 -   Clone the whole repository
--   Run `npm install` in the app directory to install dependencies
--   Run `npm run start` to start the application
+-   Open the `index.html` or run `npm run start`
 
 ## Tech Stack
 
