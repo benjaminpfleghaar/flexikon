@@ -1,17 +1,15 @@
 .header {
 	display: flex;
+	align-items: center;
 	padding: 24px 16px 24px 24px;
 	justify-content: space-between;
 	background-color: var(--color-background-bright);
 }
-.header__title {
-	gap: 8px;
-	display: flex;
-	align-items: center;
-}
 .header__headline {
+	padding-left: 32px;
 	font-size: var(--font-size-m);
 	font-family: var(--font-bold), sans-serif;
+	background: url(../../images/logo.svg) left center no-repeat;
 }
 .header__span {
 	font-weight: normal;
