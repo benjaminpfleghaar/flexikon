@@ -50,11 +50,11 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Add counter at bookmark nav link
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
--   Mark new questions with a note+
 
 ### Implemented
 
 -   Prevent hover effect on mobile
+-   Mark new questions with a small dot
 -   Make card exactly as high as it is wide
 -   Add navigation to header on Desktop
 

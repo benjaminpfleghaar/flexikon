@@ -19,7 +19,7 @@
 }
 .header__headline {
 	font-size: var(--font-size-m);
-	font-family: var(--font-bold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .header__span {
 	font-weight: normal;
