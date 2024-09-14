@@ -14,16 +14,23 @@
 .main__card:active:not(:has(.question__button:active, .answer__button:active)) {
 	transform: scale(1);
 }
+@media (min-width: 640px) {
+	.main__card:hover {
+		transform: scale(1.025);
+	}
+}
 @media (min-width: 768px) {
 	.main__card {
 		flex-basis: 50%;
-	}
-	.main__card:hover {
-		transform: scale(1.025);
 	}
 }
 @media (min-width: 1280px) {
 	.main__card {
 		flex-basis: 33.33%;
+	}
+}
+@media (min-width: 1536px) {
+	.main__card {
+		flex-basis: 25%;
 	}
 }
