@@ -20,16 +20,18 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 -   Create a home, bookmark and profile page
 -   Provide possibility to bookmark a question
+-   Provide a form to add a new question
 -   Create a set of different questions
 
 ## Challenges
 
--   [ ] Check for Accessibility
+-   [ ] Handle data input
 
 ### Solved
 
 -   [x] Build HTML structure
 -   [x] Create three 3 questions
+-   [x] Check for Accessibility
 -   [x] Style the page via CSS
 
 ## Learnings
