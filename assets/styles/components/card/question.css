@@ -23,7 +23,6 @@
 .question__headline {
 	line-height: normal;
 	font-size: var(--font-size-l);
-	font-family: var(--font-light), sans-serif;
 }
 .question__bottom {
 	display: flex;
