@@ -50,8 +50,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Add counter at bookmark nav link
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
--   Mark question based on their difficulty
--   Add filter functionality
+-   Mark new questions with a note
 
 ### Implemented
 
