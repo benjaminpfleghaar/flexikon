@@ -1,7 +1,7 @@
 .header {
 	display: flex;
 	align-items: center;
-	padding: 24px 24px 20px 24px;
+	padding: 16px 16px 12px 16px;
 	justify-content: space-between;
 	background-color: var(--color-background-bright);
 }
@@ -61,6 +61,9 @@
 	font-family: var(--font-medium), sans-serif;
 }
 @media (min-width: 768px) {
+	.header {
+		padding: 24px 24px 20px 24px;
+	}
 	.header__list {
 		gap: 8px;
 		display: flex;

@@ -3,7 +3,7 @@
 	padding: 24px;
 	display: flex;
 	aspect-ratio: 1;
-	border-radius: 20px;
+	border-radius: 8px;
 	flex-direction: column;
 	color: var(--color-white);
 	background-color: var(--color-primary);

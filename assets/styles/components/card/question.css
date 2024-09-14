@@ -2,7 +2,7 @@
 	padding: 24px;
 	display: flex;
 	aspect-ratio: 1;
-	border-radius: 20px;
+	border-radius: 8px;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: var(--color-white);
