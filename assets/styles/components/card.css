@@ -8,15 +8,11 @@
 	flex-basis: 100%;
 	transition: transform ease 0.2s;
 }
-.main__card:hover {
-	transform: none;
-}
-.main__card:active:not(:has(.question__button:active, .answer__button:active)) {
-	transform: scale(1);
-}
 @media (min-width: 640px) {
-	.main__card:hover {
-		transform: scale(1.025);
+	.main__card:active:not(
+			:has(.question__button:active, .answer__button:active)
+		) {
+		transform: scale(0.98);
 	}
 }
 @media (min-width: 768px) {
