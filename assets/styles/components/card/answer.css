@@ -11,14 +11,24 @@
 .answer--hide {
 	display: none;
 }
+.answer__editor {
+	border-radius: 8px;
+	background-color: var(--color-background-dark);
+}
+.answer__small {
+	display: block;
+	padding: 8px 12px;
+	font-size: var(--font-size-xs);
+	font-family: var(--font-medium);
+	color: var(--color-secondary-dark);
+	border-bottom: 1px solid var(--color-border-dark);
+}
 .answer__code {
 	gap: 2px;
 	display: flex;
 	padding: 16px 24px;
-	border-radius: 8px;
 	flex-direction: column;
 	font-size: var(--font-size-m);
-	background-color: var(--color-background-dark);
 }
 .answer__line--offset {
 	padding-left: 16px;
