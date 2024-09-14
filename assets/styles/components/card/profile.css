@@ -19,8 +19,6 @@
 .profile__headline {
 	display: flex;
 	flex-direction: column;
-	font-size: var(--font-size-l);
-	font-family: var(--font-medium), sans-serif;
 }
 .profile__small {
 	font-size: var(--font-size-s);

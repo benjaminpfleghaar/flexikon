@@ -20,10 +20,6 @@
 	position: absolute;
 	background-color: #24a148;
 }
-.question__headline {
-	line-height: normal;
-	font-size: var(--font-size-l);
-}
 .question__bottom {
 	display: flex;
 	align-items: flex-end;

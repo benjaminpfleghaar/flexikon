@@ -11,16 +11,10 @@
 .answer--hide {
 	display: none;
 }
-.answer__headline {
-	line-height: normal;
-	font-size: var(--font-size-m);
-	font-family: var(--font-medium), sans-serif;
-}
 .answer__code {
 	gap: 2px;
-	flex-grow: 1;
-	padding: 16px;
 	display: flex;
+	padding: 16px 24px;
 	border-radius: 8px;
 	flex-direction: column;
 	font-size: var(--font-size-m);
