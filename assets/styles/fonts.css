@@ -1,12 +1,12 @@
 @font-face {
 	font-family: "DMSans-Light";
 	src: url(../fonts/DMSans-Light.ttf);
-	font-weight: normal;
 	font-style: normal;
+	font-weight: 300;
 }
 @font-face {
 	font-family: "DMSans-Medium";
 	src: url(../fonts/DMSans-Medium.ttf);
-	font-weight: normal;
 	font-style: normal;
+	font-weight: 500;
 }

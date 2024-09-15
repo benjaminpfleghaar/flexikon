@@ -17,6 +17,7 @@
 }
 .answer__small {
 	display: block;
+	font-weight: 500;
 	padding: 8px 12px;
 	font-size: var(--font-size-xs);
 	font-family: var(--font-medium);

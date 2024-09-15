@@ -3,7 +3,7 @@
 *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 :root {
 	--color-white: #ffffff;
@@ -30,19 +30,24 @@
 	--font-size-s: 0.75rem;
 	--font-size-m: 1rem;
 	--font-size-l: 1.5rem;
-	--font-size-xl: 2rem;
+}
+html {
+	font-size: 100%;
+	line-height: 1.5;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: var(--font-light), sans-serif;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 body {
-	line-height: 1.5;
 	color: var(--color-primary);
-	font-family: var(--font-light), sans-serif;
 	background-color: var(--color-background-bright);
 }
 h1,
-h2,
-h3 {
-	font-weight: normal;
-	line-height: normal;
+h2 {
+	font-weight: 500;
 	font-size: var(--font-size-l);
 	font-family: var(--font-medium), sans-serif;
 }
