@@ -20,6 +20,11 @@
 	position: absolute;
 	background-color: var(--color-key);
 }
+.question__headline {
+	font-weight: 500;
+	font-size: var(--font-size-l);
+	font-family: var(--font-slab-medium), sans-serif;
+}
 .question__bottom {
 	display: flex;
 	align-items: flex-end;

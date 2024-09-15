@@ -10,6 +10,11 @@
 .answer--hide {
 	display: none;
 }
+.answer__headline {
+	font-weight: 500;
+	font-size: var(--font-size-l);
+	font-family: var(--font-slab-medium), sans-serif;
+}
 .answer__editor {
 	overflow: hidden;
 	border-radius: 8px;

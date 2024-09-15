@@ -17,7 +17,9 @@
 	background: var(--color-primary);
 }
 .header__headline {
+	font-weight: 500;
 	font-size: var(--font-size-m);
+	font-family: var(--font-medium), sans-serif;
 }
 .header__span {
 	font-weight: 300;

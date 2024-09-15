@@ -17,8 +17,10 @@
 	--color-key: #00a67d;
 	--color-value: #df3079;
 
-	--font-light: "DMSans-Light", sans-serif;
-	--font-medium: "DMSans-Medium", sans-serif;
+	--font-light: "Roboto-Light", sans-serif;
+	--font-medium: "Roboto-Medium", sans-serif;
+	--font-slab-light: "RobotoSlab-Light", sans-serif;
+	--font-slab-medium: "RobotoSlab-Medium", sans-serif;
 
 	--font-size-xs: 0.625rem;
 	--font-size-s: 0.75rem;
@@ -37,12 +39,6 @@ html {
 }
 body {
 	color: var(--color-primary);
-}
-h1,
-h2 {
-	font-weight: 500;
-	font-size: var(--font-size-l);
-	font-family: var(--font-medium), sans-serif;
 }
 ul {
 	list-style: none;
