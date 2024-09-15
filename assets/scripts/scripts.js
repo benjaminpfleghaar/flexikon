@@ -7,8 +7,8 @@ const cards = document.querySelectorAll('[data-js="card"]');
 
 	card.addEventListener("click", (e) => {
 		if (e.target !== button) {
-			question.classList.toggle("question--hide");
-			answer.classList.toggle("answer--hide");
+			question.classList.toggle("question--hidden");
+			answer.classList.toggle("answer--hidden");
 		}
 	});
 

@@ -48,19 +48,21 @@
 	background: var(--color-background-bright);
 }
 .header__button {
-	gap: 8px;
+	width: 40px;
 	height: 40px;
 	border: none;
-	display: flex;
 	cursor: pointer;
-	font-weight: 500;
-	align-items: center;
 	border-radius: 20px;
-	padding: 0 16px 0 12px;
-	color: var(--color-white);
-	font-size: var(--font-size-s);
-	background-color: var(--color-primary);
-	font-family: var(--font-medium), sans-serif;
+	background: var(--color-primary) url(../../images/header/add-20.svg) center
+		no-repeat;
+}
+.button__span--hidden {
+	top: auto;
+	width: 1px;
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
 }
 @media (min-width: 768px) {
 	.header {
