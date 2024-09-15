@@ -5,15 +5,15 @@
 	aspect-ratio: 1;
 	border-radius: 8px;
 	flex-direction: column;
-	color: var(--color-white);
-	background-color: var(--color-primary);
+	border: 1px solid var(--color-border);
 }
 .answer--hide {
 	display: none;
 }
 .answer__editor {
+	overflow: hidden;
 	border-radius: 8px;
-	background-color: var(--color-background-dark);
+	background-color: var(--color-primary);
 }
 .answer__small {
 	display: block;
@@ -22,36 +22,22 @@
 	font-size: var(--font-size-xs);
 	font-family: var(--font-medium);
 	color: var(--color-secondary-dark);
-	border-bottom: 1px solid var(--color-border-dark);
+	background-color: var(--color-background-dark);
 }
 .answer__code {
 	gap: 2px;
 	display: flex;
 	padding: 16px 24px;
 	flex-direction: column;
-	font-size: var(--font-size-m);
+	color: var(--color-white);
+	font-size: var(--font-size-s);
 }
 .answer__line--offset {
 	padding-left: 16px;
 }
-.answer__element {
-	color: var(--color-gold);
-}
-.answer__tag {
-	color: var(--color-darkblue);
-}
-.answer__character {
-	color: var(--color-gray);
-}
 .answer__key {
-	color: var(--color-blue);
+	color: var(--color-key);
 }
 .answer__value {
-	color: var(--color-brown);
-}
-.answer__braces {
-	color: var(--color-yellow);
-}
-.answer__brackets {
-	color: var(--color-darkgray);
+	color: var(--color-value);
 }
