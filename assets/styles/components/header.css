@@ -21,7 +21,7 @@
 	font-size: var(--font-size-m);
 	font-family: var(--font-medium), sans-serif;
 }
-.header__span {
+.header__headline--normal {
 	font-weight: 300;
 	font-family: var(--font-light), sans-serif;
 }
@@ -56,7 +56,7 @@
 	background: var(--color-primary) url(../../images/header/add-20.svg) center
 		no-repeat;
 }
-.button__span--hidden {
+.headline__label--hidden {
 	top: auto;
 	width: 1px;
 	height: 1px;
