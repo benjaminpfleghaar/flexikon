@@ -206,15 +206,51 @@
 			</nav>
 		</footer>
 		<dialog class="dialog" data-js="dialog">
-			<form class="dialog__form">
+			<form class="dialog__form" data-js="form">
 				<fieldset class="dialog__fieldset">
 					<legend class="dialog__legend">Add question</legend>
-					<label class="dialog__label">Question<textarea class="dialog__textarea"></textarea></label>
-					<label class="dialog__label">Description<textarea class="dialog__textarea"></textarea></label>
-					<label class="dialog__label">Code<textarea class="dialog__textarea"></textarea></label>
-					<label class="dialog__label">Tags<input type="text" class="dialog__input" /></label>
+					<span class="dialog__label-input">
+						<label class="dialog__label" for="question">Question</label>
+						<textarea
+							id="question"
+							class="dialog__textarea"
+							name="question"
+							maxlength="150"
+							required></textarea>
+						<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
+					>
+					<span class="dialog__label-input">
+						<label class="dialog__label" for="answer">Answer</label>
+						<input id="answer" type="text" class="dialog__input" name="answer" required
+					/></span>
+					<span class="dialog__label-input">
+						<label class="dialog__label" for="description">Description</label>
+						<textarea
+							id="description"
+							class="dialog__textarea"
+							name="description"
+							maxlength="150"
+							required></textarea>
+						<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
+					>
+					<span class="dialog__label-input">
+						<label class="dialog__label" for="code">Code</label>
+						<textarea id="code" class="dialog__textarea" name="code" maxlength="150" required></textarea>
+						<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
+					>
+					<span class="dialog__label-input">
+						<label class="dialog__label" for="tags">Tags</label>
+						<input id="tags" type="text" class="dialog__input" name="tags" required
+					/></span>
 				</fieldset>
-				<button type="submit" class="dialog__submit-form-button">Add question</button>
+
+				<button
+					type="submit"
+					class="dialog__form-submit-button"
+					aria-label="Save new question"
+					data-js="submit">
+					Save
+				</button>
 			</form>
 		</dialog>
 	</body>

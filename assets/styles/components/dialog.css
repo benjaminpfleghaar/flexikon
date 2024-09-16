@@ -1,43 +1,54 @@
 .dialog {
 	border: 0;
-	width: 480px;
 	margin: auto;
-	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	color: var(--color-primary);
-	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.25);
 }
 .dialog::backdrop {
-	backdrop-filter: blur(2px);
-	background: rgba(0, 0, 0, 0.5);
+	/* backdrop-filter: blur(2px); */
+	background: rgba(0, 0, 0, 0.75);
 }
 .dialog__form {
-	padding: 24px;
+	gap: 24px;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
 }
 .dialog__fieldset {
 	gap: 16px;
 	border: 0;
 	display: flex;
-	margin-bottom: 16px;
 	flex-direction: column;
 }
 .dialog__legend {
 	font-weight: 500;
 	margin-bottom: 16px;
 	font-size: var(--font-size-l);
-	font-family: var(--font-slab-medium), sans-serif;
+	font-family: var(--font-medium), sans-serif;
+}
+.dialog__label-input {
+	gap: 8px;
+	display: flex;
+	position: relative;
+	flex-direction: column;
 }
 .dialog__label {
-	display: flex;
-	flex-direction: column;
+	font-weight: 500;
+	font-size: var(--font-size-s);
+	font-family: var(--font-medium), sans-serif;
 }
 .dialog__textarea {
 	padding: 8px;
+	resize: none;
 	font-weight: 300;
 	min-height: 80px;
 	border-radius: 4px;
 	font-size: var(--font-size-m);
 	border: 1px solid var(--color-border);
-	font-family: var(--fontlight), sans-serif;
+	font-family: var(--font-light), sans-serif;
 }
 .dialog__input {
 	padding: 8px;
@@ -45,17 +56,50 @@
 	border-radius: 4px;
 	font-size: var(--font-size-m);
 	border: 1px solid var(--color-border);
-	font-family: var(--fontlight), sans-serif;
+	font-family: var(--font-light), sans-serif;
 }
-.dialog__submit-form-button {
+.dialog__character-count {
+	right: 12px;
+	bottom: 8px;
+	font-weight: 300;
+	position: absolute;
+	align-self: flex-end;
+	font-size: var(--font-size-xs);
+	color: var(--color-secondary-bright);
+	font-family: var(--font-light), sans-serif;
+}
+.dialog__form-submit-button {
 	height: 40px;
 	border: none;
 	cursor: pointer;
 	padding: 0 16px;
 	font-weight: 500;
-	border-radius: 20px;
+	border-radius: 4px;
 	color: var(--color-white);
 	font-size: var(--font-size-m);
+	transition: transform ease 0.2s;
 	background-color: var(--color-primary);
 	font-family: var(--font-medium), sans-serif;
+}
+@media (min-width: 640px) {
+	.dialog__form-submit-button:active {
+		transform: scale(0.98);
+	}
+}
+@media (min-width: 768px) {
+	.dialog {
+		width: 75vw;
+		max-width: 75vw;
+		border-radius: 8px;
+		height: fit-content;
+		box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+@media (min-width: 1280px) {
+	.dialog {
+		width: 50vw;
+		max-width: 50vw;
+	}
+}
+@media (min-width: 1536px) {
 }
