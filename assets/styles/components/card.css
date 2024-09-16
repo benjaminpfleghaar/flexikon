@@ -119,7 +119,7 @@
 }
 @media (min-width: 1280px) {
 	.card {
-		flex-basis: calc(33% - 1px);
+		flex-basis: calc(33.33% - 5.3px);
 	}
 }
 @media (min-width: 1536px) {
