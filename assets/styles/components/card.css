@@ -65,8 +65,7 @@
 .card__code-value {
 	color: var(--color-value);
 }
-
-.card__tags-section {
+.card__footer {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;

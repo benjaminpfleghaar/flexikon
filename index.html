@@ -9,16 +9,13 @@
 	</head>
 	<body>
 		<header class="header">
-			<section class="header__logo-section">
+			<h1 class="header__title">
 				<img
 					src="assets/images/header/logo-20.svg"
 					class="header__logo"
-					alt="Flexikon" />
-				<h1 class="header__title">
-					<span class="header__title--normal">Flexikon / </span
-					>Profile
-				</h1>
-			</section>
+					alt="Flexikon logo" />
+				<span class="header__title--normal">Flexikon / </span>Profile
+			</h1>
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li>
@@ -28,7 +25,7 @@
 							title="Home">
 							<img
 								src="assets/images/header/home-20-active.svg"
-								alt="Home" />
+								alt="Go to Home page" />
 							Home
 						</a>
 					</li>
@@ -39,7 +36,7 @@
 							title="Bookmarks">
 							<img
 								src="assets/images/header/bookmark-20.svg"
-								alt="Bookmarks" />
+								alt="View your bookmarks" />
 							Bookmarks
 						</a>
 					</li>
@@ -50,12 +47,15 @@
 							title="Profile">
 							<img
 								src="assets/images/header/profile-20.svg"
-								alt="Profile" />
+								alt="Go to Profile page" />
 							Profile
 						</a>
 					</li>
 				</ul>
-				<button type="button" class="header__add-question-button">
+				<button
+					type="button"
+					class="header__add-question-button"
+					aria-label="Add a new question">
 					<span class="header__add-question-button-text--hidden"
 						>Add question</span
 					>
@@ -63,8 +63,8 @@
 			</nav>
 		</header>
 		<main class="main-content">
-			<section class="card" data-js="card">
-				<div class="card--highlight"></div>
+			<article class="card" data-js="card">
+				<aside class="card--highlight" aria-hidden="true"></aside>
 				<section class="card__question" data-js="question">
 					<h2 class="card__title">
 						Which CSS property can be used to invert the flexbox
@@ -73,7 +73,8 @@
 				</section>
 				<section
 					class="card__answer card__answer--hidden"
-					data-js="answer">
+					data-js="answer"
+					hidden>
 					<h2 class="card__title">flex-direction</h2>
 					<p>
 						The flex-direction property specifies the direction of
@@ -96,7 +97,7 @@
 						</code>
 					</section>
 				</section>
-				<section class="card__tags-section">
+				<footer class="card__footer">
 					<ul class="card__tags-list">
 						<li class="card__tag">html</li>
 						<li class="card__tag">css</li>
@@ -105,160 +106,14 @@
 					<button
 						type="button"
 						class="card__bookmark-button"
+						aria-label="Bookmark this question"
 						data-js="button">
 						<span class="card__bookmark-button-text--hidden"
 							>Bookmark</span
 						>
 					</button>
-				</section>
-			</section>
-			<section class="card" data-js="card">
-				<div class="card--highlight"></div>
-				<section class="card__question" data-js="question">
-					<h2 class="card__title">
-						Which CSS property can be used to invert the flexbox
-						axes?
-					</h2>
-				</section>
-				<section
-					class="card__answer card__answer--hidden"
-					data-js="answer">
-					<h2 class="card__title">flex-direction</h2>
-					<p>
-						The flex-direction property specifies the direction of
-						the flexible items.
-					</p>
-					<section class="card__code-block">
-						<small class="card__code-language">CSS</small>
-						<code class="card__code">
-							<span>div {</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span
-								>: <span class="card__code-value">flex</span>;
-							</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property"
-									>flex-direction</span
-								>: <span class="card__code-value">column</span>;
-							</span>
-							<span>}</span>
-						</code>
-					</section>
-				</section>
-				<section class="card__tags-section">
-					<ul class="card__tags-list">
-						<li class="card__tag">html</li>
-						<li class="card__tag">css</li>
-						<li class="card__tag">flexbox</li>
-					</ul>
-					<button
-						type="button"
-						class="card__bookmark-button"
-						data-js="button">
-						<span class="card__bookmark-button-text--hidden"
-							>Bookmark</span
-						>
-					</button>
-				</section>
-			</section>
-			<section class="card" data-js="card">
-				<div class="card--highlight"></div>
-				<section class="card__question" data-js="question">
-					<h2 class="card__title">
-						Which CSS property can be used to invert the flexbox
-						axes?
-					</h2>
-				</section>
-				<section
-					class="card__answer card__answer--hidden"
-					data-js="answer">
-					<h2 class="card__title">flex-direction</h2>
-					<p>
-						The flex-direction property specifies the direction of
-						the flexible items.
-					</p>
-					<section class="card__code-block">
-						<small class="card__code-language">CSS</small>
-						<code class="card__code">
-							<span>div {</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span
-								>: <span class="card__code-value">flex</span>;
-							</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property"
-									>flex-direction</span
-								>: <span class="card__code-value">column</span>;
-							</span>
-							<span>}</span>
-						</code>
-					</section>
-				</section>
-				<section class="card__tags-section">
-					<ul class="card__tags-list">
-						<li class="card__tag">html</li>
-						<li class="card__tag">css</li>
-						<li class="card__tag">flexbox</li>
-					</ul>
-					<button
-						type="button"
-						class="card__bookmark-button"
-						data-js="button">
-						<span class="card__bookmark-button-text--hidden"
-							>Bookmark</span
-						>
-					</button>
-				</section>
-			</section>
-			<section class="card" data-js="card">
-				<div class="card--highlight"></div>
-				<section class="card__question" data-js="question">
-					<h2 class="card__title">
-						Which CSS property can be used to invert the flexbox
-						axes?
-					</h2>
-				</section>
-				<section
-					class="card__answer card__answer--hidden"
-					data-js="answer">
-					<h2 class="card__title">flex-direction</h2>
-					<p>
-						The flex-direction property specifies the direction of
-						the flexible items.
-					</p>
-					<section class="card__code-block">
-						<small class="card__code-language">CSS</small>
-						<code class="card__code">
-							<span>div {</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span
-								>: <span class="card__code-value">flex</span>;
-							</span>
-							<span class="card__code-line--offset">
-								<span class="card__code-property"
-									>flex-direction</span
-								>: <span class="card__code-value">column</span>;
-							</span>
-							<span>}</span>
-						</code>
-					</section>
-				</section>
-				<section class="card__tags-section">
-					<ul class="card__tags-list">
-						<li class="card__tag">html</li>
-						<li class="card__tag">css</li>
-						<li class="card__tag">flexbox</li>
-					</ul>
-					<button
-						type="button"
-						class="card__bookmark-button"
-						data-js="button">
-						<span class="card__bookmark-button-text--hidden"
-							>Bookmark</span
-						>
-					</button>
-				</section>
-			</section>
+				</footer>
+			</article>
 		</main>
 		<footer class="footer">
 			<nav>
@@ -270,7 +125,7 @@
 							title="Home">
 							<img
 								src="assets/images/footer/home-24-active.svg"
-								alt="Home" />
+								alt="Go to Home page" />
 							Home
 						</a>
 					</li>
@@ -281,7 +136,7 @@
 							title="Bookmarks">
 							<img
 								src="assets/images/footer/bookmark-24.svg"
-								alt="Bookmarks" />
+								alt="View your bookmarks" />
 							Bookmarks
 						</a>
 					</li>
@@ -292,7 +147,7 @@
 							title="Profile">
 							<img
 								src="assets/images/footer/profile-24.svg"
-								alt="Profile" />
+								alt="Go to Profile page" />
 							Profile
 						</a>
 					</li>
