@@ -5,7 +5,7 @@ cards.forEach((card) => {
 	// Find the elements within the card
 	const questionSection = card.querySelector('[data-js="question"]');
 	const answerSection = card.querySelector('[data-js="answer"]');
-	const bookmarkButton = card.querySelector('[data-js="button"]');
+	const bookmarkButton = card.querySelector('[data-js="bookmark-button"]');
 
 	// Add click event listener to the question section
 	card.addEventListener("click", () => {
@@ -31,4 +31,20 @@ cards.forEach((card) => {
 		// Toggle the bookmark button's active state
 		bookmarkButton.classList.toggle("card__bookmark-button--active");
 	});
+});
+
+// Get dialog and button
+const dialog = document.querySelector('[data-js="dialog"]');
+const addButton = document.querySelector('[data-js="add-button"]');
+
+// Open dialog
+addButton.addEventListener("click", () => {
+	dialog.showModal();
+});
+
+// Close dialog
+dialog.addEventListener("click", (event) => {
+	if (event.target === dialog) {
+		dialog.close();
+	}
 });
