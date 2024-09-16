@@ -2,31 +2,33 @@
 	gap: 16px;
 	padding: 24px;
 	display: flex;
+	aspect-ratio: 1;
+	flex-basis: 100%;
 	border-radius: 8px;
 	flex-direction: column;
 	align-items: flex-start;
 	border: 1px solid var(--color-border);
 }
-.profile__img {
+.profile__avatar {
 	border-radius: 40px;
 }
-.profile__headline {
+.profile__title {
 	display: flex;
 	font-weight: 500;
 	flex-direction: column;
 	font-size: var(--font-size-l);
 	font-family: var(--font-slab-medium), sans-serif;
 }
-.profile__small {
+.profile__title--small {
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
 	font-family: var(--font-medium), sans-serif;
 }
-.profile__list {
+.profile__tags-list {
 	gap: 8px;
 	display: flex;
 }
-.profile__item {
+.profile__tag {
 	gap: 12px;
 	height: 32px;
 	display: flex;
@@ -39,7 +41,7 @@
 	font-family: var(--font-medium), sans-serif;
 	background-color: var(--color-background-bright);
 }
-.profile__span {
+.profile__tag--highlight {
 	width: 24px;
 	height: 24px;
 	display: flex;
@@ -47,4 +49,19 @@
 	border-radius: 12px;
 	justify-content: center;
 	background-color: var(--color-white);
+}
+@media (min-width: 768px) {
+	.profile {
+		flex-basis: 50%;
+	}
+}
+@media (min-width: 1280px) {
+	.profile {
+		flex-basis: 33.33%;
+	}
+}
+@media (min-width: 1536px) {
+	.profile {
+		flex-basis: 25%;
+	}
 }
