@@ -16,8 +16,10 @@ cards.forEach((card) => {
 		// Toggle the `hidden` attribute for better accessibility
 		if (answerSection.hasAttribute("hidden")) {
 			answerSection.removeAttribute("hidden");
+			questionSection.setAttribute("hidden", "");
 		} else {
-			answerSection.setAttribute("hidden", true);
+			answerSection.setAttribute("hidden", "");
+			questionSection.removeAttribute("hidden");
 		}
 	});
 
