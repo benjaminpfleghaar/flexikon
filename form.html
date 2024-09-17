@@ -54,14 +54,16 @@
 				</section>
 				<form class="new-question-form__form" aria-labelledby="title" data-js="form">
 					<fieldset class="new-question-form__fieldset" aria-describedby="description">
-						<legend class="new-question-form__legend">General</legend>
+						<legend class="new-question-form__legend">Question details</legend>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="question">Question</label>
 							<textarea
 								id="question"
 								class="new-question-form__textarea"
 								name="question"
+								rows="3"
 								maxlength="150"
+								placeholder="Add your question here"
 								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
@@ -73,19 +75,23 @@
 								id="answer"
 								class="new-question-form__textarea"
 								name="answer"
+								rows="3"
 								maxlength="150"
+								placeholder="Add your answer here"
 								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
 							></span
 						>
 						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="explanation">explanation</label>
+							<label class="new-question-form__label" for="explanation">Explanation</label>
 							<textarea
 								id="explanation"
 								class="new-question-form__textarea"
 								name="explanation"
+								rows="3"
 								maxlength="150"
+								placeholder="Add a short explanation here"
 								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
@@ -93,14 +99,28 @@
 						>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="code">Code</label>
-							<textarea id="code" class="new-question-form__textarea" name="code" required></textarea>
+							<textarea
+								id="code"
+								class="new-question-form__textarea"
+								name="code"
+								rows="3"
+								maxlength="150"
+								placeholder="Add your code snippet here"
+								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
 							>
 						</span>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="tags">Tags</label>
-							<textarea id="tags" class="new-question-form__textarea" name="tags" required></textarea>
+							<textarea
+								id="tags"
+								class="new-question-form__textarea"
+								name="tags"
+								rows="3"
+								maxlength="150"
+								placeholder="Add a few tags here"
+								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
 							>
@@ -110,9 +130,9 @@
 						<button
 							type="button"
 							class="new-question-form__button new-question-form__button--outlined"
-							aria-label="Cancel the form"
-							data-js="cancel-button">
-							Cancel
+							aria-label="Reset the form"
+							data-js="reset-button">
+							Reset
 						</button>
 						<button
 							type="submit"
@@ -123,6 +143,11 @@
 						</button>
 					</footer>
 				</form>
+			</article>
+			<article class="card card--empty" tabindex="0" data-js="card">
+				<img src="assets/images/main/empty-card.png" alt="This card is empty" width="179" height="200" />
+				<h3 class="card__title card__title--empty">This card is empty</h3>
+				<p class="card__paragraph--empty">Start writing a question</p>
 			</article>
 		</main>
 		<footer class="footer">
