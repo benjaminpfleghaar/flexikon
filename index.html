@@ -206,12 +206,14 @@
 			</nav>
 		</footer>
 		<dialog class="dialog" data-js="dialog">
-			<section class="dialog__section">
-				<h2 class="dialog__title" id="title">Add question</h2>
-				<p id="description">
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-					labore et dolore magna aliquyam erat, sed diam voluptua.
-				</p>
+			<section class="dialog__container">
+				<section class="dialog__header">
+					<h2 class="dialog__title" id="title">Add question</h2>
+					<p id="description">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					</p>
+				</section>
 				<form class="dialog__form" aria-labelledby="title" data-js="form">
 					<fieldset class="dialog__fieldset" aria-describedby="description">
 						<legend class="dialog__legend">General</legend>
@@ -249,9 +251,6 @@
 							<label class="dialog__label" for="code">Code</label>
 							<textarea id="code" class="dialog__textarea" name="code" required></textarea>
 						</span>
-					</fieldset>
-					<fieldset class="dialog__fieldset" aria-describedby="description">
-						<legend class="dialog__legend">Additional</legend>
 						<span class="dialog__label-group">
 							<label class="dialog__label" for="tags">Tags</label>
 							<textarea id="tags" class="dialog__textarea" name="tags" required></textarea>
@@ -261,16 +260,16 @@
 						<button
 							type="butto"
 							class="dialog__form-button dialog__form-button--outlined"
-							aria-label="Reset the form"
-							data-js="reset">
-							Reset
+							aria-label="Cancel the form"
+							data-js="cancel-button">
+							Cancel
 						</button>
 						<button
 							type="submit"
 							class="dialog__form-button"
-							aria-label="Save new question"
-							data-js="submit">
-							Save
+							aria-label="Save the new question"
+							data-js="submit-button">
+							Save question
 						</button>
 					</footer>
 				</form>

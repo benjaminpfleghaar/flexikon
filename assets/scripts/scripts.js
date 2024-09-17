@@ -36,6 +36,7 @@ cards.forEach((card) => {
 // Get dialog, button and body
 const dialog = document.querySelector('[data-js="dialog"]');
 const addButton = document.querySelector('[data-js="add-button"]');
+const cancelButton = document.querySelector('[data-js="cancel-button"]');
 const body = document.querySelector("body");
 
 // Open dialog
@@ -49,6 +50,9 @@ dialog.addEventListener("click", (event) => {
 	if (event.target === dialog) {
 		dialog.close();
 	}
+});
+cancelButton.addEventListener("click", (event) => {
+	dialog.close();
 });
 
 // Listen to dialog state

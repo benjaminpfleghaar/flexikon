@@ -1,19 +1,21 @@
 .dialog {
 	border: 0;
-	width: 100%;
-	height: 100%;
 	margin: auto;
-	max-width: 100%;
-	max-height: 100%;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100vw;
+	max-height: 100vh;
 	color: var(--color-primary);
 }
 .dialog::backdrop {
 	/* backdrop-filter: blur(2px); */
 	background: rgba(0, 0, 0, 0.75);
 }
-.dialog__section {
-	gap: 16px;
+.dialog__container {
 	height: 100%;
+}
+.dialog__header {
+	gap: 16px;
 	padding: 24px;
 	display: flex;
 	flex-direction: column;
@@ -24,19 +26,20 @@
 	font-family: var(--font-medium), sans-serif;
 }
 .dialog__form {
-	gap: 16px;
 	display: flex;
 	flex-direction: column;
+	border-top: 1px solid var(--color-border);
 }
 .dialog__fieldset {
-	gap: 16px;
 	border: none;
 	display: flex;
+	padding-bottom: 168px;
 	flex-direction: column;
 }
 .dialog__legend {
+	width: 100%;
+	padding: 24px;
 	font-weight: 500;
-	margin-bottom: 8px;
 	font-size: var(--font-size-m);
 	color: var(--color-secondary-bright);
 	font-family: var(--font-medium), sans-serif;
@@ -44,35 +47,28 @@
 .dialog__label-group {
 	gap: 8px;
 	display: flex;
+	padding: 0 24px;
 	position: relative;
-	border-radius: 8px;
 	flex-direction: column;
-	border: 1px solid var(--color-border);
 }
 .dialog__label {
-	top: 8px;
-	left: 12px;
 	font-weight: 500;
-	position: absolute;
 	font-size: var(--font-size-s);
 	font-family: var(--font-medium), sans-serif;
 }
 .dialog__textarea {
-	border: none;
 	resize: none;
-	height: 92px;
+	height: 90px;
 	font-weight: 300;
-	background: none;
 	line-height: 1.5;
-	padding: 32px 12px 0;
+	padding: 8px 12px;
+	border-radius: 8px;
 	font-size: var(--font-size-m);
+	border: 1px solid var(--color-border);
 	font-family: var(--font-light), sans-serif;
 }
 .dialog__character-count {
-	right: 12px;
-	bottom: 8px;
 	font-weight: 300;
-	position: absolute;
 	align-self: flex-end;
 	font-size: var(--font-size-xs);
 	color: var(--color-secondary-bright);
@@ -81,8 +77,13 @@
 .dialog__form-footer {
 	gap: 16px;
 	display: flex;
-	padding-top: 8px;
-	justify-content: flex-end;
+	padding: 24px;
+	background-color: var(--color-white);
+	border-top: 1px solid var(--color-border);
+
+	bottom: 0;
+	width: 100%;
+	position: fixed;
 }
 .dialog__form-button {
 	height: 40px;
@@ -90,6 +91,7 @@
 	padding: 0 40px;
 	cursor: pointer;
 	font-weight: 500;
+	flex-basis: 100%;
 	border-radius: 8px;
 	color: var(--color-white);
 	font-size: var(--font-size-m);
@@ -103,6 +105,12 @@
 	border: 1px solid var(--color-border);
 }
 @media (min-width: 640px) {
+	.dialog__fieldset {
+		padding-bottom: 24px;
+	}
+	.dialog__form-footer {
+		position: static;
+	}
 	.dialog__form-submit-button:active {
 		transform: scale(0.98);
 	}
