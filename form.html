@@ -70,6 +70,23 @@
 							></span
 						>
 						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="tags">Tags</label>
+							<textarea
+								id="tags"
+								class="new-question-form__textarea"
+								name="tags"
+								rows="3"
+								maxlength="150"
+								placeholder="Add a few tags here"
+								required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							>
+						</span>
+					</fieldset>
+					<fieldset class="new-question-form__fieldset" aria-describedby="description">
+						<legend class="new-question-form__legend">Answer details</legend>
+						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="answer">Answer</label>
 							<textarea
 								id="answer"
@@ -106,20 +123,6 @@
 								rows="3"
 								maxlength="150"
 								placeholder="Add your code snippet here"
-								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							>
-						</span>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="tags">Tags</label>
-							<textarea
-								id="tags"
-								class="new-question-form__textarea"
-								name="tags"
-								rows="3"
-								maxlength="150"
-								placeholder="Add a few tags here"
 								required></textarea>
 							<small class="new-question-form__character-count" aria-live="polite"
 								>150 characters left</small
