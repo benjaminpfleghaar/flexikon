@@ -17,9 +17,8 @@
 	--color-key: #00a67d;
 	--color-value: #df3079;
 
-	--font-light: "Roboto-Light", sans-serif;
-	--font-medium: "Roboto-Medium", sans-serif;
-	--font-slab-medium: "RobotoSlab-Medium", sans-serif;
+	--font-regular: "IBMPlexSans-Regular", sans-serif;
+	--font-semibold: "IBMPlexSans-SemiBold", sans-serif;
 
 	--font-size-xs: 0.625rem;
 	--font-size-s: 0.75rem;
@@ -29,9 +28,9 @@
 html {
 	font-size: 100%;
 	line-height: 1.5;
-	font-weight: 300;
+	font-weight: 400;
 	box-sizing: border-box;
-	font-family: var(--font-light), sans-serif;
+	font-family: var(--font-regular), sans-serif;
 
 	font-synthesis: none;
 	-moz-osx-font-smoothing: grayscale;

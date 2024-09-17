@@ -36,19 +36,22 @@
 	display: none;
 }
 .card__title {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--font-size-l);
-	font-family: var(--font-slab-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
 .card__title--empty {
 	font-size: var(--font-size-l);
-	font-family: var(--font-slab-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
+}
+.card__description {
+	margin-bottom: 8px;
 }
 .card__paragraph--empty {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
 .card__code-block {
 	overflow: hidden;
@@ -57,10 +60,10 @@
 }
 .card__code-language {
 	display: block;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 8px 12px;
 	font-size: var(--font-size-xs);
-	font-family: var(--font-medium);
+	font-family: var(--font-semibold);
 	color: var(--color-secondary-dark);
 	background-color: var(--color-background-dark);
 }
@@ -94,20 +97,19 @@
 	height: 24px;
 	display: flex;
 	padding: 0 12px;
-	font-weight: 500;
+	font-weight: 600;
 	align-items: center;
 	border-radius: 12px;
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 	background-color: var(--color-background-bright);
 }
 .card__bookmark-button {
-	width: 40px;
-	height: 40px;
-	border: none;
+	width: 48px;
+	height: 48px;
 	cursor: pointer;
-	border-radius: 20px;
+	border-radius: 24px;
 	border: 1px solid var(--color-border);
 	background: url(../../images/main/bookmark-20.svg) center no-repeat;
 }

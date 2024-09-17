@@ -9,29 +9,20 @@
 	</head>
 	<body>
 		<header class="header">
-			<h1 class="header__title">
+			<section class="header__section">
 				<img src="assets/images/header/logo-20.svg" class="header__logo" alt="Flexikon logo" />
-				<span class="header__title--normal">Flexikon / </span>Profile
-			</h1>
+				<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>Profile</h1>
+			</section>
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li>
-						<a href="index.html" class="header__nav-link" title="Home">
-							<img src="assets/images/header/home-20.svg" alt="Go to Home page" />
-							Home
-						</a>
+						<a href="index.html" class="header__nav-link" title="Home">Home </a>
 					</li>
 					<li>
-						<a href="bookmarks.html" class="header__nav-link" title="Bookmarks">
-							<img src="assets/images/header/bookmark-20.svg" alt="View your bookmarks" />
-							Bookmarks
-						</a>
+						<a href="bookmarks.html" class="header__nav-link" title="Bookmarks">Bookmarks </a>
 					</li>
 					<li>
-						<a href="profile.html" class="header__nav-link" title="Profile">
-							<img src="assets/images/header/profile-20.svg" alt="Go to Profile page" />
-							Profile
-						</a>
+						<a href="profile.html" class="header__nav-link" title="Profile">Profile </a>
 					</li>
 				</ul>
 				<button
@@ -71,35 +62,27 @@
 						>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="tags">Tags</label>
-							<textarea
+							<input
 								id="tags"
-								class="new-question-form__textarea"
+								class="new-question-form__input"
 								name="tags"
-								rows="3"
 								maxlength="150"
 								placeholder="Add a few tags here"
-								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							>
+								required />
 						</span>
 					</fieldset>
 					<fieldset class="new-question-form__fieldset" aria-describedby="description">
 						<legend class="new-question-form__legend">Answer details</legend>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="answer">Answer</label>
-							<textarea
+							<input
 								id="answer"
-								class="new-question-form__textarea"
+								class="new-question-form__input"
 								name="answer"
-								rows="3"
 								maxlength="150"
 								placeholder="Add your answer here"
-								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							></span
-						>
+								required />
+						</span>
 						<span class="new-question-form__label-group">
 							<label class="new-question-form__label" for="explanation">Explanation</label>
 							<textarea

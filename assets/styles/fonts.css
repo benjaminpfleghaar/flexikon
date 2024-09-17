@@ -1,25 +1,12 @@
 @font-face {
-	font-family: "Roboto-Light";
-	src: url(../fonts/Roboto-Light.ttf);
+	font-family: "IBMPlexSans-Regular";
+	src: url(../fonts/IBMPlexSans-Regular.ttf);
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 }
 @font-face {
-	font-family: "Roboto-Medium";
-	src: url(../fonts/Roboto-Medium.ttf);
+	font-family: "IBMPlexSans-SemiBold";
+	src: url(../fonts/IBMPlexSans-SemiBold.ttf);
 	font-style: normal;
-	font-weight: 500;
-}
-@font-face {
-	font-family: "RobotoSlab-Light";
-	src: url(../fonts/RobotoSlab-Light.ttf);
-	font-style: normal;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "RobotoSlab-Medium";
-	src: url(../fonts/RobotoSlab-Medium.ttf);
-	font-style: normal;
-	font-weight: 500;
+	font-weight: 600;
 }

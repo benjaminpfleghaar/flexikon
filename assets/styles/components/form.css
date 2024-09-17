@@ -10,9 +10,9 @@
 	flex-direction: column;
 }
 .new-question-form__title {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--font-size-l);
-	font-family: var(--font-slab-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
 .new-question-form__form {
 	display: flex;
@@ -26,11 +26,11 @@
 }
 .new-question-form__legend {
 	width: 100%;
-	font-weight: 500;
+	font-weight: 600;
 	padding: 8px 24px;
 	margin-bottom: 24px;
 	font-size: var(--font-size-xs);
-	font-family: var(--font-medium);
+	font-family: var(--font-semibold);
 	color: var(--color-secondary-bright);
 	background-color: var(--color-background-bright);
 }
@@ -42,26 +42,39 @@
 	flex-direction: column;
 }
 .new-question-form__label {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: var(--font-size-m);
-	font-family: var(--font-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
-.new-question-form__textarea {
-	resize: none;
-	font-weight: 300;
+.new-question-form__input {
+	height: 40px;
+	font-weight: 400;
 	line-height: 1.5;
 	padding: 8px 12px;
 	border-radius: 8px;
 	font-size: var(--font-size-m);
 	border: 1px solid var(--color-border);
-	font-family: var(--font-light), sans-serif;
+	font-family: var(--font-regular), sans-serif;
+}
+.new-question-form__input[id="answer"] {
+	margin-bottom: 24px;
+}
+.new-question-form__textarea {
+	resize: none;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 8px 12px;
+	border-radius: 8px;
+	font-size: var(--font-size-m);
+	border: 1px solid var(--color-border);
+	font-family: var(--font-regular), sans-serif;
 }
 .new-question-form__character-count {
-	font-weight: 300;
+	font-weight: 600;
 	align-self: flex-end;
 	font-size: var(--font-size-xs);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
 .new-question-form__footer {
 	gap: 16px;
@@ -69,6 +82,7 @@
 	display: flex;
 	padding: 24px;
 	position: static;
+	justify-content: flex-end;
 	border-radius: 0 0 8px 8px;
 	background-color: var(--color-white);
 	border-top: 1px solid var(--color-border);
@@ -76,16 +90,15 @@
 .new-question-form__button {
 	height: 48px;
 	border: none;
-	padding: 0 40px;
+	padding: 0 48px;
 	cursor: pointer;
-	font-weight: 500;
-	flex-basis: 100%;
+	font-weight: 600;
 	border-radius: 8px;
 	color: var(--color-white);
 	font-size: var(--font-size-m);
 	transition: transform ease 0.2s;
 	background-color: var(--color-primary);
-	font-family: var(--font-medium), sans-serif;
+	font-family: var(--font-semibold), sans-serif;
 }
 .new-question-form__button--outlined {
 	color: var(--color-primary);
