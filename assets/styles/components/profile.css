@@ -13,10 +13,10 @@
 }
 .profile__title {
 	display: flex;
-	font-weight: 600;
+	font-weight: 500;
 	flex-direction: column;
 	font-size: var(--font-size-l);
-	font-family: var(--font-semibold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .profile__title--small {
 	font-size: var(--font-size-s);
@@ -30,13 +30,13 @@
 	gap: 12px;
 	height: 32px;
 	display: flex;
-	font-weight: 600;
+	font-weight: 500;
 	align-items: center;
 	border-radius: 16px;
 	padding: 0 16px 0 4px;
 	color: var(--color-primary);
-	font-size: var(--font-size-s);
-	font-family: var(--font-semibold), sans-serif;
+	font-size: var(--font-size-xs);
+	font-family: var(--font-medium), sans-serif;
 	background-color: var(--color-background-bright);
 }
 .profile__tag--highlight {
@@ -47,6 +47,9 @@
 	border-radius: 12px;
 	justify-content: center;
 	background-color: var(--color-white);
+}
+.profile__bio {
+	color: var(--color-secondary-bright);
 }
 @media (min-width: 768px) {
 	.profile {

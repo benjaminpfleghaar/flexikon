@@ -13,12 +13,12 @@
 }
 .footer__nav-link {
 	display: flex;
-	font-weight: 600;
+	font-weight: 500;
 	align-items: center;
 	flex-direction: column;
-	font-size: var(--font-size-xs);
+	font-size: var(--font-size-xxs);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-semibold), sans-serif;
+	font-family: var(--font-medium), sans-serif;
 }
 .footer__nav-link--active {
 	color: var(--color-primary);

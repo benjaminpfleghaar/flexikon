@@ -1,12 +1,12 @@
 @font-face {
-	font-family: "IBMPlexSans-Regular";
-	src: url(../fonts/IBMPlexSans-Regular.ttf);
+	font-family: "Geist-Regular";
+	src: url(../fonts/Geist-Regular.ttf);
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "IBMPlexSans-SemiBold";
-	src: url(../fonts/IBMPlexSans-SemiBold.ttf);
+	font-family: "Geist-Medium";
+	src: url(../fonts/Geist-Medium.ttf);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 500;
 }
