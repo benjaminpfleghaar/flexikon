@@ -21,7 +21,6 @@
 .profile__title--small {
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-semibold), sans-serif;
 }
 .profile__tags-list {
 	gap: 8px;

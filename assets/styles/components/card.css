@@ -41,17 +41,18 @@
 	font-family: var(--font-semibold), sans-serif;
 }
 .card__title--empty {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	font-size: var(--font-size-l);
 	font-family: var(--font-semibold), sans-serif;
 }
-.card__description {
-	margin-bottom: 8px;
-}
-.card__paragraph--empty {
-	font-weight: 600;
+.card__title--small {
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
-	font-family: var(--font-semibold), sans-serif;
+}
+.card__description {
+	margin-bottom: 8px;
 }
 .card__code-block {
 	overflow: hidden;

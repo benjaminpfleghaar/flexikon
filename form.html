@@ -35,94 +35,88 @@
 			</nav>
 		</header>
 		<main class="main-content">
-			<article class="new-question-form">
-				<section class="new-question-form__header">
-					<h2 class="new-question-form__title" id="title">Add question</h2>
+			<article class="new-question">
+				<section class="new-question__header">
+					<h2 class="new-question__title" id="title">Add question</h2>
 					<p id="description">
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
 						ut labore et dolore magna aliquyam erat, sed diam voluptua.
 					</p>
 				</section>
-				<form class="new-question-form__form" aria-labelledby="title" data-js="form">
-					<fieldset class="new-question-form__fieldset" aria-describedby="description">
-						<legend class="new-question-form__legend">Question details</legend>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="question">Question</label>
+				<form class="new-question__form" aria-labelledby="title" data-js="form">
+					<fieldset class="new-question__fieldset" aria-describedby="description">
+						<legend class="new-question__legend">Question details</legend>
+						<span class="new-question__label-group">
+							<label class="new-question__label" for="question">Question</label>
 							<textarea
 								id="question"
-								class="new-question-form__textarea"
+								class="new-question__textarea"
 								name="question"
 								rows="3"
 								maxlength="150"
 								placeholder="Add your question here"
 								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							></span
+							<small class="new-question__counter" aria-live="polite">150 characters left</small></span
 						>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="tags">Tags</label>
+						<span class="new-question__label-group">
+							<label class="new-question__label" for="tags">Tags</label>
 							<input
 								id="tags"
-								class="new-question-form__input"
+								class="new-question__input"
 								name="tags"
 								maxlength="150"
 								placeholder="Add a few tags here"
 								required />
 						</span>
 					</fieldset>
-					<fieldset class="new-question-form__fieldset" aria-describedby="description">
-						<legend class="new-question-form__legend">Answer details</legend>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="answer">Answer</label>
+					<fieldset class="new-question__fieldset" aria-describedby="description">
+						<legend class="new-question__legend">Answer details</legend>
+						<span class="new-question__label-group">
+							<label class="new-question__label" for="answer">Answer</label>
 							<input
 								id="answer"
-								class="new-question-form__input"
+								class="new-question__input"
 								name="answer"
 								maxlength="150"
 								placeholder="Add your answer here"
 								required />
 						</span>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="explanation">Explanation</label>
+						<span class="new-question__label-group">
+							<label class="new-question__label" for="explanation">Explanation</label>
 							<textarea
 								id="explanation"
-								class="new-question-form__textarea"
+								class="new-question__textarea"
 								name="explanation"
 								rows="3"
 								maxlength="150"
 								placeholder="Add a short explanation here"
 								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							></span
+							<small class="new-question__counter" aria-live="polite">150 characters left</small></span
 						>
-						<span class="new-question-form__label-group">
-							<label class="new-question-form__label" for="code">Code</label>
+						<span class="new-question__label-group">
+							<label class="new-question__label" for="code">Code</label>
 							<textarea
 								id="code"
-								class="new-question-form__textarea"
+								class="new-question__textarea"
 								name="code"
 								rows="3"
 								maxlength="150"
 								placeholder="Add your code snippet here"
 								required></textarea>
-							<small class="new-question-form__character-count" aria-live="polite"
-								>150 characters left</small
-							>
+							<small class="new-question__counter" aria-live="polite">150 characters left</small>
 						</span>
 					</fieldset>
-					<footer class="new-question-form__footer">
+					<footer class="new-question__footer">
 						<button
 							type="button"
-							class="new-question-form__button new-question-form__button--outlined"
+							class="new-question__button new-question__button--outlined"
 							aria-label="Reset the form"
 							data-js="reset-button">
 							Reset
 						</button>
 						<button
 							type="submit"
-							class="new-question-form__button"
+							class="new-question__button"
 							aria-label="Save the new question"
 							data-js="submit-button">
 							Save question
@@ -132,8 +126,9 @@
 			</article>
 			<article class="card card--empty" tabindex="0" data-js="card">
 				<img src="assets/images/main/empty-card.png" alt="This card is empty" width="179" height="200" />
-				<h3 class="card__title card__title--empty">This card is empty</h3>
-				<p class="card__paragraph--empty">Start writing a question</p>
+				<h3 class="card__title card__title--empty">
+					This card is empty<small class="card__title--small">Start writing a question</small>
+				</h3>
 			</article>
 		</main>
 		<footer class="footer">
