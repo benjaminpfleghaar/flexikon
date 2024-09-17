@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flexikon Home</title>
+		<link rel="stylesheet" href="./assets/styles/styles.css" />
+		<script src="./assets/scripts/scripts.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title">
+				<img src="assets/images/header/logo-20.svg" class="header__logo" alt="Flexikon logo" />
+				<span class="header__title--normal">Flexikon / </span>Profile
+			</h1>
+			<nav class="header__nav">
+				<ul class="header__nav-list">
+					<li>
+						<a href="index.html" class="header__nav-link" title="Home">
+							<img src="assets/images/header/home-20.svg" alt="Go to Home page" />
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="bookmarks.html" class="header__nav-link" title="Bookmarks">
+							<img src="assets/images/header/bookmark-20.svg" alt="View your bookmarks" />
+							Bookmarks
+						</a>
+					</li>
+					<li>
+						<a href="profile.html" class="header__nav-link" title="Profile">
+							<img src="assets/images/header/profile-20.svg" alt="Go to Profile page" />
+							Profile
+						</a>
+					</li>
+				</ul>
+				<button
+					type="button"
+					class="header__add-question-button"
+					aria-label="Add a new question"
+					data-js="add-button">
+					<span class="header__add-question-button-text--hidden">Add question</span>
+				</button>
+			</nav>
+		</header>
+		<main class="main-content">
+			<article class="new-question-form">
+				<section class="new-question-form__header">
+					<h2 class="new-question-form__title" id="title">Add question</h2>
+					<p id="description">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+						ut labore et dolore magna aliquyam erat, sed diam voluptua.
+					</p>
+				</section>
+				<form class="new-question-form__form" aria-labelledby="title" data-js="form">
+					<fieldset class="new-question-form__fieldset" aria-describedby="description">
+						<legend class="new-question-form__legend">General</legend>
+						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="question">Question</label>
+							<textarea
+								id="question"
+								class="new-question-form__textarea"
+								name="question"
+								maxlength="150"
+								required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							></span
+						>
+						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="answer">Answer</label>
+							<textarea
+								id="answer"
+								class="new-question-form__textarea"
+								name="answer"
+								maxlength="150"
+								required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							></span
+						>
+						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="explanation">explanation</label>
+							<textarea
+								id="explanation"
+								class="new-question-form__textarea"
+								name="explanation"
+								maxlength="150"
+								required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							></span
+						>
+						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="code">Code</label>
+							<textarea id="code" class="new-question-form__textarea" name="code" required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							>
+						</span>
+						<span class="new-question-form__label-group">
+							<label class="new-question-form__label" for="tags">Tags</label>
+							<textarea id="tags" class="new-question-form__textarea" name="tags" required></textarea>
+							<small class="new-question-form__character-count" aria-live="polite"
+								>150 characters left</small
+							>
+						</span>
+					</fieldset>
+					<footer class="new-question-form__footer">
+						<button
+							type="button"
+							class="new-question-form__button new-question-form__button--outlined"
+							aria-label="Cancel the form"
+							data-js="cancel-button">
+							Cancel
+						</button>
+						<button
+							type="submit"
+							class="new-question-form__button"
+							aria-label="Save the new question"
+							data-js="submit-button">
+							Save question
+						</button>
+					</footer>
+				</form>
+			</article>
+		</main>
+		<footer class="footer">
+			<nav>
+				<ul class="footer__nav-list">
+					<li>
+						<a href="index.html" class="footer__nav-link footer__nav-link--active" title="Home">
+							<img src="assets/images/footer/home-24-active.svg" alt="Go to Home page" />
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="bookmarks.html" class="footer__nav-link" title="Bookmarks">
+							<img src="assets/images/footer/bookmark-24.svg" alt="View your bookmarks" />
+							Bookmarks
+						</a>
+					</li>
+					<li>
+						<a href="profile.html" class="footer__nav-link" title="Profile">
+							<img src="assets/images/footer/profile-24.svg" alt="Go to Profile page" />
+							Profile
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</body>
+</html>

@@ -32,30 +32,3 @@ cards.forEach((card) => {
 		bookmarkButton.classList.toggle("card__bookmark-button--active");
 	});
 });
-
-// Get dialog, button and body
-const dialog = document.querySelector('[data-js="dialog"]');
-const addButton = document.querySelector('[data-js="add-button"]');
-const cancelButton = document.querySelector('[data-js="cancel-button"]');
-const body = document.querySelector("body");
-
-// Open dialog
-addButton.addEventListener("click", () => {
-	body.style.overflow = "hidden";
-	dialog.showModal();
-});
-
-// Close dialog
-dialog.addEventListener("click", (event) => {
-	if (event.target === dialog) {
-		dialog.close();
-	}
-});
-cancelButton.addEventListener("click", (event) => {
-	dialog.close();
-});
-
-// Listen to dialog state
-dialog.addEventListener("close", () => {
-	body.removeAttribute("style");
-});
