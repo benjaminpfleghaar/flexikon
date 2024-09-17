@@ -227,8 +227,14 @@
 						>
 						<span class="dialog__label-group">
 							<label class="dialog__label" for="answer">Answer</label>
-							<input id="answer" type="text" class="dialog__input" name="answer" required
-						/></span>
+							<textarea
+								id="answer"
+								class="dialog__textarea"
+								name="answer"
+								maxlength="150"
+								required></textarea>
+							<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
+						>
 						<span class="dialog__label-group">
 							<label class="dialog__label" for="description">Description</label>
 							<textarea
@@ -241,30 +247,32 @@
 						>
 						<span class="dialog__label-group">
 							<label class="dialog__label" for="code">Code</label>
-							<textarea
-								id="code"
-								class="dialog__textarea"
-								name="code"
-								maxlength="150"
-								required></textarea>
-							<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
-						>
+							<textarea id="code" class="dialog__textarea" name="code" required></textarea>
+						</span>
 					</fieldset>
 					<fieldset class="dialog__fieldset" aria-describedby="description">
 						<legend class="dialog__legend">Additional</legend>
 						<span class="dialog__label-group">
-							<label class="dialog__label" for="tasg">Tags</label>
-							<input id="tags" type="text" class="dialog__input" name="tags" required
-						/></span>
+							<label class="dialog__label" for="tags">Tags</label>
+							<textarea id="tags" class="dialog__textarea" name="tags" required></textarea>
+						</span>
 					</fieldset>
-
-					<button
-						type="submit"
-						class="dialog__form-submit-button"
-						aria-label="Save new question"
-						data-js="submit">
-						Save
-					</button>
+					<footer class="dialog__form-footer">
+						<button
+							type="butto"
+							class="dialog__form-button dialog__form-button--outlined"
+							aria-label="Reset the form"
+							data-js="reset">
+							Reset
+						</button>
+						<button
+							type="submit"
+							class="dialog__form-button"
+							aria-label="Save new question"
+							data-js="submit">
+							Save
+						</button>
+					</footer>
 				</form>
 			</section>
 		</dialog>
