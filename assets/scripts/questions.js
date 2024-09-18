@@ -62,10 +62,10 @@ const createCards = () => {
 		card.setAttribute("tabindex", "0");
 		card.setAttribute("data-js", "card");
 
-		// Check if parent is index or bookmarks
+		// Check if parent is bookmarks.html
 		let path = window.location.pathname;
 		let page = path.split("/").pop();
-		const isCardbookmarked = page !== "index.html" ? "card__bookmark-button--active" : "";
+		const isParentBookmarkPage = page === "bookmarks.html" ? "card__bookmark-button--active" : "";
 
 		// Create code block
 		let code = "";
@@ -107,7 +107,7 @@ const createCards = () => {
 			</ul>
 			<button
 				type="button"
-				class="card__bookmark-button ${isCardbookmarked}"
+				class="card__bookmark-button ${isParentBookmarkPage}"
 				aria-label="Bookmark this question"
 				data-js="bookmark-button">
 				<span class="card__bookmark-button-text--hidden">Bookmark</span>
