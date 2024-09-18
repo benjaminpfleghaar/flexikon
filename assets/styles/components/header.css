@@ -37,10 +37,14 @@
 	display: flex;
 	padding: 0 16px;
 	font-weight: 500;
-	border-radius: 24px;
+	border-radius: 6px;
 	align-items: center;
 	color: var(--color-secondary-bright);
 	font-family: var(--font-medium), sans-serif;
+}
+.header__nav-link:focus-visible {
+	outline-offset: 2px;
+	outline: 2px solid var(--color-primary);
 }
 .header__nav-link--active {
 	color: var(--color-primary);
@@ -51,8 +55,13 @@
 	height: 48px;
 	border: none;
 	cursor: pointer;
-	border-radius: 24px;
-	background: var(--color-primary) url(../../images/header/add-20.svg) center no-repeat;
+	border-radius: 6px;
+	border: 1px solid var(--color-border);
+	background: url(../../images/header/add-20.svg) center no-repeat;
+}
+.header__add-question-button:focus-visible {
+	outline-offset: 2px;
+	outline: 2px solid var(--color-primary);
 }
 .header__add-question-button-text--hidden {
 	top: auto;

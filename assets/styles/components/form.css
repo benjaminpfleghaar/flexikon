@@ -1,8 +1,11 @@
 .new-question {
 	flex-basis: 100%;
-	border-radius: 8px;
+	border-radius: 12px;
 	padding: 24px 24px 0;
 	border: 1px solid var(--color-border);
+}
+.new-question__header-section {
+	margin-bottom: 24px;
 }
 .new-question__title {
 	font-weight: 500;
@@ -19,22 +22,25 @@
 .new-question__fieldset {
 	border: none;
 	display: flex;
+	padding-bottom: 24px;
 	flex-direction: column;
 }
 .new-question__legend {
 	width: 100%;
 	font-weight: 500;
+	padding-top: 24px;
 	color: var(--color-primary);
 	font-size: var(--font-size-m);
 	font-family: var(--font-medium);
 	border-top: 1px solid var(--color-border);
 }
 .new-question__fieldset-description {
+	margin-bottom: 24px;
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
 }
 .new-question__label-group {
-	gap: 8px;
+	gap: 6px;
 	display: flex;
 	position: relative;
 	flex-direction: column;
@@ -50,12 +56,19 @@
 	font-weight: 400;
 	line-height: 1.5;
 	border-radius: 6px;
-	font-size: var(--font-size-m);
+	font-size: var(--font-size-s);
 	border: 1px solid var(--color-border);
 	font-family: var(--font-regular), sans-serif;
 }
 .new-question__input[id="answer"] {
 	margin-bottom: 24px;
+}
+.new-question__input:focus-visible {
+	outline-offset: 2px;
+	outline: 2px solid var(--color-primary);
+}
+.new-question__input::placeholder {
+	color: var(--color-secondary-bright);
 }
 .new-question__textarea {
 	resize: none;
@@ -63,9 +76,16 @@
 	line-height: 1.5;
 	padding: 8px 12px;
 	border-radius: 6px;
-	font-size: var(--font-size-m);
+	font-size: var(--font-size-s);
 	border: 1px solid var(--color-border);
 	font-family: var(--font-regular), sans-serif;
+}
+.new-question__textarea:focus-visible {
+	outline-offset: 2px;
+	outline: 2px solid var(--color-primary);
+}
+.new-question__textarea::placeholder {
+	color: var(--color-secondary-bright);
 }
 .new-question__counter {
 	font-weight: 500;
@@ -81,7 +101,6 @@
 	padding: 24px 0;
 	position: static;
 	justify-content: flex-end;
-	border-radius: 0 0 8px 8px;
 	background-color: var(--color-white);
 	border-top: 1px solid var(--color-border);
 }
@@ -97,6 +116,10 @@
 	transition: transform ease 0.2s;
 	background-color: var(--color-primary);
 	font-family: var(--font-medium), sans-serif;
+}
+.new-question__button:focus-visible {
+	outline-offset: 2px;
+	outline: 2px solid var(--color-primary);
 }
 .new-question__button--outlined {
 	color: var(--color-primary);
