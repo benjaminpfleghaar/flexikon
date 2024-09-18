@@ -28,12 +28,30 @@ form.addEventListener("submit", (event) => {
 	);
 });
 
+// Count characters
+const inputElements = document.getElementsByTagName("textarea");
+
+[...inputElements].forEach((element) => {
+	element.addEventListener("input", (event) => {
+		// Select counter and calculate characters
+		const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
+		const characters = 150 - event.target.value.length;
+		counter.innerHTML = `${characters} characters left`;
+	});
+});
+
 // Reset form
 const resetButton = document.querySelector("[data-js=reset-button]");
 
 resetButton.addEventListener("click", () => {
 	// Reset form
 	form.reset();
+
+	// Reset character counter
+	const counters = document.getElementsByClassName("new-question__counter");
+	[...counters].forEach((counter) => {
+		counter.innerHTML = "150 characters left";
+	});
 
 	// Add empty class
 	card.classList.add("card--empty");

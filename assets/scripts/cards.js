@@ -2,7 +2,7 @@
 import questions from "./questions.js";
 import { createCard } from "./utils.js";
 
-// Select parent
+// Select main container
 const main = document.querySelector('[data-js="main"]');
 
 for (let i = 0; i < questions.length; i++) {
