@@ -1,9 +1,12 @@
 // Create card
-export const createCard = (card, question, answer, description, code_language, code, tags) => {
+export const createCard = (card, question, answer, description, code_language, code, tags, isNew) => {
 	// Check if parent is bookmarks.html
 	let path = window.location.pathname;
 	let page = path.split("/").pop();
 	const isParentBookmarkPage = page === "bookmarks.html" ? "card__bookmark-button--active" : "";
+
+	// Check if card is new
+	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
 	// Create code block
 	let codeBlock = "";
@@ -23,7 +26,7 @@ export const createCard = (card, question, answer, description, code_language, c
 
 	// Set inner HTML of card
 	card.innerHTML = `
-		<aside class="card--highlight" aria-hidden="true"></aside>
+		${highlightCard}
 		<section class="card__question" data-js="question">
 			<h2 class="card__title">${question}</h2>
 		</section>

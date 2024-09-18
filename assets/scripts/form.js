@@ -18,5 +18,21 @@ form.addEventListener("submit", (event) => {
 	card.classList.remove("card--empty");
 
 	// Fill card with content
-	createCard(card, data.question, data.answer, data.explanation, "CSS", data.code.split("\n"), data.tags.split(" "));
+	createCard(
+		card,
+		data.question,
+		data.answer,
+		data.explanation,
+		"CSS",
+		data.code.split("\n"),
+		data.tags.split(" "),
+		true
+	);
+});
+
+// Reset form
+const resetButton = document.querySelector("[data-js=reset-button]");
+
+resetButton.addEventListener("click", () => {
+	form.reset();
 });

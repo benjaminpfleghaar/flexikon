@@ -20,7 +20,8 @@ for (let i = 0; i < questions.length; i++) {
 		questions[i].description,
 		questions[i].code_language,
 		questions[i].code,
-		questions[i].tags
+		questions[i].tags,
+		false
 	);
 
 	// Append card to main container
