@@ -79,13 +79,13 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 ## Feature ideas
 
--   Create questions with ChatGPT
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
 -   Add counter at bookmark nav link
 
 ### Implemented
 
+-   Create questions with ChatGPT
 -   Prevent hover effect on mobile
 -   Mark new questions with a small dot
 -   Make card exactly as high as it is wide
