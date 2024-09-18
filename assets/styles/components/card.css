@@ -22,8 +22,8 @@
 	background-color: var(--color-background-bright);
 }
 .card--highlight {
-	top: 8px;
-	right: 8px;
+	top: 12px;
+	right: 12px;
 	width: 12px;
 	height: 12px;
 	border-radius: 6px;
