@@ -7,6 +7,7 @@ const questions = [
 		code_language: "CSS",
 		code: ["p {", "color: blue;", "}"],
 		tags: ["css", "color", "text"],
+		bookmark: true,
 	},
 	{
 		question: "Which HTML element is used to define a hyperlink?",
@@ -15,6 +16,7 @@ const questions = [
 		code_language: "HTML",
 		code: ["&lt;a href='https://example.com'&gt;", "Visit Example", "&lt;/a&gt;"],
 		tags: ["html", "hyperlink", "link"],
+		bookmark: false,
 	},
 	{
 		question: "Which CSS property is used to set the background image of an element?",
@@ -23,6 +25,7 @@ const questions = [
 		code_language: "CSS",
 		code: ["div {", "background-image: url('image.jpg');", "}"],
 		tags: ["css", "background", "image"],
+		bookmark: false,
 	},
 	{
 		question: "Which HTML element represents a table row?",
@@ -31,6 +34,7 @@ const questions = [
 		code_language: "HTML",
 		code: ["&lt;table&gt;", "&lt;tr&gt;", "&lt;td&gt;Data&lt;/td&gt;", "&lt;/tr&gt;", "&lt;/table&gt;"],
 		tags: ["html", "table", "row"],
+		bookmark: false,
 	},
 	{
 		question: "Which CSS property controls the space between an element's border and content?",
@@ -39,6 +43,7 @@ const questions = [
 		code_language: "CSS",
 		code: ["div {", "padding: 20px;", "}"],
 		tags: ["css", "padding", "spacing"],
+		bookmark: true,
 	},
 	{
 		question: "Which HTML element is used for embedding multimedia elements like videos?",
@@ -47,6 +52,7 @@ const questions = [
 		code_language: "HTML",
 		code: ["&lt;video controls&gt;", "&lt;source src='video.mp4' type='video/mp4'&gt;", "&lt;/video&gt;"],
 		tags: ["html", "multimedia", "video"],
+		bookmark: false,
 	},
 ];
 
