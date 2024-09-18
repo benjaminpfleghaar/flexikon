@@ -12,20 +12,39 @@ form.addEventListener("submit", (event) => {
 	const formData = new FormData(event.target);
 	const data = Object.fromEntries(formData);
 
-	// Prepare card
-	card.classList.remove("card--empty");
+	// Add loading indicator
+	document.querySelector('[data-js="submit-button"]').innerHTML =
+		'<span class="new-question__spinner"></span>Save question';
 
-	// Fill card with content
-	createCard(
-		card,
-		data.question,
-		data.answer,
-		data.explanation,
-		"CSS",
-		data.code.split("\n"),
-		data.tags.split(" "),
-		true
-	);
+	// Disable all buttons
+	[...document.getElementsByTagName("button")].forEach((button) => {
+		button.disabled = true;
+	});
+
+	setTimeout(() => {
+		// Prepare card
+		card.classList.remove("card--empty");
+
+		// Fill card with content
+		createCard(
+			card,
+			data.question,
+			data.answer,
+			data.explanation,
+			"CSS",
+			data.code.split("\n"),
+			data.tags.split(" "),
+			true
+		);
+
+		// Remove loading indicator
+		document.querySelector('[data-js="submit-button"]').innerHTML = "Save question";
+
+		// Enable all buttons
+		[...document.getElementsByTagName("button")].forEach((button) => {
+			button.disabled = false;
+		});
+	}, 3000);
 });
 
 // Count characters
