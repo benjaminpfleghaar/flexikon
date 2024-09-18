@@ -19,7 +19,7 @@ questions.forEach((item) => {
 	card.setAttribute("data-js", "card");
 
 	// Fill card with content
-	// (card element, question, answer, description, code language, code, tags, new card)
+	// (card element, question, answer, description, code language, code, tags, bookmarked y/n, new card y/n)
 	createCard(
 		card,
 		item.question,

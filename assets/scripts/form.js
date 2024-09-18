@@ -26,6 +26,7 @@ form.addEventListener("submit", (event) => {
 		card.classList.remove("card--empty");
 
 		// Fill card with content
+		// (card element, question, answer, description, code language, code, tags, bookmarked y/n, new card y/n)
 		createCard(
 			card,
 			data.question,
@@ -34,6 +35,7 @@ form.addEventListener("submit", (event) => {
 			"CSS",
 			data.code.split("\n"),
 			data.tags.split(" "),
+			false,
 			true
 		);
 
