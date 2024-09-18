@@ -22,7 +22,7 @@ form.addEventListener("submit", (event) => {
 	});
 
 	setTimeout(() => {
-		// Prepare card
+		// Remove empty class
 		card.classList.remove("card--empty");
 
 		// Fill card with content
@@ -48,9 +48,7 @@ form.addEventListener("submit", (event) => {
 });
 
 // Count characters
-const inputElements = document.getElementsByTagName("textarea");
-
-[...inputElements].forEach((element) => {
+[...document.getElementsByTagName("textarea")].forEach((element) => {
 	element.addEventListener("input", (event) => {
 		// Select counter and calculate characters
 		const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
@@ -67,15 +65,14 @@ resetButton.addEventListener("click", () => {
 	form.reset();
 
 	// Reset character counter
-	const counters = document.getElementsByClassName("new-question__counter");
-	[...counters].forEach((counter) => {
+	[...document.getElementsByClassName("new-question__counter")].forEach((counter) => {
 		counter.innerHTML = "150 characters left";
 	});
 
 	// Add empty class
 	card.classList.add("card--empty");
 
-	// Reset card to empty
+	// Reset card content
 	card.innerHTML = `
 		<img src="assets/images/main/empty-card.png" alt="This card is empty" width="179" height="200" />
 		<h3 class="card__title card__title--empty">

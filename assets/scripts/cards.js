@@ -5,7 +5,8 @@ import { createCard } from "./utils.js";
 // Select main container
 const main = document.querySelector('[data-js="main"]');
 
-for (let i = 0; i < questions.length; i++) {
+// Create cards
+questions.forEach((item) => {
 	// Create card container and apply attributes
 	const card = document.createElement("article");
 	card.setAttribute("class", "card");
@@ -13,17 +14,9 @@ for (let i = 0; i < questions.length; i++) {
 	card.setAttribute("data-js", "card");
 
 	// Fill card with content
-	createCard(
-		card,
-		questions[i].question,
-		questions[i].answer,
-		questions[i].description,
-		questions[i].code_language,
-		questions[i].code,
-		questions[i].tags,
-		false
-	);
+	// (card element, question, answer, description, code language, code, tags, new card)
+	createCard(card, item.question, item.answer, item.description, item.code_language, item.code, item.tags, false);
 
 	// Append card to main container
 	main.append(card);
-}
+});

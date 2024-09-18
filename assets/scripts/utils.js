@@ -9,12 +9,12 @@ export const createCard = (card, question, answer, description, code_language, c
 	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
 	// Create code block
-	let codeBlock = "";
+	let codeLines = "";
 	for (let i = 0; i < code.length; i++) {
 		if (i === 0 || i === code.length - 1) {
-			codeBlock += `<span>${code[i]}</span>`;
+			codeLines += `<span>${code[i]}</span>`;
 		} else {
-			codeBlock += `<span class="card__code-line--offset">${code[i]}</span>`;
+			codeLines += `<span class="card__code-line--offset">${code[i]}</span>`;
 		}
 	}
 
@@ -38,7 +38,7 @@ export const createCard = (card, question, answer, description, code_language, c
 			<section class="card__code-block">
 				<small class="card__code-language">${code_language}</small>
 				<code class="card__code">
-					${codeBlock}
+					${codeLines}
 				</code>
 			</section>
 		</section>
