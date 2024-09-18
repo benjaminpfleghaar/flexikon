@@ -139,15 +139,9 @@
 	.card {
 		flex-basis: calc(33.33% - 5.3px);
 	}
-	.card--empty {
-		flex-basis: calc(50% - 4px);
-	}
 }
 @media (min-width: 1536px) {
 	.card {
 		flex-basis: calc(25% - 6px);
-	}
-	.card--empty {
-		flex-basis: calc(50% - 4px);
 	}
 }
