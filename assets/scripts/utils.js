@@ -62,7 +62,19 @@ export const createCard = (card, question, answer, description, code_language, c
 	const bookmarkButton = card.querySelector('[data-js="bookmark-button"]');
 
 	// Add click event listener to question section
-	card.addEventListener("click", () => {
+	card.addEventListener("click", (event) => {
+		// Reset flipped cards
+		if (!questionSection.hasAttribute("hidden")) {
+			[...document.querySelectorAll('[data-js="question"]')].forEach((question) => {
+				question.classList.remove("card__question--hidden");
+				question.removeAttribute("hidden");
+			});
+			[...document.querySelectorAll('[data-js="answer"]')].forEach((answer) => {
+				answer.classList.add("card__answer--hidden");
+				answer.setAttribute("hidden", "");
+			});
+		}
+
 		// Toggle the visibility of question and answer
 		questionSection.classList.toggle("card__question--hidden");
 		answerSection.classList.toggle("card__answer--hidden");
