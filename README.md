@@ -23,7 +23,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Provide a form to add a new question
 -   Create a set of different questions
 
-### Solved
+## Challenges
 
 -   [x] Handle data input
 -   [x] Build HTML structure
