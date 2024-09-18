@@ -50,6 +50,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 
 ## Feature ideas
 
+-   Create questions with ChatGPT
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
 -   Add counter at bookmark nav link

@@ -13,25 +13,23 @@
 	--color-secondary-bright: #6f6f6f;
 	--color-background-dark: #262626;
 	--color-background-bright: #f4f4f4;
-
 	--color-key: #00a67d;
-	--color-value: #df3079;
 
-	--font-light: "Roboto-Light", sans-serif;
-	--font-medium: "Roboto-Medium", sans-serif;
-	--font-slab-medium: "RobotoSlab-Medium", sans-serif;
+	--font-regular: "Geist-Regular", sans-serif;
+	--font-medium: "Geist-Medium", sans-serif;
 
-	--font-size-xs: 0.625rem;
-	--font-size-s: 0.75rem;
+	--font-size-xxs: 0.625rem;
+	--font-size-xs: 0.75rem;
+	--font-size-s: 0.875rem;
 	--font-size-m: 1rem;
 	--font-size-l: 1.5rem;
 }
 html {
 	font-size: 100%;
 	line-height: 1.5;
-	font-weight: 300;
+	font-weight: 400;
 	box-sizing: border-box;
-	font-family: var(--font-light), sans-serif;
+	font-family: var(--font-regular), sans-serif;
 
 	font-synthesis: none;
 	-moz-osx-font-smoothing: grayscale;

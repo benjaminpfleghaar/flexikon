@@ -1,12 +1,13 @@
 @import "./card.css";
 @import "./profile.css";
+@import "./form.css";
 
 .main-content {
 	gap: 8px;
 	display: flex;
-	margin: 0 auto;
 	flex-wrap: wrap;
 	padding: 0 16px 88px;
+	align-items: flex-start;
 }
 @media (min-width: 768px) {
 	.main-content {

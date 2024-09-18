@@ -1,25 +1,12 @@
 @font-face {
-	font-family: "Roboto-Light";
-	src: url(../fonts/Roboto-Light.ttf);
+	font-family: "Geist-Regular";
+	src: url(../fonts/Geist-Regular.ttf);
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 }
 @font-face {
-	font-family: "Roboto-Medium";
-	src: url(../fonts/Roboto-Medium.ttf);
-	font-style: normal;
-	font-weight: 500;
-}
-@font-face {
-	font-family: "RobotoSlab-Light";
-	src: url(../fonts/RobotoSlab-Light.ttf);
-	font-style: normal;
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "RobotoSlab-Medium";
-	src: url(../fonts/RobotoSlab-Medium.ttf);
+	font-family: "Geist-Medium";
+	src: url(../fonts/Geist-Medium.ttf);
 	font-style: normal;
 	font-weight: 500;
 }

@@ -9,29 +9,20 @@
 	</head>
 	<body>
 		<header class="header">
-			<h1 class="header__title">
+			<section class="header__section">
 				<img src="assets/images/header/logo-20.svg" class="header__logo" alt="Flexikon logo" />
-				<span class="header__title--normal">Flexikon / </span>Profile
-			</h1>
+				<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>Profile</h1>
+			</section>
 			<nav class="header__nav">
 				<ul class="header__nav-list">
 					<li>
-						<a href="index.html" class="header__nav-link header__nav-link--active" title="Home">
-							<img src="assets/images/header/home-20-active.svg" alt="Go to Home page" />
-							Home
-						</a>
+						<a href="index.html" class="header__nav-link header__nav-link--active" title="Home"> Home </a>
 					</li>
 					<li>
-						<a href="bookmarks.html" class="header__nav-link" title="Bookmarks">
-							<img src="assets/images/header/bookmark-20.svg" alt="View your bookmarks" />
-							Bookmarks
-						</a>
+						<a href="bookmarks.html" class="header__nav-link" title="Bookmarks"> Bookmarks </a>
 					</li>
 					<li>
-						<a href="profile.html" class="header__nav-link" title="Profile">
-							<img src="assets/images/header/profile-20.svg" alt="Go to Profile page" />
-							Profile
-						</a>
+						<a href="profile.html" class="header__nav-link" title="Profile"> Profile </a>
 					</li>
 				</ul>
 				<button
@@ -46,7 +37,7 @@
 		<main class="main-content">
 			<article class="profile">
 				<img
-					src="assets/images/profile/avatar.jpeg"
+					src="assets/images/main/avatar.jpg"
 					class="profile__avatar"
 					width="80"
 					height="80"
@@ -58,7 +49,7 @@
 					<li class="profile__tag"><span class="profile__tag--highlight">12</span>Questions</li>
 					<li class="profile__tag"><span class="profile__tag--highlight">4</span>Bookmarks</li>
 				</ul>
-				<p>
+				<p class="profile__bio">
 					Quiz app enthusiast, gaming aficionado, and pizza lover. Always on the lookout for the next fun
 					challenge and the perfect slice.
 				</p>
@@ -70,18 +61,18 @@
 				</section>
 				<section class="card__answer card__answer--hidden" data-js="answer" hidden>
 					<h2 class="card__title">flex-direction</h2>
-					<p>The flex-direction property specifies the direction of the flexible items.</p>
+					<p class="card__description">
+						The flex-direction property specifies the direction of the flexible items.
+					</p>
 					<section class="card__code-block">
 						<small class="card__code-language">CSS</small>
 						<code class="card__code">
 							<span>div {</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span>:
-								<span class="card__code-value">flex</span>;
+								<span>display: flex;</span>
 							</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">flex-direction</span>:
-								<span class="card__code-value">column</span>;
+								<span>flex-direction: column;</span>
 							</span>
 							<span>}</span>
 						</code>
@@ -109,18 +100,18 @@
 				</section>
 				<section class="card__answer card__answer--hidden" data-js="answer" hidden>
 					<h2 class="card__title">flex-direction</h2>
-					<p>The flex-direction property specifies the direction of the flexible items.</p>
+					<p class="card__description">
+						The flex-direction property specifies the direction of the flexible items.
+					</p>
 					<section class="card__code-block">
 						<small class="card__code-language">CSS</small>
 						<code class="card__code">
 							<span>div {</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span>:
-								<span class="card__code-value">flex</span>;
+								<span>display: flex;</span>
 							</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">flex-direction</span>:
-								<span class="card__code-value">column</span>;
+								<span>flex-direction: column;</span>
 							</span>
 							<span>}</span>
 						</code>
@@ -148,18 +139,18 @@
 				</section>
 				<section class="card__answer card__answer--hidden" data-js="answer" hidden>
 					<h2 class="card__title">flex-direction</h2>
-					<p>The flex-direction property specifies the direction of the flexible items.</p>
+					<p class="card__description">
+						The flex-direction property specifies the direction of the flexible items.
+					</p>
 					<section class="card__code-block">
 						<small class="card__code-language">CSS</small>
 						<code class="card__code">
 							<span>div {</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">display</span>:
-								<span class="card__code-value">flex</span>;
+								<span>display: flex;</span>
 							</span>
 							<span class="card__code-line--offset">
-								<span class="card__code-property">flex-direction</span>:
-								<span class="card__code-value">column</span>;
+								<span>flex-direction: column;</span>
 							</span>
 							<span>}</span>
 						</code>
@@ -205,75 +196,5 @@
 				</ul>
 			</nav>
 		</footer>
-		<dialog class="dialog" data-js="dialog">
-			<section class="dialog__container">
-				<section class="dialog__header">
-					<h2 class="dialog__title" id="title">Add question</h2>
-					<p id="description">
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-						ut labore et dolore magna aliquyam erat, sed diam voluptua.
-					</p>
-				</section>
-				<form class="dialog__form" aria-labelledby="title" data-js="form">
-					<fieldset class="dialog__fieldset" aria-describedby="description">
-						<legend class="dialog__legend">General</legend>
-						<span class="dialog__label-group">
-							<label class="dialog__label" for="question">Question</label>
-							<textarea
-								id="question"
-								class="dialog__textarea"
-								name="question"
-								maxlength="150"
-								required></textarea>
-							<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
-						>
-						<span class="dialog__label-group">
-							<label class="dialog__label" for="answer">Answer</label>
-							<textarea
-								id="answer"
-								class="dialog__textarea"
-								name="answer"
-								maxlength="150"
-								required></textarea>
-							<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
-						>
-						<span class="dialog__label-group">
-							<label class="dialog__label" for="description">Description</label>
-							<textarea
-								id="description"
-								class="dialog__textarea"
-								name="description"
-								maxlength="150"
-								required></textarea>
-							<small class="dialog__character-count" aria-live="polite">150 characters left</small></span
-						>
-						<span class="dialog__label-group">
-							<label class="dialog__label" for="code">Code</label>
-							<textarea id="code" class="dialog__textarea" name="code" required></textarea>
-						</span>
-						<span class="dialog__label-group">
-							<label class="dialog__label" for="tags">Tags</label>
-							<textarea id="tags" class="dialog__textarea" name="tags" required></textarea>
-						</span>
-					</fieldset>
-					<footer class="dialog__form-footer">
-						<button
-							type="butto"
-							class="dialog__form-button dialog__form-button--outlined"
-							aria-label="Cancel the form"
-							data-js="cancel-button">
-							Cancel
-						</button>
-						<button
-							type="submit"
-							class="dialog__form-button"
-							aria-label="Save the new question"
-							data-js="submit-button">
-							Save question
-						</button>
-					</footer>
-				</form>
-			</section>
-		</dialog>
 	</body>
 </html>
