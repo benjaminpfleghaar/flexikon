@@ -96,7 +96,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 The application requires no further packages.
 
 -   Clone the whole repository
--   Open the `index.html` or run `npm run start`
+-   Run `npm run start` to start the application
 
 ## Tech Stack
 
