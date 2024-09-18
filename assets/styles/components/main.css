@@ -1,6 +1,6 @@
 @import "./card.css";
 @import "./profile.css";
-@import "./new-question.css";
+@import "./form.css";
 
 .main-content {
 	gap: 8px;
