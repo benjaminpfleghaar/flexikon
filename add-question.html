@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Flexikon - Add question</title>
 		<link rel="stylesheet" href="./assets/styles/styles.css" />
-		<script type="module" src="./assets/scripts/scripts.js" defer></script>
+		<script type="module" src="./assets/scripts/form.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
@@ -30,7 +30,7 @@
 				</a>
 			</nav>
 		</header>
-		<main class="main-content">
+		<main class="main-content" data-js="main">
 			<article class="new-question">
 				<section class="new-question__header-section">
 					<h2 class="new-question__title" id="title">Add question</h2>
@@ -51,7 +51,9 @@
 								rows="3"
 								maxlength="150"
 								placeholder="Add your question here"
-								required></textarea>
+								required>
+Question</textarea
+							>
 							<small class="new-question__counter" aria-live="polite">150 characters left</small></span
 						>
 						<span class="new-question__label-group">
@@ -62,6 +64,7 @@
 								name="tags"
 								maxlength="150"
 								placeholder="Add a few tags here"
+								value="html css flexbox"
 								required />
 						</span>
 					</fieldset>
@@ -78,6 +81,7 @@
 								name="answer"
 								maxlength="150"
 								placeholder="Add your answer here"
+								value="Answer"
 								required />
 						</span>
 						<span class="new-question__label-group">
@@ -89,7 +93,9 @@
 								rows="3"
 								maxlength="150"
 								placeholder="Add a short explanation here"
-								required></textarea>
+								required>
+Explanation</textarea
+							>
 							<small class="new-question__counter" aria-live="polite">150 characters left</small></span
 						>
 						<span class="new-question__label-group">
@@ -101,7 +107,11 @@
 								rows="3"
 								maxlength="150"
 								placeholder="Add your code snippet here"
-								required></textarea>
+								required>
+p {
+color: red;
+}</textarea
+							>
 							<small class="new-question__counter" aria-live="polite">150 characters left</small>
 						</span>
 					</fieldset>
