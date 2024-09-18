@@ -1,4 +1,4 @@
-# Quiz App
+# Flexikon App
 
 Quiz app as part of the neuefische Web Development Bootcamp
 
@@ -14,7 +14,7 @@ Quiz app as part of the neuefische Web Development Bootcamp
 
 ## Description
 
-A short quiz about modern web technologies. Just click on the respective question to see the answer.
+A short quiz about modern web technologies. Just click on the respective question to see the answer or add your own question.
 
 ## Constraints
 
