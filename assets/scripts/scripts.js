@@ -1,3 +1,9 @@
+// Import card function
+import createCards from "./questions.js";
+
+// Create cards
+createCards();
+
 // Get all cards
 const cards = document.querySelectorAll('[data-js="card"]');
 

@@ -50,20 +50,18 @@
 	color: var(--color-primary);
 	background: var(--color-background-bright);
 }
-.header__add-question-button {
+.header__add-question-link {
 	width: 48px;
 	height: 48px;
-	border: none;
-	cursor: pointer;
 	border-radius: 6px;
 	border: 1px solid var(--color-border);
 	background: url(../../images/header/add-20.svg) center no-repeat;
 }
-.header__add-question-button:focus-visible {
+.header__add-question-link:focus-visible {
 	outline-offset: 2px;
 	outline: 2px solid var(--color-primary);
 }
-.header__add-question-button-text--hidden {
+.header__add-question-link-text--hidden {
 	top: auto;
 	width: 1px;
 	height: 1px;

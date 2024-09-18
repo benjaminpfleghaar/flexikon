@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Flexikon Home</title>
+		<title>Flexikon - Add question</title>
 		<link rel="stylesheet" href="./assets/styles/styles.css" />
-		<script src="./assets/scripts/scripts.js" defer></script>
+		<script type="module" src="./assets/scripts/scripts.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
 			<section class="header__section">
 				<img src="assets/images/header/logo-20.svg" class="header__logo" alt="Flexikon logo" />
-				<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>Profile</h1>
+				<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>Add question</h1>
 			</section>
 			<nav class="header__nav">
 				<ul class="header__nav-list">
@@ -25,13 +25,9 @@
 						<a href="profile.html" class="header__nav-link" title="Profile">Profile </a>
 					</li>
 				</ul>
-				<button
-					type="button"
-					class="header__add-question-button"
-					aria-label="Add a new question"
-					data-js="add-button">
-					<span class="header__add-question-button-text--hidden">Add question</span>
-				</button>
+				<a href="add-question.html" class="header__add-question-link" title="Add question">
+					<span class="header__add-question-link-text--hidden">Add question</span>
+				</a>
 			</nav>
 		</header>
 		<main class="main-content">
@@ -138,8 +134,8 @@
 			<nav>
 				<ul class="footer__nav-list">
 					<li>
-						<a href="index.html" class="footer__nav-link footer__nav-link--active" title="Home">
-							<img src="assets/images/footer/home-24-active.svg" alt="Go to Home page" />
+						<a href="index.html" class="footer__nav-link" title="Home">
+							<img src="assets/images/footer/home-24.svg" alt="Go to Home page" />
 							Home
 						</a>
 					</li>
