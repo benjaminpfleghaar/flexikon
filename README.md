@@ -47,6 +47,38 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Make an array from nodes with `Array.from(nodes)`
     -   even shorter `[...nodes]`
 -   Use color and font variables in CSS
+-   Ask ChatGPT for generating questions
+    - <details>
+        <summary>Show prompt</summary>
+        Hey, please pretend to be a html and css expert because I want you to help me create a random question either css or html related for a quiz. Here's an example:
+        
+        **Question (maximum of 80 characters):**
+        Which CSS property can be used to invert the flexbox axes?
+        
+        **Answer (single line, only the html tag/css attribute:**
+        flex-direction
+        
+        **Description (maximum of 80 characters):**
+        The flex-direction property specifies the direction of the flexible items.
+        
+        **Code language (single word):**
+        CSS
+        
+        **Code (each line individually):**
+        div {
+        display: flex;
+        flex-direction: column;
+        }
+        
+        Attention: in case you code has some html tags in it, make sure to replace the < > with `&lt;` and `&gt;`
+        
+        **Tags (maxium of 3, only one word each):**
+        html
+        css
+        flexbox
+        
+        Could you please give me 6 questions back as a single JSON object, so that I can work on with it.
+    </details>
 
 ## Feature ideas
 
