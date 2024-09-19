@@ -63,11 +63,11 @@ export const createCard = (card, question, answer, description, code_language, c
 	card.addEventListener("click", (event) => {
 		// Reset flipped cards
 		if (!questionSection.hasAttribute("hidden")) {
-			[...document.querySelectorAll('[data-js="question"]')].forEach((question) => {
+			document.querySelectorAll('[data-js="question"]').forEach((question) => {
 				question.classList.remove("card__question--hidden");
 				question.removeAttribute("hidden");
 			});
-			[...document.querySelectorAll('[data-js="answer"]')].forEach((answer) => {
+			document.querySelectorAll('[data-js="answer"]').forEach((answer) => {
 				answer.classList.add("card__answer--hidden");
 				answer.setAttribute("hidden", "");
 			});

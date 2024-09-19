@@ -17,7 +17,7 @@ form.addEventListener("submit", (event) => {
 		'<span class="new-question__spinner"></span>Save question';
 
 	// Disable all buttons
-	[...document.getElementsByTagName("button")].forEach((button) => {
+	document.querySelectorAll("button").forEach((button) => {
 		button.disabled = true;
 	});
 
@@ -43,14 +43,20 @@ form.addEventListener("submit", (event) => {
 		document.querySelector('[data-js="submit-button"]').innerHTML = "Save question";
 
 		// Enable all buttons
-		[...document.getElementsByTagName("button")].forEach((button) => {
+		document.querySelectorAll("button").forEach((button) => {
 			button.disabled = false;
+		});
+
+		// Scroll card into view
+		window.scrollTo({
+			behavior: "smooth",
+			top: card.getBoundingClientRect().top - document.body.getBoundingClientRect().top - 24,
 		});
 	}, 3000);
 });
 
 // Count characters
-[...document.getElementsByTagName("textarea")].forEach((element) => {
+document.querySelectorAll("textarea").forEach((element) => {
 	element.addEventListener("input", (event) => {
 		// Select counter and calculate characters
 		const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
@@ -66,7 +72,7 @@ resetButton.addEventListener("click", () => {
 	form.reset();
 
 	// Reset character counter
-	[...document.getElementsByClassName("new-question__counter")].forEach((counter) => {
+	document.querySelectorAll(".new-question__counter").forEach((counter) => {
 		counter.innerHTML = "150 characters left";
 	});
 
