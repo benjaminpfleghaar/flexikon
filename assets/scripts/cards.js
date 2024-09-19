@@ -14,7 +14,7 @@ for (const item of questions) {
 
 	// Create card container and apply attributes
 	const card = document.createElement("article");
-	card.setAttribute("class", "card");
+	card.classList.add("card");
 	card.setAttribute("tabindex", "0");
 	card.setAttribute("data-js", "card");
 
