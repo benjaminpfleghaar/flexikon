@@ -3,7 +3,7 @@
 @import "./form.css";
 
 .main-content {
-	gap: 8px;
+	gap: 16px;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 16px 88px;
