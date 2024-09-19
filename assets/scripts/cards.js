@@ -6,7 +6,7 @@ import { createCard } from "./utils.js";
 const main = document.querySelector('[data-js="main"]');
 
 // Create cards
-questions.forEach((item) => {
+for (const item of questions) {
 	// Check if parent is bookmarks.html
 	let path = window.location.pathname;
 	let page = path.split("/").pop();
@@ -41,4 +41,4 @@ questions.forEach((item) => {
 		// Append only bookmarked cards to main container
 		main.append(card);
 	}
-});
+}

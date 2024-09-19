@@ -15,8 +15,8 @@ export const createCard = (card, question, answer, description, code_language, c
 
 	// Create tag list
 	let tagItems = "";
-	for (let i = 0; i < tags.length; i++) {
-		tagItems += `<li class="card__tag">${tags[i]}</li>`;
+	for (const tag of tags) {
+		tagItems += `<li class="card__tag">${tag}</li>`;
 	}
 
 	// Check if item is bookmarked
