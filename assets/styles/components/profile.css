@@ -61,8 +61,3 @@
 		flex-basis: calc(33.33% - 5.3px);
 	}
 }
-@media (min-width: 1536px) {
-	.profile {
-		flex-basis: calc(25% - 6px);
-	}
-}

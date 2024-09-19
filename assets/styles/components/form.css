@@ -158,13 +158,3 @@
 		position: sticky;
 	}
 }
-@media (min-width: 1280px) {
-	/* .new-question {
-		flex-basis: calc(66.66% - 5.3px);
-	} */
-}
-@media (min-width: 1536px) {
-	/* .new-question {
-		flex-basis: calc(75% - 6px);
-	} */
-}
