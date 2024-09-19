@@ -113,8 +113,7 @@
 	outline: 2px solid var(--color-primary);
 }
 .card__bookmark-button--active {
-	border-color: var(--color-primary);
-	background-color: var(--color-primary);
+	background-color: var(--color-background-bright);
 	background-image: url(../../images/main/check-20.svg);
 }
 .card__bookmark-button-text--hidden {
