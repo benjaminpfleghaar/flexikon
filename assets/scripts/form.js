@@ -54,7 +54,7 @@ form.addEventListener("submit", (event) => {
 	element.addEventListener("input", (event) => {
 		// Select counter and calculate characters
 		const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
-		counter.innerHTML = `${150 - event.target.value.length} characters left`;
+		counter.textContent = `${150 - event.target.value.length} characters left`;
 	});
 });
 
