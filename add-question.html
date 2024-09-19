@@ -31,97 +31,97 @@
 			</nav>
 		</header>
 		<main class="main-content" data-js="main">
-			<article class="new-question">
-				<section class="new-question__header-section">
-					<h2 class="new-question__title" id="title">Add question</h2>
-					<p class="new-question__description">Expand the flexicon by adding a new question</p>
+			<article class="form">
+				<section class="form__header">
+					<h2 class="form__title" id="title">Add question</h2>
+					<p class="form__description">Expand the flexicon by adding a new question</p>
 				</section>
-				<form class="new-question__form" aria-labelledby="title" data-js="form">
-					<fieldset class="new-question__fieldset" aria-describedby="description-question">
-						<legend class="new-question__legend">Question details</legend>
-						<p class="new-question__fieldset-description" id="description-question">
+				<form aria-labelledby="title" data-js="form">
+					<fieldset class="form__fieldset" aria-describedby="description-question">
+						<legend class="form__legend">Question details</legend>
+						<p class="form__fieldset-description" id="description-question">
 							Enter the question and some keywords
 						</p>
-						<span class="new-question__label-group">
-							<label class="new-question__label" for="question">Question</label>
+						<section class="form__group">
+							<label class="form__label" for="question">Question</label>
 							<textarea
 								id="question"
-								class="new-question__textarea"
+								class="form__textarea"
 								name="question"
 								rows="3"
 								maxlength="150"
 								placeholder="Add your question here"
 								required></textarea>
-							<small class="new-question__counter" data-js="question__counter" aria-live="polite"
+							<small class="form__counter" data-js="question__counter" aria-live="polite"
 								>150 characters left</small
-							></span
-						>
-						<span class="new-question__label-group">
-							<label class="new-question__label" for="tags">Tags</label>
+							>
+						</section>
+						<section class="form__group">
+							<label class="form__label" for="tags">Tags</label>
 							<input
 								id="tags"
-								class="new-question__input"
+								class="form__input"
 								name="tags"
 								maxlength="150"
 								placeholder="Add a few tags here"
 								required />
-						</span>
+						</section>
 					</fieldset>
-					<fieldset class="new-question__fieldset" aria-describedby="description-answer">
-						<legend class="new-question__legend">Answer details</legend>
-						<p class="new-question__fieldset-description" id="description-answer">
+					<fieldset class="form__fieldset" aria-describedby="description-answer">
+						<legend class="form__legend">Answer details</legend>
+						<p class="form__fieldset-description" id="description-answer">
 							Enter the answer, a description and a code snippet
 						</p>
-						<span class="new-question__label-group">
-							<label class="new-question__label" for="answer">Answer</label>
+						<section class="form__group">
+							<label class="form__label" for="answer">Answer</label>
 							<input
 								id="answer"
-								class="new-question__input"
+								class="form__input"
 								name="answer"
 								maxlength="150"
 								placeholder="Add your answer here"
 								required />
-						</span>
-						<span class="new-question__label-group">
-							<label class="new-question__label" for="explanation">Explanation</label>
+						</section>
+						<section class="form__group">
+							<label class="form__label" for="explanation">Explanation</label>
 							<textarea
 								id="explanation"
-								class="new-question__textarea"
+								class="form__textarea"
 								name="explanation"
 								rows="3"
 								maxlength="150"
 								placeholder="Add a short explanation here"
 								required></textarea>
-							<small class="new-question__counter" data-js="explanation__counter" aria-live="polite"
+							<small class="form__counter" data-js="explanation__counter" aria-live="polite"
 								>150 characters left</small
-							></span
-						>
-						<span class="new-question__label-group">
-							<label class="new-question__label" for="code">Code</label>
+							>
+						</section>
+						<section class="form__group">
+							<label class="form__label" for="code">Code</label>
 							<textarea
 								id="code"
-								class="new-question__textarea"
+								class="form__textarea"
 								name="code"
 								rows="3"
 								maxlength="150"
 								placeholder="Add your code snippet here"
 								required></textarea>
-							<small class="new-question__counter" data-js="code__counter" aria-live="polite"
+							<small class="form__counter" data-js="code__counter" aria-live="polite"
 								>150 characters left</small
 							>
-						</span>
+						</section>
 					</fieldset>
-					<footer class="new-question__footer">
+					<footer class="form__footer">
 						<button
 							type="button"
-							class="new-question__button new-question__button--outlined"
+							class="form__button form__button--outlined"
 							aria-label="Reset the form"
 							data-js="reset-button">
 							Reset
 						</button>
 						<button
 							type="submit"
-							class="new-question__button"
+							class="form__button"
 							aria-label="Save the new question"
 							data-js="submit-button">
 							Save question

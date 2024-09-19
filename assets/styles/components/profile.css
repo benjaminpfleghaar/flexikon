@@ -5,7 +5,6 @@
 	aspect-ratio: 1;
 	border-radius: 12px;
 	flex-direction: column;
-	align-items: flex-start;
 	border: 1px solid var(--color-border);
 }
 .profile__avatar {
@@ -34,7 +33,6 @@
 	align-items: center;
 	border-radius: 16px;
 	padding: 0 16px 0 4px;
-	color: var(--color-primary);
 	font-size: var(--font-size-xs);
 	font-family: var(--font-medium), sans-serif;
 	background-color: var(--color-background-bright);

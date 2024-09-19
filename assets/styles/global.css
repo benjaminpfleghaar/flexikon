@@ -3,7 +3,7 @@
 *::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 :root {
 	--color-white: #ffffff;
@@ -13,7 +13,7 @@
 	--color-secondary-bright: #6f6f6f;
 	--color-background-dark: #262626;
 	--color-background-bright: #f4f4f4;
-	--color-key: #00a67d;
+	--color-highlight: #00a67d;
 
 	--font-regular: "Geist-Regular", sans-serif;
 	--font-medium: "Geist-Medium", sans-serif;
@@ -28,7 +28,6 @@ html {
 	font-size: 100%;
 	line-height: 1.5;
 	font-weight: 400;
-	box-sizing: border-box;
 	font-family: var(--font-regular), sans-serif;
 
 	font-synthesis: none;

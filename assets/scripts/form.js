@@ -13,8 +13,7 @@ form.addEventListener("submit", (event) => {
 	const data = Object.fromEntries(formData);
 
 	// Add loading indicator
-	document.querySelector('[data-js="submit-button"]').innerHTML =
-		'<span class="new-question__spinner"></span>Save question';
+	document.querySelector('[data-js="submit-button"]').innerHTML = '<span class="form__spinner"></span>Loading...';
 
 	// Disable all buttons
 	document.querySelectorAll("button").forEach((button) => {
@@ -72,7 +71,7 @@ resetButton.addEventListener("click", () => {
 	form.reset();
 
 	// Reset character counter
-	document.querySelectorAll(".new-question__counter").forEach((counter) => {
+	document.querySelectorAll(".form__counter").forEach((counter) => {
 		counter.innerHTML = "150 characters left";
 	});
 

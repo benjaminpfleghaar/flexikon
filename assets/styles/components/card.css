@@ -28,7 +28,7 @@
 	height: 12px;
 	border-radius: 6px;
 	position: absolute;
-	background-color: var(--color-key);
+	background-color: var(--color-highlight);
 }
 .card__question--hidden,
 .card__answer--hidden {
@@ -43,8 +43,6 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	font-size: var(--font-size-l);
-	font-family: var(--font-medium), sans-serif;
 }
 .card__title--small {
 	font-size: var(--font-size-s);
@@ -69,7 +67,6 @@
 	background-color: var(--color-background-dark);
 }
 .card__code {
-	gap: 2px;
 	display: flex;
 	padding: 16px 24px;
 	flex-direction: column;
