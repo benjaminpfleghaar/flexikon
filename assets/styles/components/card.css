@@ -48,7 +48,7 @@
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
 }
-.card__description {
+.card__explanation {
 	margin-bottom: 24px;
 	color: var(--color-secondary-bright);
 }

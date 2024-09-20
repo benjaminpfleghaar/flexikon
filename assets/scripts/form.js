@@ -12,6 +12,11 @@ form.addEventListener("submit", (event) => {
 	const formData = new FormData(event.target);
 	const data = Object.fromEntries(formData);
 
+	// Prepare data
+	data.code_language = "CSS";
+	data.code = data.code.split("\n");
+	data.tags = data.tags.split(" ");
+
 	// Add loading indicator
 	document.querySelector('[data-js="submit-button"]').innerHTML = '<span class="form__spinner"></span>Loading...';
 
@@ -24,19 +29,8 @@ form.addEventListener("submit", (event) => {
 		// Remove empty class
 		card.classList.remove("card--empty");
 
-		// Fill card with content
-		// (card element, question, answer, description, code language, code, tags, bookmarked y/n, new card y/n)
-		createCard(
-			card,
-			data.question,
-			data.answer,
-			data.explanation,
-			"CSS",
-			data.code.split("\n"),
-			data.tags.split(" "),
-			false,
-			true
-		);
+		// Create card with content (card object, question object, new card y/n)
+		createCard(card, data, true);
 
 		// Remove loading indicator
 		document.querySelector('[data-js="submit-button"]').innerHTML = "Save question";

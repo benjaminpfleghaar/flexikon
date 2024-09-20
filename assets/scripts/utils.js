@@ -1,40 +1,40 @@
 // Create card
-export const createCard = (card, question, answer, description, code_language, code, tags, isBookmarked, isNew) => {
+export const createCard = (card, question, isNew) => {
 	// Check if card is new
 	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
 	// Create code block
 	let codeLines = "";
-	for (let i = 0; i < code.length; i++) {
-		if (i === 0 || i === code.length - 1) {
-			codeLines += `<span>${code[i]}</span>`;
+	for (let i = 0; i < question.code.length; i++) {
+		if (i === 0 || i === question.code.length - 1) {
+			codeLines += `<span>${question.code[i]}</span>`;
 		} else {
-			codeLines += `<span class="card__code-line--offset">${code[i]}</span>`;
+			codeLines += `<span class="card__code-line--offset">${question.code[i]}</span>`;
 		}
 	}
 
 	// Create tag list
 	let tagItems = "";
-	for (const tag of tags) {
+	for (const tag of question.tags) {
 		tagItems += `<li class="card__tag">${tag}</li>`;
 	}
 
-	// Check if item is bookmarked
-	const isParentBookmarkedClass = isBookmarked ? "card__bookmark-button--active" : "";
+	// Check if card is bookmarked
+	const bookmarkCard = question.bookmark ? "card__bookmark-button--active" : "";
 
 	// Set inner HTML of card
 	card.innerHTML = `
 		${highlightCard}
 		<section class="card__question" data-js="question">
-			<h2 class="card__title">${question}</h2>
+			<h2 class="card__title">${question.question}</h2>
 		</section>
 		<section class="card__answer card__answer--hidden" data-js="answer" hidden>
-			<h2 class="card__title">${answer}</h2>
-			<p class="card__description">
-				${description}
+			<h2 class="card__title">${question.answer}</h2>
+			<p class="card__explanation">
+				${question.explanation}
 			</p>
 			<section class="card__code-block">
-				<small class="card__code-language">${code_language}</small>
+				<small class="card__code-language">${question.code_language}</small>
 				<code class="card__code">
 					${codeLines}
 				</code>
@@ -46,7 +46,7 @@ export const createCard = (card, question, answer, description, code_language, c
 			</ul>
 			<button
 				type="button"
-				class="card__bookmark-button ${isParentBookmarkedClass}"
+				class="card__bookmark-button ${bookmarkCard}"
 				aria-label="Bookmark this question"
 				data-js="bookmark-button">
 				<span class="card__bookmark-button-text--hidden">Bookmark</span>
