@@ -13,7 +13,6 @@ form.addEventListener("submit", (event) => {
 	const data = Object.fromEntries(formData);
 
 	// Prepare data
-	data.code_language = "CSS";
 	data.code = data.code.split("\n");
 	data.tags = data.tags.split(",");
 

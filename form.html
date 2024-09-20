@@ -47,7 +47,7 @@
 						<p class="form__fieldset-description" id="description-question">
 							Enter the question and some keywords
 						</p>
-						<section class="form__group">
+						<section class="form__input-group">
 							<label class="form__label" for="question">Question</label>
 							<textarea
 								id="question"
@@ -61,7 +61,7 @@
 								>150 characters left</small
 							>
 						</section>
-						<section class="form__group">
+						<section class="form__input-group">
 							<label class="form__label" for="tags">Tags</label>
 							<input
 								id="tags"
@@ -77,7 +77,7 @@
 						<p class="form__fieldset-description" id="description-answer">
 							Enter the answer, a explanation and a code snippet
 						</p>
-						<section class="form__group">
+						<section class="form__input-group">
 							<label class="form__label" for="answer">Answer</label>
 							<input
 								id="answer"
@@ -87,7 +87,7 @@
 								placeholder="Add your answer here"
 								required />
 						</section>
-						<section class="form__group">
+						<section class="form__input-group">
 							<label class="form__label" for="explanation">Explanation</label>
 							<textarea
 								id="explanation"
@@ -101,7 +101,7 @@
 								>150 characters left</small
 							>
 						</section>
-						<section class="form__group">
+						<section class="form__input-group">
 							<label class="form__label" for="code">Code</label>
 							<textarea
 								id="code"
@@ -114,6 +114,24 @@
 							<small class="form__counter" data-js="code__counter" aria-live="polite"
 								>150 characters left</small
 							>
+						</section>
+						<section class="form__radio-group">
+							<input
+								type="radio"
+								id="html"
+								class="form__radio"
+								value="HTML"
+								name="code_language"
+								checked />
+							<label class="form__label" for="html">HTML</label>
+						</section>
+						<section class="form__radio-group">
+							<input type="radio" id="css" class="form__radio" value="CSS" name="code_language" />
+							<label class="form__label" for="css">CSS</label>
+						</section>
+						<section class="form__radio-group">
+							<input type="radio" id="js" class="form__radio" value="JS" name="code_language" />
+							<label class="form__label" for="js">JavaScript</label>
 						</section>
 					</fieldset>
 					<footer class="form__footer">

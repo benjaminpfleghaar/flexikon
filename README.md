@@ -49,21 +49,21 @@ A short quiz about modern web technologies. Just click on the respective questio
     -   <details>
             <summary>Show prompt</summary>
             
-            Hey, please pretend to be a html and css expert because I want you to help me create a random question either css or html related for a quiz. Here's an example:
+            Hey, please pretend to be a html, css and javascript expert because I want you to help me create a random question either html, css or javascript related for a quiz. Here's an example:
             
             Question (maximum of 80 characters):
             Which CSS property can be used to invert the flexbox axes?
             
-            Answer (single line, only the html tag/css attribute:
+            Answer (single line, only the html tag/css/js attribute):
             flex-direction
             
-            Description (maximum of 80 characters):
+            Explanation (maximum of 80 characters):
             The flex-direction property specifies the direction of the flexible items.
             
-            Code language (single word):
+            Code language (single word, CSS, HTML or JS):
             CSS
             
-            Code (each line individually):
+            Code (maximum of 120 characters, each line individually):
             div {
             display: flex;
             flex-direction: column;
@@ -74,7 +74,7 @@ A short quiz about modern web technologies. Just click on the respective questio
             Tags (maxium of 3, only one word each):
             html
             css
-            flexbox
+            js
             
             Could you please give me 6 questions back as a single JSON object, so that I can work on with it.
         </details>

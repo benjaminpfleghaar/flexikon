@@ -30,10 +30,15 @@
 	font-size: var(--font-size-s);
 	color: var(--color-secondary-bright);
 }
-.form__group {
+.form__input-group {
 	gap: 6px;
 	display: flex;
 	flex-direction: column;
+}
+.form__radio-group {
+	gap: 6px;
+	display: flex;
+	align-items: center;
 }
 .form__label {
 	font-weight: 500;
@@ -75,6 +80,9 @@
 }
 .form__textarea::placeholder {
 	color: var(--color-secondary-bright);
+}
+.form__radio {
+	accent-color: var(--color-primary);
 }
 .form__counter {
 	font-weight: 500;
