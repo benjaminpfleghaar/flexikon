@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
 	// Prepare data
 	data.code_language = "CSS";
 	data.code = data.code.split("\n");
-	data.tags = data.tags.split(" ");
+	data.tags = data.tags.split(",");
 
 	// Add loading indicator
 	document.querySelector('[data-js="submit-button"]').innerHTML = '<span class="form__spinner"></span>Loading...';
