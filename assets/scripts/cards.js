@@ -1,9 +1,9 @@
 // Import
-import questions from "./questions.js";
+import { data } from "./data.js";
 import { createCard } from "./utils.js";
 
 // Store questions
-let questionsToRender = questions;
+let questions = data;
 
 // Select main container
 const main = document.querySelector('[data-js="main"]');
@@ -12,11 +12,11 @@ const main = document.querySelector('[data-js="main"]');
 let path = window.location.pathname;
 let page = path.split("/").pop();
 if (page === "bookmarks.html") {
-	questionsToRender = questions.filter((item) => item.bookmark);
+	questions = data.filter((question) => question.bookmark);
 }
 
 // Create cards
-for (const question of questionsToRender) {
+questions.forEach((question) => {
 	// Create card container and apply attributes
 	const card = document.createElement("article");
 	card.classList.add("card");
@@ -28,4 +28,4 @@ for (const question of questionsToRender) {
 
 	// Append card to main container
 	main.append(card);
-}
+});

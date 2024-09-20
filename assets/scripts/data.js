@@ -1,5 +1,5 @@
 // Questions object
-const questions = [
+export const data = [
 	{
 		question: "Which CSS property is used to make an element's corners rounded?",
 		answer: "border-radius",
@@ -55,5 +55,3 @@ const questions = [
 		bookmark: false,
 	},
 ];
-
-export default questions;
