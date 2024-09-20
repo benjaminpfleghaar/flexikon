@@ -1,5 +1,11 @@
 // Create card
-export const createCard = (card, question, isNew) => {
+export default function card(question, isNew) {
+	// Create card container and apply attributes
+	const card = document.createElement("article");
+	card.classList.add("card");
+	card.setAttribute("tabindex", "0");
+	card.setAttribute("data-js", "card");
+
 	// Check if card is new
 	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
@@ -95,4 +101,6 @@ export const createCard = (card, question, isNew) => {
 		// Toggle bookmark button's active state
 		bookmarkButton.classList.toggle("card__bookmark-button--active");
 	});
-};
+
+	return card;
+}
