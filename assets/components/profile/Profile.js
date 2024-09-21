@@ -1,7 +1,6 @@
 export default function Profile() {
 	// Create container
 	const profile = document.createElement("main");
-	profile.classList.add("main-content");
 	profile.setAttribute("data-js", "main");
 
 	// Set inner HTML of profile

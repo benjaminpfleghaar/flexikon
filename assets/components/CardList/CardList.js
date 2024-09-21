@@ -4,7 +4,6 @@ import Card from "../Card/Card.js";
 export default function CardList(bookmarked) {
 	// Create container
 	const cardList = document.createElement("main");
-	cardList.classList.add("main-content");
 	cardList.setAttribute("data-js", "main");
 
 	// Create cards

@@ -1,12 +1,11 @@
 import Form from "../Form/Form.js";
 import EmptyCard from "../EmptyCard/EmptyCard.js";
 
-export default function CreateView() {
+export default function FormView() {
 	// Create container
-	const createView = document.createElement("main");
-	createView.classList.add("main-content");
-	createView.setAttribute("data-js", "main");
-	createView.append(Form(), EmptyCard());
+	const formView = document.createElement("main");
+	formView.setAttribute("data-js", "main");
+	formView.append(Form(), EmptyCard());
 
-	return createView;
+	return formView;
 }
