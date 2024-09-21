@@ -1,9 +1,13 @@
-// Import
-import { data } from "./lib/data.js";
-import card from "../components/card/card.js";
+import { questions } from "./lib/data.js";
+import Card from "../components/Card/Card.js";
+import Header from "../components/Header/Header.js";
+import Footer from "../components/Footer/Footer.js";
 
-// Select main container
-const main = document.querySelector('[data-js="main"]');
+// Create header
+document.body.prepend(Header("Home"));
 
 // Create cards
-data.forEach((question) => main.append(card(question, false)));
+questions.forEach((question) => document.querySelector('[data-js="main"]').append(Card(question, false)));
+
+// Create footer
+document.body.append(Footer("Home"));

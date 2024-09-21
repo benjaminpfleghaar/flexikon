@@ -1,5 +1,4 @@
-// Create card
-export default function card(question, isNew) {
+export default function Card(question, isNew) {
 	// Create card container and apply attributes
 	const card = document.createElement("article");
 	card.classList.add("card");
