@@ -2,10 +2,10 @@ import Card from "../components/Card/Card.js";
 import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer/Footer.js";
 import EmptyCard from "../components/EmptyCard/EmptyCard.js";
-import CreateView from "../components/CreateView/CreateView.js";
+import FormView from "../components/FormView/FormView.js";
 
 // Append components
-document.body.append(Header("Create"), CreateView(), Footer("Create"));
+document.body.append(Header("Create"), FormView(), Footer("Create"));
 
 // Add event listeners
 document.querySelector('[data-js="form"]').addEventListener("submit", handleFormSubmit);
