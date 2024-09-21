@@ -1,23 +1,18 @@
 import Card from "../components/Card/Card.js";
-import Form from "../components/Form/Form.js";
 import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer/Footer.js";
 import EmptyCard from "../components/EmptyCard/EmptyCard.js";
+import CreateView from "../components/CreateView/CreateView.js";
 
-// Create header
-document.body.prepend(Header("Create"));
+// Append components
+document.body.append(Header("Create"), CreateView(), Footer("Create"));
 
-// Create form
-document.querySelector('[data-js="main"]').append(Form());
+// Add event listeners
+document.querySelector('[data-js="form"]').addEventListener("submit", handleFormSubmit);
+document.querySelector('[data-js="reset-button"]').addEventListener("click", handleFormReset);
+document.querySelectorAll("textarea").forEach((element) => element.addEventListener("input", handleCharacterCount));
 
-// Create empty card
-document.querySelector('[data-js="main"]').append(EmptyCard());
-
-// Create footer
-document.body.append(Footer("Create"));
-
-// Listen to form
-document.querySelector('[data-js="form"]').addEventListener("submit", (event) => {
+function handleFormSubmit(event) {
 	event.preventDefault();
 
 	// Create object from form data
@@ -60,19 +55,9 @@ document.querySelector('[data-js="form"]').addEventListener("submit", (event) =>
 				24,
 		});
 	}, 3000);
-});
+}
 
-// Count characters
-document.querySelectorAll("textarea").forEach((element) => {
-	element.addEventListener("input", (event) => {
-		// Select counter and calculate characters
-		const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
-		counter.textContent = `${150 - event.target.value.length} characters left`;
-	});
-});
-
-// Reset form
-document.querySelector("[data-js=reset-button]").addEventListener("click", () => {
+function handleFormReset() {
 	// Reset form
 	document.querySelector('[data-js="form"]').reset();
 
@@ -86,4 +71,10 @@ document.querySelector("[data-js=reset-button]").addEventListener("click", () =>
 
 	// Create empty card
 	document.querySelector('[data-js="main"]').append(EmptyCard());
-});
+}
+
+function handleCharacterCount(event) {
+	// Select counter and calculate characters
+	const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
+	counter.textContent = `${150 - event.target.value.length} characters left`;
+}
