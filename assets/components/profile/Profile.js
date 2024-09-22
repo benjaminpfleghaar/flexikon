@@ -1,7 +1,10 @@
 export default function Profile() {
 	// Create container
 	const profile = document.createElement("main");
-	profile.setAttribute("data-js", "main");
+	profile.classList.add("main--hidden");
+	profile.setAttribute("data-js", "main-profile");
+	profile.setAttribute("id", "profile");
+	profile.setAttribute("hidden", "");
 
 	// Set inner HTML of profile
 	profile.innerHTML = `

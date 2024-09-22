@@ -1,7 +1,6 @@
 .empty-card {
 	display: flex;
 	aspect-ratio: 1;
-	cursor: pointer;
 	flex-basis: 100%;
 	border-radius: 12px;
 	align-items: center;

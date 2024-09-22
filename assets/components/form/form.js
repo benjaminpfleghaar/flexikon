@@ -2,11 +2,11 @@ import Card from "../Card/Card.js";
 import EmptyCard from "../EmptyCard/EmptyCard.js";
 
 export default function Form() {
-	// Create container and apply attributes
+	// Create form and apply attributes
 	const form = document.createElement("article");
 	form.classList.add("form");
 
-	// Set inner HTML of container
+	// Set inner HTML of form
 	form.innerHTML = `
 		<section class="form__header">
 			<h2 class="form__title" id="title">Add question</h2>
@@ -156,7 +156,7 @@ function handleFormSubmit(event) {
 		document.querySelector('[data-js="card"]').remove();
 
 		// Create card with content (card object, question object, new card y/n)
-		document.querySelector('[data-js="main"]').append(Card(data, true));
+		document.querySelector('[data-js="main-form"]').append(Card(data, true));
 
 		// Remove loading indicator
 		document.querySelector('[data-js="submit-button"]').innerHTML = "Save question";
@@ -190,7 +190,7 @@ function handleFormReset() {
 	document.querySelector('[data-js="card"]').remove();
 
 	// Create empty card
-	document.querySelector('[data-js="main"]').append(EmptyCard());
+	document.querySelector('[data-js="main-form"]').append(EmptyCard());
 }
 
 function handleCharacterCount(event) {

@@ -8,17 +8,17 @@ export default function Footer(page) {
 		<nav>
             <ul class="footer__nav-list">
                 <li>
-                    <a href="index.html" class="footer__nav-link ${
+                    <a href="#home" class="footer__nav-link ${
 						page === "Home" && "footer__nav-link--active"
-					}" title="Go to Home page">
+					}" title="Go to Home page" data-js="link-home">
                         <img src="assets/components/Footer/images/home-24.svg" width="24" height="24" alt="Home icon" />
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="bookmarked.html" class="footer__nav-link ${
+                    <a href="#bookmarked" class="footer__nav-link ${
 						page === "Bookmarked" && "footer__nav-link--active"
-					}" title="View your bookmarked questions">
+					}" title="View your bookmarked questions" data-js="link-bookmarked">
                         <img
                             src="assets/components/Footer/images/bookmark-24.svg"
                             width="24"
@@ -28,9 +28,9 @@ export default function Footer(page) {
                     </a>
                 </li>
                 <li>
-                    <a href="profile.html" class="footer__nav-link ${
+                    <a href="#profile" class="footer__nav-link ${
 						page === "Profile" && "footer__nav-link--active"
-					}" title="Go to Profile page">
+					}" title="Go to Profile page" data-js="link-profile">
                         <img src="assets/components/Footer/images/profile-24.svg" width="24" height="24" alt="Profile icon" />
                         Profile
                     </a>
