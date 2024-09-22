@@ -64,7 +64,7 @@ export default function Card(question, isNew) {
 	const answerSection = card.querySelector('[data-js="answer"]');
 	const bookmarkButton = card.querySelector('[data-js="bookmark-button"]');
 
-	// Add click event listener to question section
+	// Add click event listener
 	card.addEventListener("click", (event) => {
 		// Reset flipped cards
 		if (!questionSection.hasAttribute("hidden")) {
