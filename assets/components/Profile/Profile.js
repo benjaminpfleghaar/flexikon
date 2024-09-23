@@ -6,12 +6,7 @@ export default function Profile() {
 	// Set inner HTML of profile
 	profile.innerHTML = `
         <article class="profile">
-            <img
-                src="assets/components/Profile/images/avatar.jpg"
-                class="profile__avatar"
-                width="80"
-                height="80"
-                alt="Jamie Torres" />
+            <img src="assets/components/Profile/images/avatar.jpg" class="profile__avatar" width="80" height="80" alt="Jamie Torres" />
             <h2 class="profile__title">
                 Jamie Torres<small class="profile__title--small">Senior Quiz Master</small>
             </h2>

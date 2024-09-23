@@ -7,9 +7,7 @@ export default function EmptyCard() {
 	// Set inner HTML of empty card
 	emptyCard.innerHTML = `
 			<img src="assets/components/EmptyCard/images/empty-card.png" alt="This card is empty" width="179" height="200" />
-			<h3 class="empty-card__title">
-				This card is empty<small class="empty-card__title--small">Start writing a question</small>
-			</h3>
+			<h3 class="empty-card__title">This card is empty<small class="empty-card__title--small">Start writing a question</small></h3>
 	`;
 
 	return emptyCard;

@@ -8,32 +8,13 @@ export default function Footer(page) {
 		<nav>
             <ul class="footer__nav-list">
                 <li>
-                    <a href="index.html" class="footer__nav-link ${
-						page === "Home" && "footer__nav-link--active"
-					}" title="Go to Home page">
-                        <img src="assets/components/Footer/images/home-24.svg" width="24" height="24" alt="Home icon" />
-                        Home
-                    </a>
+                    <a href="index.html" class="footer__nav-link ${page === "Home" ? "footer__nav-link-home--active" : "footer__nav-link-home "}" title="Go to Home page">Home</a>
                 </li>
                 <li>
-                    <a href="bookmarked.html" class="footer__nav-link ${
-						page === "Bookmarked" && "footer__nav-link--active"
-					}" title="View your bookmarked questions">
-                        <img
-                            src="assets/components/Footer/images/bookmark-24.svg"
-                            width="24"
-                            height="24"
-                            alt="Bookmark icon" />
-                        Bookmarked
-                    </a>
+                    <a href="bookmarked.html" class="footer__nav-link ${page === "Bookmarked" ? "footer__nav-link-bookmarked--active" : "footer__nav-link-bookmarked"}" title="View your bookmarked questions">Bookmarked</a>
                 </li>
                 <li>
-                    <a href="profile.html" class="footer__nav-link ${
-						page === "Profile" && "footer__nav-link--active"
-					}" title="Go to Profile page">
-                        <img src="assets/components/Footer/images/profile-24.svg" width="24" height="24" alt="Profile icon" />
-                        Profile
-                    </a>
+                    <a href="profile.html" class="footer__nav-link ${page === "Profile" ? "footer__nav-link-profile--active" : "footer__nav-link-profile"}" title="Go to Profile page">Profile</a>
                 </li>
             </ul>
         </nav>

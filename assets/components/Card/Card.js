@@ -1,12 +1,9 @@
-export default function Card(question, isNew) {
+export default function Card(question, addHighlight) {
 	// Create card container and apply attributes
 	const card = document.createElement("article");
 	card.classList.add("card");
 	card.setAttribute("tabindex", "0");
 	card.setAttribute("data-js", "card");
-
-	// Check if card is new
-	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
 	// Create code block
 	let codeLines = "";
@@ -24,20 +21,15 @@ export default function Card(question, isNew) {
 		tagItems += `<li class="card__tag">${tag}</li>`;
 	}
 
-	// Check if card is bookmarked
-	const bookmarkCard = question.bookmark ? "card__bookmark-button--active" : "";
-
 	// Set inner HTML of card
 	card.innerHTML = `
-		${highlightCard}
+		${addHighlight ? '<aside class="card--highlight" aria-hidden="true"></aside>' : ""}
 		<section class="card__question" data-js="question">
 			<h2 class="card__title">${question.question}</h2>
 		</section>
 		<section class="card__answer card__answer--hidden" data-js="answer" hidden>
 			<h2 class="card__title">${question.answer}</h2>
-			<p class="card__explanation">
-				${question.explanation}
-			</p>
+			<p class="card__explanation">${question.explanation}</p>
 			<section class="card__code-block">
 				<small class="card__code-language">${question.code_language}</small>
 				<code class="card__code">
@@ -49,11 +41,7 @@ export default function Card(question, isNew) {
 			<ul class="card__tags-list">
 				${tagItems}
 			</ul>
-			<button
-				type="button"
-				class="card__bookmark-button ${bookmarkCard}"
-				aria-label="Bookmark this question"
-				data-js="bookmark-button">
+			<button type="button" class="card__bookmark-button ${question.bookmark ? "card__bookmark-button--active" : ""}" aria-label="Bookmark this question" data-js="bookmark-button">
 				<span class="card__bookmark-button-text--hidden">Bookmark</span>
 			</button>
 		</footer>
