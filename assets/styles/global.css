@@ -48,8 +48,8 @@ a {
 main {
 	gap: 16px;
 	display: grid;
+	align-items: start;
 	padding: 0 16px 88px;
-	grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
 	main {
