@@ -3,7 +3,6 @@
 	display: flex;
 	aspect-ratio: 1;
 	cursor: pointer;
-	flex-basis: 100%;
 	position: relative;
 	border-radius: 12px;
 	flex-direction: column;
@@ -113,15 +112,5 @@
 @media (min-width: 640px) {
 	.card:active:not(:has(.card__bookmark-button:active)) {
 		transform: scale(0.98);
-	}
-}
-@media (min-width: 768px) {
-	.card {
-		flex-basis: calc(50% - 8px);
-	}
-}
-@media (min-width: 1280px) {
-	.card {
-		flex-basis: calc(33.33% - 10.7px);
 	}
 }

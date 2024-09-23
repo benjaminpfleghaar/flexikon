@@ -86,6 +86,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Provide a copy button for the code
 -   Provide layout for empty bookmark page
 -   Add counter to bookmark nav link
+-   Add pagination in footer
 
 ### Implemented
 

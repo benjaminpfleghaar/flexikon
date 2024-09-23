@@ -47,13 +47,18 @@ a {
 }
 main {
 	gap: 16px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
 	padding: 0 16px 88px;
-	align-items: flex-start;
+	grid-template-columns: 1fr;
 }
 @media (min-width: 768px) {
 	main {
 		padding: 0 24px 24px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 1280px) {
+	main {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
