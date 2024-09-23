@@ -20,27 +20,13 @@ export default function Form() {
 				</p>
 				<section class="form__input-group">
 					<label class="form__label" for="question">Question</label>
-					<textarea
-						id="question"
-						class="form__textarea"
-						name="question"
-						rows="3"
-						maxlength="150"
-						placeholder="Add your question here"
-						required></textarea>
-					<small class="form__counter" data-js="question__counter" aria-live="polite"
-						>150 characters left</small
+					<textarea id="question" class="form__textarea" name="question" rows="3" maxlength="150" placeholder="Add your question here" required></textarea>
+					<small class="form__counter" data-js="question__counter" aria-live="polite" >150 characters left</small
 					>
 				</section>
 				<section class="form__input-group">
 					<label class="form__label" for="tags">Tags</label>
-					<input
-						id="tags"
-						class="form__input"
-						name="tags"
-						maxlength="150"
-						placeholder="Add a few tags like html, css, ..."
-						required />
+					<input id="tags" class="form__input" name="tags" maxlength="150" placeholder="Add a few tags like html, css, ..." required />
 				</section>
 			</fieldset>
 			<fieldset class="form__fieldset" aria-describedby="description-answer">
@@ -50,50 +36,22 @@ export default function Form() {
 				</p>
 				<section class="form__input-group">
 					<label class="form__label" for="answer">Answer</label>
-					<input
-						id="answer"
-						class="form__input"
-						name="answer"
-						maxlength="150"
-						placeholder="Add your answer here"
-						required />
+					<input id="answer" class="form__input" name="answer" maxlength="150" placeholder="Add your answer here" required />
 				</section>
 				<section class="form__input-group">
 					<label class="form__label" for="explanation">Explanation</label>
-					<textarea
-						id="explanation"
-						class="form__textarea"
-						name="explanation"
-						rows="3"
-						maxlength="150"
-						placeholder="Add a short explanation here"
-						required></textarea>
-					<small class="form__counter" data-js="explanation__counter" aria-live="polite"
-						>150 characters left</small
+					<textarea id="explanation" class="form__textarea" name="explanation" rows="3" maxlength="150" placeholder="Add a short explanation here" required></textarea>
+					<small class="form__counter" data-js="explanation__counter" aria-live="polite" >150 characters left</small
 					>
 				</section>
 				<section class="form__input-group">
 					<label class="form__label" for="code">Code</label>
-					<textarea
-						id="code"
-						class="form__textarea"
-						name="code"
-						rows="3"
-						maxlength="150"
-						placeholder="Add your code snippet here"
-						required></textarea>
-					<small class="form__counter" data-js="code__counter" aria-live="polite"
-						>150 characters left</small
+					<textarea id="code" class="form__textarea" name="code" rows="3" maxlength="150" placeholder="Add your code snippet here" required></textarea>
+					<small class="form__counter" data-js="code__counter" aria-live="polite" >150 characters left</small
 					>
 				</section>
 				<section class="form__radio-group">
-					<input
-						type="radio"
-						id="html"
-						class="form__radio"
-						value="HTML"
-						name="code_language"
-						checked />
+					<input type="radio" id="html" class="form__radio" value="HTML" name="code_language" checked />
 					<label class="form__label" for="html">HTML</label>
 				</section>
 				<section class="form__radio-group">
@@ -162,10 +120,7 @@ export default function Form() {
 			// Scroll card into view
 			window.scrollTo({
 				behavior: "smooth",
-				top:
-					document.querySelector('[data-js="card"]').getBoundingClientRect().top -
-					document.body.getBoundingClientRect().top -
-					24,
+				top: document.querySelector('[data-js="card"]').getBoundingClientRect().top - document.body.getBoundingClientRect().top - 24,
 			});
 		}, 3000);
 	});
