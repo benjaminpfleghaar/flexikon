@@ -36,6 +36,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   Apply BEM naming convention
 -   Understanding `:has` and `:not`
 -   Use `data-js=<name>` for query selection
+    -   `data-js*=<name>` selects all with `<name>`in it
 -   Use `text-overflow: ellipsis` for cutting text
 -   How to ensure accessibility of icon only buttons
 -   Organize components/styles in different files
