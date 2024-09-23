@@ -45,3 +45,23 @@ ul {
 a {
 	text-decoration: none;
 }
+main {
+	gap: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 16px 88px;
+	align-items: flex-start;
+}
+.main--hidden {
+	top: auto;
+	width: 1px;
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+}
+@media (min-width: 768px) {
+	main {
+		padding: 0 24px 24px;
+	}
+}

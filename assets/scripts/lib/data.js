@@ -1,5 +1,5 @@
 // Questions object
-export const data = [
+export const questions = [
 	{
 		question: "Which CSS property is used to make an element's corners rounded?",
 		answer: "border-radius",

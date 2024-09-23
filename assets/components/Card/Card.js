@@ -1,5 +1,10 @@
-// Create card
-export const createCard = (card, question, isNew) => {
+export default function Card(question, isNew) {
+	// Create card container and apply attributes
+	const card = document.createElement("article");
+	card.classList.add("card");
+	card.setAttribute("tabindex", "0");
+	card.setAttribute("data-js", "card");
+
 	// Check if card is new
 	const highlightCard = isNew ? '<aside class="card--highlight" aria-hidden="true"></aside>' : "";
 
@@ -54,13 +59,12 @@ export const createCard = (card, question, isNew) => {
 		</footer>
 	`;
 
-	// Find elements within the card
-	const questionSection = card.querySelector('[data-js="question"]');
-	const answerSection = card.querySelector('[data-js="answer"]');
-	const bookmarkButton = card.querySelector('[data-js="bookmark-button"]');
+	// Toggle answer/question
+	card.addEventListener("click", () => {
+		// Find elements within the card
+		const questionSection = card.querySelector('[data-js="question"]');
+		const answerSection = card.querySelector('[data-js="answer"]');
 
-	// Add click event listener to question section
-	card.addEventListener("click", (event) => {
 		// Reset flipped cards
 		if (!questionSection.hasAttribute("hidden")) {
 			document.querySelectorAll('[data-js="question"]').forEach((question) => {
@@ -88,11 +92,13 @@ export const createCard = (card, question, isNew) => {
 	});
 
 	// Toggle bookmark status
-	bookmarkButton.addEventListener("click", (event) => {
+	card.querySelector('[data-js="bookmark-button"]').addEventListener("click", (event) => {
 		// Prevent click event from bubbling up to the card
 		event.stopPropagation();
 
 		// Toggle bookmark button's active state
-		bookmarkButton.classList.toggle("card__bookmark-button--active");
+		event.target.classList.toggle("card__bookmark-button--active");
 	});
-};
+
+	return card;
+}
