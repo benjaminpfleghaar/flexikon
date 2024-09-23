@@ -59,13 +59,12 @@ export default function Card(question, isNew) {
 		</footer>
 	`;
 
-	// Find elements within the card
-	const questionSection = card.querySelector('[data-js="question"]');
-	const answerSection = card.querySelector('[data-js="answer"]');
-	const bookmarkButton = card.querySelector('[data-js="bookmark-button"]');
+	// Toggle answer/question
+	card.addEventListener("click", () => {
+		// Find elements within the card
+		const questionSection = card.querySelector('[data-js="question"]');
+		const answerSection = card.querySelector('[data-js="answer"]');
 
-	// Add click event listener
-	card.addEventListener("click", (event) => {
 		// Reset flipped cards
 		if (!questionSection.hasAttribute("hidden")) {
 			document.querySelectorAll('[data-js="question"]').forEach((question) => {
@@ -93,12 +92,12 @@ export default function Card(question, isNew) {
 	});
 
 	// Toggle bookmark status
-	bookmarkButton.addEventListener("click", (event) => {
+	card.querySelector('[data-js="bookmark-button"]').addEventListener("click", (event) => {
 		// Prevent click event from bubbling up to the card
 		event.stopPropagation();
 
 		// Toggle bookmark button's active state
-		bookmarkButton.classList.toggle("card__bookmark-button--active");
+		event.target.classList.toggle("card__bookmark-button--active");
 	});
 
 	return card;

@@ -4,11 +4,13 @@ import Card from "../Card/Card.js";
 export default function CardList(bookmarked) {
 	// Create container
 	const cardList = document.createElement("main");
-	cardList.setAttribute("data-js", "main-home");
-	cardList.setAttribute("id", "home");
+	cardList.setAttribute("data-js", "main");
+
+	// Filter cards based in page
+	const filteredQuestions = bookmarked ? questions.filter((question) => question.bookmark) : questions;
 
 	// Create cards
-	questions.forEach((question) => {
+	filteredQuestions.forEach((question) => {
 		cardList.append(Card(question, false));
 	});
 

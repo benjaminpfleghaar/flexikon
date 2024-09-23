@@ -23,25 +23,23 @@ export default function Header(page) {
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li>
-                    <a href="#home" class="header__nav-link ${
+                    <a href="index.html" class="header__nav-link ${
 						page === "Home" && "header__nav-link--active"
-					}" title="Go to Home page" data-js="link-home"
-                        >Home</a
+					}" title="Go to Home page">Home</a
                     >
                 </li>
                 <li>
-                    <a href="#bookmarked" class="header__nav-link ${
+                    <a href="bookmarked.html" class="header__nav-link ${
 						page === "Bookmarked" && "header__nav-link--active"
-					}" title="View your bookmarked questions" data-js="link-bookmarked">Bookmarked</a>
+					}" title="View your bookmarked questions">Bookmarked</a>
                 </li>
                 <li>
-                    <a href="#profile" class="header__nav-link ${
+                    <a href="profile.html" class="header__nav-link ${
 						page === "Profile" && "header__nav-link--active"
-					}" title="Go to Profile page" data-js="link-profile">Profile</a>
+					}" title="Go to Profile page">Profile</a>
                 </li>
             </ul>
-            <a href="#form" class="header__add-question-link" title="Add a new question" data-js="link-form"
-                ><img src="assets/components/Header/images/add-20.svg" width="20" height="20" alt="Add icon" />Add question
+            <a href="create.html" class="header__add-question-link" title="Add a new question"><img src="assets/components/Header/images/add-20.svg" width="20" height="20" alt="Add icon" />Add question
             </a>
         </nav>
 	`;
