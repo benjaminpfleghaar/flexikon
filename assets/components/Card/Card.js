@@ -62,11 +62,11 @@ export default function Card(question, isNew) {
 	// Toggle answer/question
 	card.addEventListener("click", () => {
 		// Find elements within the card
-		const questionSection = card.querySelector('[data-js="question"]');
-		const answerSection = card.querySelector('[data-js="answer"]');
+		const question = card.querySelector('[data-js="question"]');
+		const answer = card.querySelector('[data-js="answer"]');
 
 		// Reset flipped cards
-		if (!questionSection.hasAttribute("hidden")) {
+		if (!question.hasAttribute("hidden")) {
 			document.querySelectorAll('[data-js="question"]').forEach((question) => {
 				question.classList.remove("card__question--hidden");
 				question.removeAttribute("hidden");
@@ -78,16 +78,16 @@ export default function Card(question, isNew) {
 		}
 
 		// Toggle the visibility of question and answer
-		questionSection.classList.toggle("card__question--hidden");
-		answerSection.classList.toggle("card__answer--hidden");
+		question.classList.toggle("card__question--hidden");
+		answer.classList.toggle("card__answer--hidden");
 
 		// Toggle `hidden` attribute for better accessibility
-		if (answerSection.hasAttribute("hidden")) {
-			answerSection.removeAttribute("hidden");
-			questionSection.setAttribute("hidden", "");
+		if (answer.hasAttribute("hidden")) {
+			answer.removeAttribute("hidden");
+			question.setAttribute("hidden", "");
 		} else {
-			answerSection.setAttribute("hidden", "");
-			questionSection.removeAttribute("hidden");
+			answer.setAttribute("hidden", "");
+			question.removeAttribute("hidden");
 		}
 	});
 

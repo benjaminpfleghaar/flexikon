@@ -137,10 +137,10 @@ export default function Form() {
 		data.tags = data.tags.split(",");
 
 		// Add loading indicator
-		document.querySelector('[data-js="submit-button"]').innerHTML = '<span class="form__spinner"></span>Loading...';
+		form.querySelector('[data-js="submit-button"]').innerHTML = '<span class="form__spinner"></span>Loading...';
 
 		// Disable all buttons
-		document.querySelectorAll("button").forEach((button) => {
+		form.querySelectorAll("button").forEach((button) => {
 			button.disabled = true;
 		});
 
@@ -152,10 +152,10 @@ export default function Form() {
 			document.querySelector('[data-js="main"]').append(Card(data, true));
 
 			// Remove loading indicator
-			document.querySelector('[data-js="submit-button"]').innerHTML = "Save question";
+			form.querySelector('[data-js="submit-button"]').innerHTML = "Save question";
 
 			// Enable all buttons
-			document.querySelectorAll("button").forEach((button) => {
+			form.querySelectorAll("button").forEach((button) => {
 				button.disabled = false;
 			});
 
@@ -173,10 +173,10 @@ export default function Form() {
 	// Handle form reset
 	form.querySelector('[data-js="reset-button"]').addEventListener("click", () => {
 		// Reset form
-		document.querySelector('[data-js="form"]').reset();
+		form.querySelector('[data-js="form"]').reset();
 
 		// Reset character counter
-		document.querySelectorAll(".form__counter").forEach((counter) => {
+		form.querySelectorAll(".form__counter").forEach((counter) => {
 			counter.innerHTML = "150 characters left";
 		});
 
@@ -188,10 +188,10 @@ export default function Form() {
 	});
 
 	// Handle character counter
-	form.querySelectorAll("textarea").forEach((element) =>
-		element.addEventListener("input", (event) => {
+	form.querySelectorAll("textarea").forEach((textarea) =>
+		textarea.addEventListener("input", (event) => {
 			// Select counter and calculate characters
-			const counter = document.querySelector(`[data-js="${event.target.id}__counter"]`);
+			const counter = form.querySelector(`[data-js="${event.target.id}__counter"]`);
 			counter.textContent = `${150 - event.target.value.length} characters left`;
 		})
 	);
