@@ -58,7 +58,7 @@
 	color: var(--color-primary);
 	border: 1px solid var(--color-border);
 	font-family: var(--font-medium), sans-serif;
-	background: url(images/add-20.svg) left 12px center no-repeat;
+	background: url(images/add.svg) left 12px center no-repeat;
 }
 .header__add-question-link:focus-visible {
 	outline-offset: 2px;

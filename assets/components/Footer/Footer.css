@@ -20,25 +20,25 @@
 	font-family: var(--font-medium), sans-serif;
 }
 .footer__nav-link-home {
-	background-image: url(images/home-24.svg);
+	background-image: url(images/home.svg);
 }
 .footer__nav-link-home--active {
 	color: var(--color-primary);
-	background-image: url(images/home-24-active.svg);
+	background-image: url(images/home-active.svg);
 }
 .footer__nav-link-bookmarked {
-	background-image: url(images/bookmark-24.svg);
+	background-image: url(images/bookmark.svg);
 }
 .footer__nav-link-bookmarked--active {
 	color: var(--color-primary);
-	background-image: url(images/bookmark-24-active.svg);
+	background-image: url(images/bookmark-active.svg);
 }
 .footer__nav-link-profile {
-	background-image: url(images/profile-24.svg);
+	background-image: url(images/profile.svg);
 }
 .footer__nav-link-profile--active {
 	color: var(--color-primary);
-	background-image: url(images/profile-24-active.svg);
+	background-image: url(images/profile-active.svg);
 }
 @media (min-width: 768px) {
 	.footer {

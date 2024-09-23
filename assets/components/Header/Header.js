@@ -3,14 +3,11 @@ export default function Header(page) {
 	const header = document.createElement("header");
 	header.classList.add("header");
 
-	// Build headline
-	const headline = page !== "Home" ? `<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>${page}</h1>` : `<h1 class="header__title">Flexikon</h1>`;
-
 	// Set inner HTML of header
 	header.innerHTML = `
 		<section class="header__section">
-            <img src="assets/components/Header/images/logo-20.svg" width="20" height="20" class="header__logo" alt="Flexikon Logo" />
-            ${headline}
+            <img src="assets/components/Header/images/logo.svg" width="48" height="48" alt="Flexikon Logo" />
+            ${page !== "Home" ? `<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>${page}</h1>` : `<h1 class="header__title">Flexikon</h1>`}
         </section>
         <nav class="header__nav">
             <ul class="header__nav-list">
