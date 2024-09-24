@@ -87,7 +87,7 @@ export default function Form() {
 			// Remove empty card
 			document.querySelector('[data-js="card"]').remove();
 
-			// Create card with content (card object, question object, new card y/n)
+			// Create card with content (question object, new card y/n)
 			document.querySelector('[data-js="main"]').append(Card(data, true));
 
 			// Remove loading indicator

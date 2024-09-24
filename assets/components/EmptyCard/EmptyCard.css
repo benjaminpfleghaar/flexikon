@@ -8,10 +8,6 @@
 	transition: transform ease 0.2s;
 	background-color: var(--color-background-bright);
 }
-.empty-card:focus-visible {
-	outline-offset: 2px;
-	outline: 2px solid var(--color-primary);
-}
 .empty-card__title {
 	display: flex;
 	font-weight: 500;
