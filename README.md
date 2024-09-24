@@ -41,6 +41,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   How to ensure accessibility of icon only buttons
 -   Organize components/styles in different files
 -   How to style `<input type="radio">` elements with css
+    - ... using `appearance: none;`
 -   Use `hidden` attribute to hide elements to screenreaders
 -   Apply `aria-live` to inform impaired users politely
 -   Use `type="module"` on `<script>` tag enable import
