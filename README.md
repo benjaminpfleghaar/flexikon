@@ -106,7 +106,7 @@ The application requires no further packages.
 
 ## Tech Stack
 
--   Visual Studio Code
+-   VSC
 -   GitHub
 -   HTML
 -   CSS
