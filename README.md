@@ -26,6 +26,7 @@ A short quiz about modern web technologies. Just click on the respective questio
 ## Challenges
 
 -   [x] Handle data input
+-   [x] Use vanilla JS only 
 -   [x] Build HTML structure
 -   [x] Create at least 3 questions
 -   [x] Check for Accessibility
