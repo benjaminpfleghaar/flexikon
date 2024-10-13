@@ -29,8 +29,8 @@ A short quiz about modern web technologies. Just click on the respective questio
 -   [x] Use vanilla JS only 
 -   [x] Build HTML structure
 -   [x] Create at least 3 questions
+-   [x] Style the pages with CSS
 -   [x] Check for Accessibility
--   [x] Style the page via CSS
 
 ## Learnings
 
