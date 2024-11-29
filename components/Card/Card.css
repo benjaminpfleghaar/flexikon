@@ -14,14 +14,14 @@
 	outline-offset: 2px;
 	outline: 2px solid var(--color-primary);
 }
-.card--highlight {
+.card--new {
 	top: 12px;
 	right: 12px;
 	width: 12px;
 	height: 12px;
 	border-radius: 6px;
 	position: absolute;
-	background-color: var(--color-highlight);
+	background-color: var(--color-new);
 }
 .card__question--hidden,
 .card__answer--hidden {
@@ -70,7 +70,7 @@
 	justify-content: space-between;
 }
 .card__tags-list {
-	gap: 4px;
+	gap: 8px;
 	display: flex;
 }
 .card__tag {
@@ -89,7 +89,7 @@
 	width: 48px;
 	height: 48px;
 	cursor: pointer;
-	border-radius: 6px;
+	border-radius: 24px;
 	border: 1px solid var(--color-border);
 	background: url(images/bookmark.svg) center no-repeat;
 }
@@ -98,8 +98,9 @@
 	outline: 2px solid var(--color-primary);
 }
 .card__bookmark-button--active {
-	background-color: var(--color-background-bright);
-	background-image: url(images/check.svg);
+	border-color: var(--color-highlight);
+	background-color: var(--color-highlight);
+	background-image: url(images/bookmark-active.svg);
 }
 .card__bookmark-button-text--hidden {
 	top: auto;

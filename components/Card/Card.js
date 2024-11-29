@@ -23,7 +23,7 @@ export default function Card(question, addHighlight) {
 
 	// Set inner HTML of card
 	card.innerHTML = `
-		${addHighlight ? '<aside class="card--highlight" aria-hidden="true"></aside>' : ""}
+		${addHighlight ? '<aside class="card--new" aria-hidden="true"></aside>' : ""}
 		<section class="card__question" data-js="question">
 			<h2 class="card__title">${question.question}</h2>
 		</section>

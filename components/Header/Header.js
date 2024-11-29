@@ -21,7 +21,9 @@ export default function Header(page) {
                     <a href="profile.html" class="header__nav-link ${page === "Profile" && "header__nav-link--active"}" title="Go to Profile page">Profile</a>
                 </li>
             </ul>
-            <a href="create.html" class="header__add-question-link" title="Add a new question">Add question</a>
+            <a href="create.html" class="header__add-question-link" aria-label="Add a new question">
+                <span class="header__add-question-link-text--hidden">Add</span>
+            </a>
         </nav>
 	`;
 

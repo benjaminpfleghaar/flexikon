@@ -43,19 +43,23 @@
 	background: var(--color-background-bright);
 }
 .header__add-question-link {
-	display: flex;
-	font-weight: 500;
-	border-radius: 6px;
-	align-items: center;
-	padding: 0 16px 0 44px;
-	color: var(--color-primary);
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
 	border: 1px solid var(--color-border);
-	font-family: var(--font-medium), sans-serif;
-	background: url(images/add.svg) left 12px center no-repeat;
+	background: url(images/add.svg) center center no-repeat;
 }
 .header__add-question-link:focus-visible {
 	outline-offset: 2px;
 	outline: 2px solid var(--color-primary);
+}
+.header__add-question-link-text--hidden {
+	top: auto;
+	width: 1px;
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
 }
 @media (min-width: 768px) {
 	.header {
