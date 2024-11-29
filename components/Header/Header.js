@@ -6,7 +6,7 @@ export default function Header(page) {
 	// Set inner HTML of header
 	header.innerHTML = `
 		<section class="header__section">
-            <img src="assets/components/Header/images/logo.svg" width="48" height="48" alt="Flexikon Logo" />
+            <img src="components/Header/images/logo.svg" width="48" height="48" alt="Flexikon Logo" />
             ${page !== "Home" ? `<h1 class="header__title"><span class="header__title--normal">Flexikon / </span>${page}</h1>` : `<h1 class="header__title">Flexikon</h1>`}
         </section>
         <nav class="header__nav">

@@ -1,4 +1,4 @@
-import { questions } from "./../../scripts/lib/data.js";
+import { questions } from "../../data/questions.js";
 import Card from "../Card/Card.js";
 
 export default function CardList(showOnlyBookmarkedCards) {

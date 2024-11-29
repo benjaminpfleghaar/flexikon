@@ -1,26 +1,8 @@
 {
-	"name": "flexikon-app",
-	"version": "1.0.0",
+	"name": "flexikon",
+	"version": "0.1.0",
 	"private": true,
-	"description": "Quiz app as part of the neuefische Web Development Bootcamp",
-	"main": "index.html",
 	"scripts": {
 		"start": "npx -y live-server@latest"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/benjaminpfleghaar/flexikon-app.git"
-	},
-	"keywords": [
-		"HTML",
-		"CSS",
-		"JavaScript",
-		"Web",
-		"App"
-	],
-	"author": "Benjamin Pfleghaar",
-	"bugs": {
-		"url": "https://github.com/benjaminpfleghaar/flexikon-app/issues"
-	},
-	"homepage": "https://github.com/benjaminpfleghaar/flexikon-app#readme"
+	}
 }

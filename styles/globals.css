@@ -30,9 +30,8 @@ html {
 	font-weight: 400;
 	font-family: var(--font-regular), sans-serif;
 
-	font-synthesis: none;
-	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 body {
 	margin: 0 auto;
