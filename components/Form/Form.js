@@ -28,7 +28,7 @@ export default function Form() {
 			</fieldset>
 			<fieldset class="form__fieldset" aria-describedby="description-answer">
 				<legend class="form__legend">Answer details</legend>
-				<p class="form__fieldset-description" id="description-answer">Enter the answer, a explanation and a code snippet</p>
+				<p class="form__fieldset-description" id="description-answer">Enter the answer, explanation and code snippet</p>
 				<section class="form__input-group">
 					<label class="form__label" for="answer">Answer</label>
 					<input id="answer" class="form__input" name="answer" maxlength="150" placeholder="Add your answer here" required />
