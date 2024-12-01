@@ -4,7 +4,6 @@
 	justify-content: space-between;
 }
 .header__section {
-	gap: 16px;
 	display: flex;
 	align-items: center;
 }
@@ -29,7 +28,7 @@
 	display: flex;
 	padding: 0 16px;
 	font-weight: 500;
-	border-radius: 6px;
+	border-radius: 24px;
 	align-items: center;
 	color: var(--color-secondary-bright);
 	font-family: var(--font-medium), sans-serif;
@@ -46,8 +45,7 @@
 	width: 48px;
 	height: 48px;
 	border-radius: 24px;
-	border: 1px solid var(--color-border);
-	background: url(images/add.svg) center center no-repeat;
+	background: var(--color-highlight) url(images/add.svg) center no-repeat;
 }
 .header__add-question-link:focus-visible {
 	outline-offset: 2px;

@@ -21,7 +21,7 @@
 	height: 12px;
 	border-radius: 6px;
 	position: absolute;
-	background-color: var(--color-new);
+	background-color: var(--color-highlight);
 }
 .card__question--hidden,
 .card__answer--hidden {
