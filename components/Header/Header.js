@@ -15,7 +15,7 @@ export default function Header(page) {
                     <a href="index.html" class="header__nav-link ${page === "Home" && "header__nav-link--active"}" title="Go to Home page">Home</a>
                 </li>
                 <li>
-                    <a href="bookmarked.html" class="header__nav-link ${page === "Bookmarked" && "header__nav-link--active"}" title="View your bookmarked questions">Bookmarked</a>
+                    <a href="bookmarks.html" class="header__nav-link ${page === "Bookmarks" && "header__nav-link--active"}" title="View your bookmarked questions">Bookmarks</a>
                 </li>
                 <li>
                     <a href="profile.html" class="header__nav-link ${page === "Profile" && "header__nav-link--active"}" title="Go to Profile page">Profile</a>

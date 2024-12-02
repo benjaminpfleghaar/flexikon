@@ -3,4 +3,4 @@ import Footer from "../components/Footer/Footer.js";
 import CardList from "../components/CardList/CardList.js";
 
 // Append components
-document.body.append(Header("Bookmarked"), CardList(true), Footer("Bookmarked"));
+document.body.append(Header("Bookmarks"), CardList(true), Footer("Bookmarks"));

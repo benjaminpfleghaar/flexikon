@@ -12,7 +12,7 @@ export default function Profile() {
             </h2>
             <ul class="profile__tags-list">
                 <li class="profile__tag"><span class="profile__tag--highlight">6</span>Questions</li>
-                <li class="profile__tag"><span class="profile__tag--highlight">2</span>Bookmarked</li>
+                <li class="profile__tag"><span class="profile__tag--highlight">2</span>Bookmarks</li>
             </ul>
             <p class="profile__bio">
                 Quiz app enthusiast, gaming aficionado, and pizza lover. Always on the lookout for the next fun
