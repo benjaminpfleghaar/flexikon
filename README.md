@@ -1,6 +1,6 @@
 # Flexikon
 
-This app project is a personal exercise in component-based development, focused on building modular and reusable components. To keep the focus on understanding core concepts, the project uses only vanilla JavaScript, without relying on frameworks or libraries. The goal was to practice writing clean and maintainable code while exploring the fundamentals of modern JavaScript development.
+This app project is a personal exercise in component-based development, focused on building modular and reusable components. To keep the focus on understanding core concepts, the project uses only vanilla JavaScript, without relying on frameworks or libraries.
 
 ## Table of Contents
 
