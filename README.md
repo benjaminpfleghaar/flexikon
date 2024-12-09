@@ -13,7 +13,7 @@ This app project is a personal exercise in component-based development, focused 
 
 ## Description
 
-This Quiz App provides a simple and interactive way to explore modern web technologies. Users can reveal answers by clicking on questions or contribute by adding their own. Built with a focus on core functionality and ease of use, the app aims to create an engaging experience for testing and expanding knowledge in web development.
+Flexikon provides a simple and interactive way to explore modern web technologies. Users can reveal answers by clicking on questions or contribute by adding their own. Built with a focus on core functionality and ease of use, the app aims to create an engaging experience for testing and expanding knowledge in web development.
 
 ## Design
 
