@@ -1,6 +1,6 @@
 # Flexikon
 
-A personal project focused on component-based development using only vanilla **JavaScript**. Flexikon offers an interactive way to explore modern web technologies, allowing users to test their knowledge and contribute new questions.
+A **JavaScript** application focused on core concepts without relying on frameworks. Flexikon offers an interactive way to explore modern web technologies, allowing users to test their knowledge and contribute new questions.
 
 ![Mockup](./assets/mockup.jpg)
 
@@ -8,6 +8,14 @@ A personal project focused on component-based development using only vanilla **J
 
 - **Interactive Quizzes:** Test your knowledge on modern web technologies
 - **Custom Questions:** Add your own questions to expand the learning experience
+
+## Technologies
+
+This project is built with:
+
+- **Markup**: [HTML](https://developer.mozilla.org/de/docs/Web/HTML)
+- **Styling**: [CSS](https://developer.mozilla.org/de/docs/Web/CSS)
+- **Interaction**: [JS](https://developer.mozilla.org/de/docs/Web/JavaScript)
 
 ## Questions
 
