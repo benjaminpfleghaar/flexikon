@@ -1,23 +1,13 @@
 # Flexikon
 
-This app project is a personal exercise in component-based development, focused on building modular and reusable components. To keep the focus on understanding core concepts, the project uses only vanilla JavaScript, without relying on frameworks or libraries.
-
-## Table of Contents
-
-1. [Description](#description)
-2. [Design](#design)
-3. [Questions](#questions)
-4. [Backlog](#backlog)
-5. [How to use](#how-to-use)
-6. [Tech Stack](#tech-stack)
-
-## Description
-
-Flexikon provides a simple and interactive way to explore modern web technologies. Users can reveal answers by clicking on questions or contribute by adding their own. Built with a focus on core functionality and ease of use, the app aims to create an engaging experience for testing and expanding knowledge in web development.
-
-## Design
+A personal project focused on component-based development using only vanilla **JavaScript**. Flexikon offers an interactive way to explore modern web technologies, allowing users to test their knowledge and contribute new questions.
 
 ![Mockup](./assets/mockup.jpg)
+
+## Features
+
+- **Interactive Quizzes:** Test your knowledge on modern web technologies
+- **Custom Questions:** Add your own questions to expand the learning experience
 
 ## Questions
 
@@ -56,24 +46,18 @@ Utilizing ChatGPT for creating new questions.
     Could you please give me 6 questions back as a single JSON object, so that I can work on with it.
 </details>
 
-## Backlog
-
--   Add a bookmark counter to nav
--   Provide a copy button for the code
--   Provide layout for empty bookmark page
--   Add a pagination in the footer
-
-## How to use
+## Getting Started
 
 The application requires no further packages.
 
--   Clone the whole repository
--   Run `npm run start` to start the application
+### Installation
 
-## Tech Stack
-
--   VSC
--   GitHub
--   HTML
--   CSS
--   JS
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/benjaminpfleghaar/flexikon.git
+   ```
+   
+2. Run the application:
+   ```bash
+   npm run start
+   ```

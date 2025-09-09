@@ -3,3 +3,6 @@
 
 # assets
 /assets/edit
+
+# webstorm
+/.idea
