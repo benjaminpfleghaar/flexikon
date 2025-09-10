@@ -1,6 +1,6 @@
 # Flexikon
 
-Vanilla JavaScript app to explore web technologies interactively, test knowledge, and contribute new questions.
+Vanilla JavaScript app to explore web technologies interactively, test knowledge and contribute new questions.
 
 ![Mockup](./assets/mockup.jpg)
 
